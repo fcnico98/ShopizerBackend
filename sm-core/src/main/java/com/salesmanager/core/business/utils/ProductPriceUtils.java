@@ -170,7 +170,7 @@ public class ProductPriceUtils {
 
 		finalPrice.setStringPrice(getStringAmount(finalPrice.getFinalPrice()));
 		if (finalPrice.isDiscounted()) {
-			finalPrice.setStringDiscountedPrice(getStringAmount(finalPrice.getDiscountedPrice()));
+			finalPrice.setStringDiscountedPrice(getAdminFormatedAmount(finalPrice.getDiscountedPrice()));
 		}
 		return finalPrice;
 
@@ -233,7 +233,7 @@ public class ProductPriceUtils {
 
 		finalPrice.setStringPrice(getStringAmount(finalPrice.getFinalPrice()));
 		if (finalPrice.isDiscounted()) {
-			finalPrice.setStringDiscountedPrice(getStringAmount(finalPrice.getDiscountedPrice()));
+			finalPrice.setStringDiscountedPrice(getAdminFormatedAmount(finalPrice.getDiscountedPrice()));
 		}
 		return finalPrice;
 
@@ -266,7 +266,7 @@ public class ProductPriceUtils {
 	}
 
 	// Utility
-	public String getStringAmount(BigDecimal amount) {
+	public String getAdminFormatedAmount(BigDecimal amount) {
 
 		if (amount == null) {
 			return "";

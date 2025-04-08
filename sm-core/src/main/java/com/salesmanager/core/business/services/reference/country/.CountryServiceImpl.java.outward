@@ -1,0 +1,264 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryServiceImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryServiceImpl.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByCode",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listCountryZones",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "listCountryZones",
+                "to_name": "ServiceException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listCountryZones",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCountries",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 11,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listCountryZones",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCountries",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries",
+                "to_name": "getDescriptions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries",
+                "to_name": "setName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries",
+                "to_name": "getIsoCode",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 11,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByCode",
+                "to_name": "findByIsoCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listCountryZones",
+                "to_name": "listCountryZonesByLanguage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries",
+                "to_name": "listByLanguage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CountryServiceImpl",
+                "to_name": "CountryRepository",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/reference/country/CountryRepository.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listCountryZones",
+                "to_name": "getId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries",
+                "to_name": "getId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries",
+                "to_name": "getCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "Language",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries",
+                "to_name": "getFromCache",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries",
+                "to_name": "putInCache",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "CacheUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/utils/CacheUtils.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addCountryDescription",
+                "to_name": "update",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "CountryServiceImpl",
+                "to_name": "SalesManagerEntityServiceImpl",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "SalesManagerEntityServiceImpl\u003cK extends Serializable\u0026Comparable\u003cK\u003e,E extends SalesManagerEntity\u003cK,?\u003e\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries",
+                "to_name": "getName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "Description",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addCountryDescription",
+                "to_name": "setCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "CountryDescription",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/CountryDescription.java"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 8
+      }
+    ]
+  }
+}

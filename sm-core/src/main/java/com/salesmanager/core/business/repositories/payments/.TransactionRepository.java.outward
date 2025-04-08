@@ -1,0 +1,117 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/payments/TransactionRepository.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/payments/TransactionRepository.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByDates",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByDates",
+                "to_name": "Transaction",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByOrder",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByOrder",
+                "to_name": "Transaction",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "TransactionRepository",
+                "to_name": "Transaction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByDates",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByOrder",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "TransactionRepository",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select t from Transaction",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/Order.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByDates",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "TransactionRepository",
+                "to_name": "OrderTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select t from Transaction",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotal.java"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ]
+  }
+}

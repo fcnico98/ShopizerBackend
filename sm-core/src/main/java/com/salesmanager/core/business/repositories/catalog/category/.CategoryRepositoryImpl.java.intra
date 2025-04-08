@@ -1,0 +1,33 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java]": {
+    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java]": [
+      {
+        "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "listByProduct",
+            "to_name": "select category from Product",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "listByStoreAndParent",
+            "to_name": "select c from Category",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "countProductsByCategories",
+            "to_name": "select category.id, count(product.id) from",
+            "calling_type": "CALL"
+          }
+        ],
+        "calls_between_elements_list_comment": "",
+        "nb_calls_between_elements": 6
+      }
+    ]
+  }
+}

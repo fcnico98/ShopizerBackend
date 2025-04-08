@@ -1,0 +1,61 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java]": {
+    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java]": [
+      {
+        "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "findByCode",
+            "to_name": "select m from MerchantStore",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "getById",
+            "to_name": "select m from MerchantStore",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data Query",
+            "from_name": "listByGroup",
+            "to_name": "select * from MERCHANT_STORE",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "findAllStoreCodeNameEmail",
+            "to_name": "select new com.salesmanager.core.model.merchant.MerchantStore(m.id, m.code,",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "findAllStoreNames",
+            "to_name": "select new com.salesmanager.core.model.merchant.MerchantStore(m.id, m.code,",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "getByParent",
+            "to_name": "select distinct m from",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "existsByCode",
+            "to_name": "SELECT COUNT(m) \u003e 0",
+            "calling_type": "CALL"
+          }
+        ],
+        "calls_between_elements_list_comment": "",
+        "nb_calls_between_elements": 9
+      }
+    ]
+  }
+}

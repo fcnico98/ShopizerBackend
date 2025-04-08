@@ -1,0 +1,110 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/reference/zone/ZoneRepository.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/reference/zone/ZoneRepository.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByCode",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "listByLanguageAndCountry",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listByLanguageAndCountry",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "listByLanguage",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listByLanguage",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "listByLanguageAndCountry",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ZoneRepository",
+                "to_name": "Country",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select z from Zone",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByLanguageAndCountry",
+                "to_name": "zone",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByLanguage",
+                "to_name": "zone",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ZoneRepository",
+                "to_name": "zone",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "Salesmanager.sql"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ]
+  }
+}

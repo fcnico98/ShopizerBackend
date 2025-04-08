@@ -1,0 +1,775 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/PayPalExpressCheckoutPayment.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/PayPalExpressCheckoutPayment.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "capture",
+                "to_name": "IntegrationException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "capture",
+                "to_name": "IntegrationException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "capture",
+                "to_name": "IntegrationException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processTransaction",
+                "to_name": "IntegrationException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processTransaction",
+                "to_name": "IntegrationException",
+                "calling_type": "RAISE"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 29,
+            "to_file": "sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/IntegrationException.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture",
+                "to_name": "getTransactionDetails",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture",
+                "to_name": "setPaymentType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture",
+                "to_name": "setTransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture",
+                "to_name": "setTransactionDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture",
+                "to_name": "setAmount",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 25,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture",
+                "to_name": "getIntegrationKeys",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture",
+                "to_name": "getEnvironment",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getIntegrationKeys",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getEnvironment",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refund",
+                "to_name": "getIntegrationKeys",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationConfiguration.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "capture",
+                "to_name": "Constants",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processTransaction",
+                "to_name": "Constants",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "refund",
+                "to_name": "Constants",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "initPaypalTransaction",
+                "to_name": "SLASH",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "initPaypalTransaction",
+                "to_name": "OT_TAX_MODULE_CODE",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processTransaction",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "initPaypalTransaction",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getFinalPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getQuantity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "capture",
+                "to_name": "CAPTURE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "processTransaction",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "refund",
+                "to_name": "REFUND",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "initPaypalTransaction",
+                "to_name": "INIT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "initPaypalTransaction",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/TransactionType.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture",
+                "to_name": "getStringAmount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getStringAmount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refund",
+                "to_name": "getStringAmount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getStringAmount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "PricingServiceImpl",
+                "calling_type": "FIRE"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingServiceImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "capture",
+                "to_name": "PAYPAL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "processTransaction",
+                "to_name": "PAYPAL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "refund",
+                "to_name": "PAYPAL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "initPaypalTransaction",
+                "to_name": "PAYPAL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "PaymentType",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/PaymentType.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture",
+                "to_name": "getCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refund",
+                "to_name": "getCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "Currency",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/currency/Currency.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture",
+                "to_name": "getStringAmount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getStringAmount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refund",
+                "to_name": "getStringAmount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getStringAmount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "PricingService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "initPaypalTransaction",
+                "to_name": "OrderTotal",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "OrderTotal",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "OrderTotal",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotal.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getProperty",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "CoreConfiguration",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "CoreConfiguration",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "CoreConfiguration",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/utils/CoreConfiguration.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getTotals",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getSubTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "OrderTotalSummary",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotalSummary.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture",
+                "to_name": "getTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refund",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/Order.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getPaymentToken",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "authorizeAndCapture",
+                "to_name": "getPaymentToken",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "authorize",
+                "to_name": "getPaymentToken",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "PaypalPayment",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/PaypalPayment.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getTransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "Payment",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/Payment.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getDomainName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "MerchantStore",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getFinalPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "FinalPrice",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/FinalPrice.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "Description",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction",
+                "to_name": "getProductDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "Product",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "initPaypalTransaction",
+                "to_name": "URL_EXTENSION",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "initPaypalTransaction",
+                "to_name": "SHOP_SCHEME",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-shop/src/main/resources/shopizer-properties.properties"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "refund",
+                "to_name": "EXCEPTION_TRANSACTION_DECLINED",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+          }
+        ],
+        "files_list_comment": "files list is truncated to first 15 items",
+        "nb_files_with_calling_elements": 22
+      }
+    ]
+  }
+}

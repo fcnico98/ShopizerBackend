@@ -1,0 +1,180 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select category from Product",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select c from Category",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByProduct",
+                "to_name": "getId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "listByProduct",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByStoreAndParent",
+                "to_name": "getId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java",
+            "nb_calls_between_elements": 11
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select c from Category",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listByProduct",
+                "to_name": "Category",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listByStoreAndParent",
+                "to_name": "Category",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByStoreAndParent",
+                "to_name": "getId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "listByStoreAndParent",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/category/Category.java",
+            "nb_calls_between_elements": 11
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByProduct",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByProduct",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByStoreAndParent",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "countProductsByCategories",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "countProductsByCategories",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "to_file": "Salesmanager.sql",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select category from Product",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select category.id, count(product.id) from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "listByProduct",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "countProductsByCategories",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "CategoryRepositoryImpl",
+                "to_name": "Product",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java",
+            "nb_calls_between_elements": 5
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 4
+      }
+    ]
+  }
+}

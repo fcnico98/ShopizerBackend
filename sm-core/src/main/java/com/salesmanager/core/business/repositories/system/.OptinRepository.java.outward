@@ -1,0 +1,89 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/system/OptinRepository.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/system/OptinRepository.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByMerchantAndCode",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByMerchantAndType",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByMerchant",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByMerchant",
+                "to_name": "Optin",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "OptinRepository",
+                "to_name": "Optin",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/optin/Optin.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByMerchantAndCode",
+                "to_name": "optin",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByMerchantAndType",
+                "to_name": "optin",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByMerchant",
+                "to_name": "optin",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "OptinRepository",
+                "to_name": "optin",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "Salesmanager.sql"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

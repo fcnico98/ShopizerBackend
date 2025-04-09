@@ -7,63 +7,63 @@
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/customers/{}/cart/",
-            "to_name": "addToCart",
+            "to_name": "addToCart(java.lang.Long,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.sal",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Delete Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/cart/{}/product/{}/",
-            "to_name": "deleteCartItem",
+            "to_name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/auth/customer/cart/",
-            "to_name": "getByCustomer",
+            "to_name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/auth/customer/{}/cart/",
-            "to_name": "getByCustomer",
+            "to_name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/cart/{}/",
-            "to_name": "getByCode",
+            "to_name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/cart/{}/multi/",
-            "to_name": "modifyCart",
+            "to_name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/cart/{}/promo/{}/",
-            "to_name": "modifyCart",
+            "to_name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Put Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/cart/{}/",
-            "to_name": "modifyCart",
+            "to_name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/cart/",
-            "to_name": "addToCart",
+            "to_name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
             "calling_type": "CALL"
           },
           {
@@ -107,9 +107,44 @@
             "from_name": "api/v1/cart/",
             "to_name": "ShoppingCartApi",
             "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/auth/customer/cart/",
+            "to_name": "ShoppingCartApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/auth/customer/{}/cart/",
+            "to_name": "ShoppingCartApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/cart/{}/",
+            "to_name": "ShoppingCartApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Delete Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/cart/{}/product/{}/",
+            "to_name": "ShoppingCartApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Instantiated Method",
+            "from_name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
+            "to_name": "asList\u003cPersistableShoppingCartItem[]\u003e",
+            "calling_type": "CALL"
           }
         ],
-        "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",
+        "calls_between_elements_list_comment": "",
         "nb_calls_between_elements": 20
       }
     ]

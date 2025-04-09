@@ -2,6 +2,7 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/user/PermissionRepositoryImpl.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/user/PermissionRepositoryImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 10,
         "files": [
           {
             "calls_between_elements": [
@@ -22,14 +23,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listByCriteria",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
                 "to_name": "Permission",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "listByCriteria",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
@@ -39,9 +40,16 @@
                 "from_name": "PermissionRepositoryImpl",
                 "to_name": "Permission",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "PermissionRepositoryImpl",
+                "to_name": "Permission",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/Permission.java",
             "nb_calls_between_elements": 8
           },
@@ -50,22 +58,71 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "setPermissions",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "setParameter(java.lang.String,java.lang.Object) return javax.persistence.Query",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "setTotalCount",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "setFirstResult(int) return javax.persistence.Query",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "setMaxResults(int) return javax.persistence.Query",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "getSingleResult() return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "getResultList() return java.util.List\u003cE\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "PermissionRepositoryImpl",
+                "to_name": "Query",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Query_32662.java",
+            "nb_calls_between_elements": 6
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "setPermissions(java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "setTotalCount(int) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "listByCriteria",
-                "to_name": "PermissionList",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "PermissionList()",
                 "calling_type": "CALL"
               },
               {
@@ -85,15 +142,43 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "getMaxCount",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "toString() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "getStartIndex",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "append(java.lang.String) return java.lang.StringBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "StringBuilder()",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "getMaxCount() return int",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "getStartIndex() return int",
                 "calling_type": "CALL"
               },
               {
@@ -113,7 +198,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "PostgreSQL Table",
-                "from_name": "listByCriteria",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
                 "to_name": "permission",
                 "calling_type": "SELECT"
               },
@@ -134,8 +219,50 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "getGroupIds",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "size() return int",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "PermissionRepositoryImpl",
+                "to_name": "Set\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "createQuery(java.lang.String) return javax.persistence.Query",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "PermissionRepositoryImpl",
+                "to_name": "EntityManager",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/EntityManager_1769.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "getGroupIds() return java.util.Set.Set\u003cjava.lang.Integer\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -149,10 +276,23 @@
             "comment": "",
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/PermissionCriteria.java",
             "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "intValue() return int",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Number_1fecc723ff0302c0.java",
+            "nb_calls_between_elements": 1
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 5
+        "files_list_comment": ""
       }
     ]
   }

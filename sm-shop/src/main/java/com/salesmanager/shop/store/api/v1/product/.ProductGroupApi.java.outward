@@ -2,46 +2,82 @@
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductGroupApi.java]": {
     "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductGroupApi.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 9,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteGroup",
-                "to_name": "deleteGroup",
+                "from_name": "deleteGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return void",
+                "to_name": "deleteGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removeProductFromGroup",
-                "to_name": "removeItemFromGroup",
+                "from_name": "removeProductFromGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.sale",
+                "to_name": "removeItemFromGroup(com.salesmanager.core.model.catalog.product.Product,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.Readabl",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addProductToGroup",
-                "to_name": "addItemToGroup",
+                "from_name": "addProductToGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.Readabl",
+                "to_name": "addItemToGroup(com.salesmanager.core.model.catalog.product.Product,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProd",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductItemsByGroup",
-                "to_name": "listItemsByGroup",
+                "from_name": "getProductItemsByGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.ReadableProductLi",
+                "to_name": "listItemsByGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProductList",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "list",
-                "to_name": "listProductGroups",
+                "from_name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.group.ProductGroup\u003e",
+                "to_name": "listProductGroups(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.group.ProductGroup\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateGroup(com.salesmanager.shop.model.catalog.product.group.ProductGroup,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return void",
+                "to_name": "updateProductGroup(java.lang.String,com.salesmanager.shop.model.catalog.product.group.ProductGroup,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "creteGroup(com.salesmanager.shop.model.catalog.product.group.ProductGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model",
+                "to_name": "createProductGroup(com.salesmanager.shop.model.catalog.product.group.ProductGroup,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.catalog.product.group.ProductGroup",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "ProductGroupApi()",
+                "to_name": "ProductItemsFacadeImpl()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductGroupApi",
+                "to_name": "ProductItemsFacadeImpl",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductGroupApi",
+                "to_name": "ProductItemsFacadeImpl",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 10,
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/items/ProductItemsFacadeImpl.java"
           },
@@ -50,40 +86,61 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteGroup",
-                "to_name": "deleteGroup",
+                "from_name": "deleteGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return void",
+                "to_name": "deleteGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removeProductFromGroup",
-                "to_name": "removeItemFromGroup",
+                "from_name": "removeProductFromGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.sale",
+                "to_name": "removeItemFromGroup(com.salesmanager.core.model.catalog.product.Product,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.Readabl",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addProductToGroup",
-                "to_name": "addItemToGroup",
+                "from_name": "addProductToGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.Readabl",
+                "to_name": "addItemToGroup(com.salesmanager.core.model.catalog.product.Product,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProd",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductItemsByGroup",
-                "to_name": "listItemsByGroup",
+                "from_name": "getProductItemsByGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.ReadableProductLi",
+                "to_name": "listItemsByGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProductList",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "list",
-                "to_name": "listProductGroups",
+                "from_name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.group.ProductGroup\u003e",
+                "to_name": "listProductGroups(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.group.ProductGroup\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateGroup(com.salesmanager.shop.model.catalog.product.group.ProductGroup,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return void",
+                "to_name": "updateProductGroup(java.lang.String,com.salesmanager.shop.model.catalog.product.group.ProductGroup,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "creteGroup(com.salesmanager.shop.model.catalog.product.group.ProductGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model",
+                "to_name": "createProductGroup(com.salesmanager.shop.model.catalog.product.group.ProductGroup,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.catalog.product.group.ProductGroup",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ProductGroupApi",
+                "to_name": "ProductItemsFacade",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8,
             "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/items/facade/ProductItemsFacade.java"
           },
@@ -91,16 +148,170 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "removeProductFromGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.sale",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "addProductToGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.Readabl",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getProductItemsByGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.ReadableProductLi",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getProductItemsByGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.ReadableProductLi",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.group.ProductGroup\u003e",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "updateGroup(com.salesmanager.shop.model.catalog.product.group.ProductGroup,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return void",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "creteGroup(com.salesmanager.shop.model.catalog.product.group.ProductGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 7,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removeProductFromGroup",
-                "to_name": "getById",
+                "from_name": "removeProductFromGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.sale",
+                "to_name": "sendError(int,java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addProductToGroup",
-                "to_name": "getById",
+                "from_name": "addProductToGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.Readabl",
+                "to_name": "sendError(int,java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductItemsByGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.ReadableProductLi",
+                "to_name": "sendError(int,java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ProductGroupApi",
+                "to_name": "HttpServletResponse",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpServletResponse_27830.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProductFromGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.sale",
+                "to_name": "error(java.lang.String,java.lang.Throwable) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.Readabl",
+                "to_name": "error(java.lang.String,java.lang.Throwable) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductItemsByGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.ReadableProductLi",
+                "to_name": "error(java.lang.String,java.lang.Throwable) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ProductGroupApi",
+                "to_name": "Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProductFromGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.sale",
+                "to_name": "getMessage() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.Readabl",
+                "to_name": "getMessage() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductItemsByGroup(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.ReadableProductLi",
+                "to_name": "getMessage() return java.lang.String",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Throwable_59bd5118ab8c02bb.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProductFromGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.sale",
+                "to_name": "getById(java.io.Serializable) return com.salesmanager.core.model.generic.SalesManagerEntity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToGroup(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.Readabl",
+                "to_name": "getById(java.io.Serializable) return com.salesmanager.core.model.generic.SalesManagerEntity",
                 "calling_type": "CALL"
               },
               {
@@ -120,7 +331,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "list",
+                "from_name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.group.ProductGroup\u003e",
                 "to_name": "ProductGroup",
                 "calling_type": "USE"
               },
@@ -135,10 +346,23 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/group/ProductGroup.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "LOGGER",
+                "to_name": "getLogger(java.lang.Class.Class\u003c? extends\u003e) return org.slf4j.Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 4
+        "files_list_comment": ""
       }
     ]
   }

@@ -2,6 +2,7 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/content/ContentRepositoryImpl.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/content/ContentRepositoryImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 11,
         "files": [
           {
             "calls_between_elements": [
@@ -15,33 +16,68 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getBySeUrl",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
                 "to_name": "Content",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getBySeUrl",
-                "to_name": "getDescription",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "getDescription() return com.salesmanager.core.model.content.ContentDescription",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "getBySeUrl",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listNameByType",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
                 "to_name": "Content",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "getDescription() return com.salesmanager.core.model.content.ContentDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentRepositoryImpl",
+                "to_name": "Content",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentRepositoryImpl",
+                "to_name": "Content",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "ContentRepositoryImpl",
+                "to_name": "Content",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/Content.java",
             "nb_calls_between_elements": 11
           },
@@ -57,33 +93,47 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getBySeUrl",
-                "to_name": "getId",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "getBySeUrl",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listNameByType",
-                "to_name": "getId",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "listNameByType",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
                 "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentRepositoryImpl",
+                "to_name": "MerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "ContentRepositoryImpl",
+                "to_name": "MerchantStore",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java",
             "nb_calls_between_elements": 8
           },
@@ -92,40 +142,54 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listNameByType",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
                 "to_name": "ContentDescription",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listNameByType",
-                "to_name": "setSeUrl",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "setSeUrl(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listNameByType",
-                "to_name": "getSeUrl",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "getSeUrl() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listNameByType",
-                "to_name": "setContent",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "setContent(com.salesmanager.core.model.content.Content) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "listNameByType",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "ContentDescription()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentRepositoryImpl",
+                "to_name": "ContentDescription",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentRepositoryImpl",
                 "to_name": "ContentDescription",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentDescription.java",
             "nb_calls_between_elements": 7
           },
@@ -133,15 +197,155 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "toString() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "append(java.lang.String) return java.lang.StringBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "StringBuilder()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "toString() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "append(java.lang.String) return java.lang.StringBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "StringBuilder()",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java",
+            "nb_calls_between_elements": 6
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "setParameter(java.lang.String,java.lang.Object) return javax.persistence.Query",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "getSingleResult() return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "getResultList() return java.util.List\u003cE\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "setParameter(java.lang.String,java.lang.Object) return javax.persistence.Query",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "getResultList() return java.util.List\u003cE\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ContentRepositoryImpl",
+                "to_name": "Query",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Query_32662.java",
+            "nb_calls_between_elements": 6
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "size() return int",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "get(int) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "isEmpty() return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "add(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "ContentRepositoryImpl",
+                "to_name": "List\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "PostgreSQL Table",
-                "from_name": "getBySeUrl",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
                 "to_name": "content",
                 "calling_type": "SELECT"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "PostgreSQL Table",
-                "from_name": "listNameByType",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
                 "to_name": "content",
                 "calling_type": "SELECT"
               },
@@ -162,15 +366,43 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listNameByType",
-                "to_name": "setName",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "createQuery(java.lang.String) return javax.persistence.Query",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listNameByType",
-                "to_name": "getName",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "createQuery(java.lang.String) return javax.persistence.Query",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ContentRepositoryImpl",
+                "to_name": "EntityManager",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/EntityManager_1769.java",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "setName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "getName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -189,9 +421,30 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "ArrayList\u003cContentDescription\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "ContentRepositoryImpl",
+                "to_name": "ArrayList\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listNameByType",
-                "to_name": "getId",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
@@ -207,8 +460,7 @@
             "nb_calls_between_elements": 2
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 6
+        "files_list_comment": ""
       }
     ]
   }

@@ -40,9 +40,58 @@
                 "from_name": "getProductByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProduct",
                 "to_name": "getBySku(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.Product",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+                "to_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(java.lang.String,com.salesmanager.shop.model.catalog.product.LightPersistableProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "saveProduct(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProductFromCategory(com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProduct",
+                "to_name": "saveProduct(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToCategory(com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProduct",
+                "to_name": "saveProduct(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateProductQuantity(com.salesmanager.shop.model.catalog.product.ReadableProduct,int,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProduct",
+                "to_name": "saveProduct(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveProduct(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.catalog.product.product.PersistableProduct,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
+                "to_name": "saveProduct(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ProductCommonFacadeImpl",
+                "to_name": "ProductService",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 12
           },
           {
@@ -82,9 +131,16 @@
                 "from_name": "getProductListsByCriterias(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria) return com.salesmanager.shop.model.catalog.product.ReadableP",
                 "to_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.c",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ProductFacadeImpl",
+                "to_name": "ProductService",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {
@@ -291,111 +347,6 @@
             "nb_calls_between_elements": 3
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/order/ReadableOrderProductMapper.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.sh",
-                "to_name": "getBySku(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.Product",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "ReadableOrderProductMapper",
-                "to_name": "ProductService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/inventory/PersistableProductPriceMapper.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.catalog.product.PersistableProductPrice,com.salesmanager.core.model.catalog.product.price.ProductPrice,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com",
-                "to_name": "getBySku(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.Product",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "PersistableProductPriceMapper",
-                "to_name": "ProductService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/order/ordertotal/OrderTotalServiceImpl.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "findOrderTotalVariation(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.m",
-                "to_name": "getBySku(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.Product",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "OrderTotalServiceImpl",
-                "to_name": "ProductService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "indexAllData(com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Product\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "SearchFacadeImpl",
-                "to_name": "ProductService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/category/CategoryServiceImpl.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "delete(com.salesmanager.core.model.catalog.category.Category) return void",
-                "to_name": "getProducts(java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Product\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "CategoryServiceImpl",
-                "to_name": "ProductService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
             "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/inventory/PersistableInventoryMapper.java",
             "calls_between_elements": [
               {
@@ -562,9 +513,114 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/order/ReadableOrderProductMapper.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.sh",
+                "to_name": "getBySku(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ReadableOrderProductMapper",
+                "to_name": "ProductService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/inventory/PersistableProductPriceMapper.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.PersistableProductPrice,com.salesmanager.core.model.catalog.product.price.ProductPrice,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com",
+                "to_name": "getBySku(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "PersistableProductPriceMapper",
+                "to_name": "ProductService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/order/ordertotal/OrderTotalServiceImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findOrderTotalVariation(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.m",
+                "to_name": "getBySku(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "OrderTotalServiceImpl",
+                "to_name": "ProductService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "indexAllData(com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Product\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "SearchFacadeImpl",
+                "to_name": "ProductService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/category/CategoryServiceImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(com.salesmanager.core.model.catalog.category.Category) return void",
+                "to_name": "getProducts(java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Product\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CategoryServiceImpl",
+                "to_name": "ProductService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
-        "files_list_comment": "files list is truncated to first 15 items",
+        "files_list_comment": "",
         "nb_files_with_calling_elements": 21
       }
     ]

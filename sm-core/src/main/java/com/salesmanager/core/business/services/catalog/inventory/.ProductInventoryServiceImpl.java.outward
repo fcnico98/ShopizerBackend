@@ -2,35 +2,43 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/inventory/ProductInventoryServiceImpl.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/inventory/ProductInventoryServiceImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 13,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "inventory",
-                "to_name": "setSku",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "setSku(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "inventory",
-                "to_name": "setPrice",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "setSku(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "inventory",
-                "to_name": "setQuantity",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.catalog.product.price.FinalPrice) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "setPrice(com.salesmanager.core.model.catalog.product.price.FinalPrice) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.catalog.product.price.FinalPrice) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "setQuantity(long) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "inventory",
-                "to_name": "ProductInventory",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.catalog.product.price.FinalPrice) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "ProductInventory()",
                 "calling_type": "CALL"
               },
               {
@@ -41,7 +49,7 @@
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/inventory/ProductInventory.java"
           },
@@ -50,21 +58,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "inventory",
-                "to_name": "getProductQuantity",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.catalog.product.price.FinalPrice) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "getProductQuantity() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "defaultAvailability",
-                "to_name": "getRegion",
+                "from_name": "defaultAvailability(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return com.salesmanager.core.model.catalog.product.availability.ProductAvailability",
+                "to_name": "getRegion() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "defaultAvailability",
+                "from_name": "defaultAvailability(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return com.salesmanager.core.model.catalog.product.availability.ProductAvailability",
                 "to_name": "ProductAvailability",
                 "calling_type": "USE"
               },
@@ -92,22 +100,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "inventory",
-                "to_name": "getAvailabilities",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "getAvailabilities() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "inventory",
-                "to_name": "getProduct",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "inventory",
-                "to_name": "getSku",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "getSku() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -127,15 +135,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "inventory",
-                "to_name": "getAvailabilities",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "getAvailabilities() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "inventory",
-                "to_name": "getSku",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "getAvailabilities() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "getSku() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -155,8 +170,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "inventory",
-                "to_name": "calculateProductPrice",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "calculateProductPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "calculateProductPrice(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "calculateProductPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
                 "calling_type": "CALL"
               },
               {
@@ -176,8 +205,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "inventory",
-                "to_name": "calculateProductPrice",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "calculateProductPrice(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "calculateProductPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "calculateProductPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
                 "calling_type": "CALL"
               },
               {
@@ -197,7 +240,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "inventory",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -217,8 +267,106 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "inventory(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.inventory.ProductInventory",
+                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductInventoryServiceImpl",
+                "to_name": "CollectionUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CollectionUtils_1588.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "defaultAvailability(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return com.salesmanager.core.model.catalog.product.availability.ProductAvailability",
+                "to_name": "isEmpty(java.lang.CharSequence) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductInventoryServiceImpl",
+                "to_name": "StringUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "defaultAvailability(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return com.salesmanager.core.model.catalog.product.availability.ProductAvailability",
+                "to_name": "iterator() return java.util.Iterator.Iterator\u003cE\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "ProductInventoryServiceImpl",
+                "to_name": "Set\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "defaultAvailability(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return com.salesmanager.core.model.catalog.product.availability.ProductAvailability",
+                "to_name": "next() return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "ProductInventoryServiceImpl",
+                "to_name": "Iterator\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Iterator_19d1eba3a02154d3.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "defaultAvailability(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return com.salesmanager.core.model.catalog.product.availability.ProductAvailability",
+                "to_name": "equals(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "defaultAvailability",
+                "from_name": "defaultAvailability(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return com.salesmanager.core.model.catalog.product.availability.ProductAvailability",
                 "to_name": "ALL_REGIONS",
                 "calling_type": "READ"
               }
@@ -228,8 +376,7 @@
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 8
+        "files_list_comment": ""
       }
     ]
   }

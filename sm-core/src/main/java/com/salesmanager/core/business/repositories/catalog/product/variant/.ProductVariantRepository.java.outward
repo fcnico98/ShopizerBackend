@@ -2,46 +2,117 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/variant/ProductVariantRepository.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/variant/ProductVariantRepository.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 5,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "existsBySkuAndProduct",
+                "from_name": "existsBySkuAndProduct(java.lang.String,java.lang.Long) return com.salesmanager.core.model.catalog.product.variant.ProductVariant",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductId",
+                "from_name": "findByProductId(java.lang.Integer,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findByProductId",
+                "from_name": "findByProductId(java.lang.Integer,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "ProductVariant",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findBySku",
+                "from_name": "findBySku(java.lang.String,java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findBySku",
+                "from_name": "findBySku(java.lang.String,java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "ProductVariant",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findById(java.lang.Long,java.lang.Long,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findById(java.lang.Long,java.lang.Long,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
+                "to_name": "ProductVariant",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByIds(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByIds(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
+                "to_name": "ProductVariant",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findOne(java.lang.Long,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findOne(java.lang.Long,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
+                "to_name": "ProductVariant",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ProductVariantRepository",
+                "to_name": "ProductVariant",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ProductVariantRepository",
+                "to_name": "ProductVariant",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from ProductVariant",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct p from",
+                "to_name": "Select",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 19,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariant.java"
           },
@@ -50,40 +121,68 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "existsBySkuAndProduct",
+                "from_name": "existsBySkuAndProduct(java.lang.String,java.lang.Long) return com.salesmanager.core.model.catalog.product.variant.ProductVariant",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductId",
+                "from_name": "findByProductId(java.lang.Integer,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findBySku",
+                "from_name": "findBySku(java.lang.String,java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findById",
+                "from_name": "findById(java.lang.Long,java.lang.Long,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByIds",
+                "from_name": "findByIds(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findOne(java.lang.Long,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ProductVariantRepository",
+                "to_name": "Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from ProductVariant",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct p from",
                 "to_name": "Select",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 13,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
           },
@@ -92,40 +191,61 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductId",
+                "from_name": "findByProductId(java.lang.Integer,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findBySku",
+                "from_name": "findBySku(java.lang.String,java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findById",
+                "from_name": "findById(java.lang.Long,java.lang.Long,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByIds",
+                "from_name": "findByIds(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findOne",
+                "from_name": "findOne(java.lang.Long,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ProductVariantRepository",
+                "to_name": "ProductOptionValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct p from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from ProductVariant",
                 "to_name": "Select",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 11,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductOptionValue.java"
           },
@@ -134,46 +254,87 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductId",
+                "from_name": "findByProductId(java.lang.Integer,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findBySku",
+                "from_name": "findBySku(java.lang.String,java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findById",
+                "from_name": "findById(java.lang.Long,java.lang.Long,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByIds",
+                "from_name": "findByIds(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findOne",
+                "from_name": "findOne(java.lang.Long,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ProductVariantRepository",
+                "to_name": "ProductOption",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct p from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from ProductVariant",
                 "to_name": "Select",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 11,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductOption.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByIds(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
+                "to_name": "Long",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ProductVariantRepository",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 4
+        "files_list_comment": ""
       }
     ]
   }

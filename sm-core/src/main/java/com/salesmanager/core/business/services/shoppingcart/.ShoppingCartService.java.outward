@@ -2,46 +2,75 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartService.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartService.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 5,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "deleteCart",
+                "from_name": "deleteCart(com.salesmanager.core.model.shoppingcart.ShoppingCart) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "populateShoppingCartItem",
+                "from_name": "populateShoppingCartItem(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "createShippingProduct",
+                "from_name": "createShippingProduct(com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getByCode",
+                "from_name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getById",
+                "from_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.shoppingcart.ShoppingCart) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getShoppingCart(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "removeShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartService",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
@@ -50,7 +79,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "createShippingProduct",
+                "from_name": "createShippingProduct(com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e",
                 "to_name": "ShippingProduct",
                 "calling_type": "USE"
               },
@@ -69,6 +98,20 @@
           {
             "calls_between_elements": [
               {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "mergeShoppingCarts(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
                 "from_type": "Java Interface",
                 "to_type": "Java Class",
                 "from_name": "ShoppingCartService",
@@ -79,10 +122,23 @@
             "comment": "",
             "nb_calls_between_elements": 1,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCart.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartService",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 3
+        "files_list_comment": ""
       }
     ]
   }

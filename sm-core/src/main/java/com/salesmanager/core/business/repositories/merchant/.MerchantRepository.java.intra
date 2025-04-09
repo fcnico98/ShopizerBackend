@@ -6,49 +6,63 @@
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
-            "from_name": "findByCode",
+            "from_name": "findByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
             "to_name": "select m from MerchantStore",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
-            "from_name": "getById",
+            "from_name": "getById(int) return com.salesmanager.core.model.merchant.MerchantStore",
             "to_name": "select m from MerchantStore",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Spring Data Query",
-            "from_name": "listByGroup",
+            "from_name": "listByGroup(java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
             "to_name": "select * from MERCHANT_STORE",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
-            "from_name": "findAllStoreCodeNameEmail",
+            "from_name": "findAllStoreCodeNameEmail() return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
             "to_name": "select new com.salesmanager.core.model.merchant.MerchantStore(m.id, m.code,",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
-            "from_name": "findAllStoreNames",
+            "from_name": "findAllStoreNames(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
             "to_name": "select new com.salesmanager.core.model.merchant.MerchantStore(m.id, m.code,",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
-            "from_name": "getByParent",
+            "from_name": "findAllStoreNames(java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
+            "to_name": "select new com.salesmanager.core.model.merchant.MerchantStore(m.id, m.code,",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "findAllStoreNames() return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
+            "to_name": "select new com.salesmanager.core.model.merchant.MerchantStore(m.id, m.code,",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "getByParent(java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
             "to_name": "select distinct m from",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
-            "from_name": "existsByCode",
+            "from_name": "existsByCode(java.lang.String) return boolean",
             "to_name": "SELECT COUNT(m) \u003e 0",
             "calling_type": "CALL"
           }

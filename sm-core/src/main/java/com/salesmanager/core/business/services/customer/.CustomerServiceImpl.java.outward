@@ -2,46 +2,75 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerServiceImpl.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerServiceImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 17,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "getMerchantStore",
+                "from_name": "delete(com.salesmanager.core.model.customer.Customer) return void",
+                "to_name": "getMerchantStore() return com.salesmanager.core.model.merchant.MerchantStore",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "getId",
+                "from_name": "delete(com.salesmanager.core.model.customer.Customer) return void",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "delete",
+                "from_name": "delete(com.salesmanager.core.model.customer.Customer) return void",
                 "to_name": "Remove",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrUpdate",
-                "to_name": "getId",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.Customer) return void",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getListByStore",
+                "from_name": "getListByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.Customer\u003e",
                 "to_name": "Customer",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByName(java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.customer.Customer\u003e",
+                "to_name": "Customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerServiceImpl",
+                "to_name": "Customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerServiceImpl",
+                "to_name": "Customer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "CustomerServiceImpl",
+                "to_name": "Customer",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
           },
@@ -50,40 +79,61 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "delete",
+                "from_name": "delete(com.salesmanager.core.model.customer.Customer) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getCustomerAddress",
+                "from_name": "getCustomerAddress(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.common.Address",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "getCustomerAddress",
-                "to_name": "ServiceException",
+                "from_name": "getCustomerAddress(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.common.Address",
+                "to_name": "ServiceException(java.lang.Throwable)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getCustomerAddress",
+                "from_name": "getCustomerAddress(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.common.Address",
                 "to_name": "ServiceException",
                 "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "saveOrUpdate",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.Customer) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerServiceImpl",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerServiceImpl",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerServiceImpl",
+                "to_name": "ServiceException",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
@@ -92,40 +142,61 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByPasswordResetToken",
-                "to_name": "findByResetPasswordToken",
+                "from_name": "getByPasswordResetToken(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "findByResetPasswordToken(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByNick",
-                "to_name": "findByNick",
+                "from_name": "getByNick(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "findByNick(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getListByStore",
-                "to_name": "findByStore",
+                "from_name": "getListByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.Customer\u003e",
+                "to_name": "findByStore(int) return java.util.List.List\u003ccom.salesmanager.core.model.customer.Customer\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getById",
-                "to_name": "findOne",
+                "from_name": "getByNick(java.lang.String,int) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "findByNick(java.lang.String,int) return com.salesmanager.core.model.customer.Customer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByName",
-                "to_name": "findByName",
+                "from_name": "getByNick(java.lang.String) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "findByNick(java.lang.String) return com.salesmanager.core.model.customer.Customer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getById(java.lang.Long) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "findOne(java.lang.Long) return com.salesmanager.core.model.customer.Customer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByName(java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.customer.Customer\u003e",
+                "to_name": "findByName(java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.customer.Customer\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CustomerServiceImpl",
+                "to_name": "CustomerRepository",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/CustomerRepository.java"
           },
@@ -134,22 +205,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrUpdate",
-                "to_name": "update",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.Customer) return void",
+                "to_name": "update(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrUpdate",
-                "to_name": "create",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.Customer) return void",
+                "to_name": "create(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "CustomerServiceImpl",
-                "to_name": "SalesManagerEntityServiceImpl",
+                "from_name": "CustomerServiceImpl(com.salesmanager.core.business.repositories.customer.CustomerRepository)",
+                "to_name": "SalesManagerEntityServiceImpl(org.springframework.data.jpa.repository.JpaRepository.JpaRepository\u003cT,ID\u003e)",
                 "calling_type": "CALL"
               },
               {
@@ -169,15 +240,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "getByCustomer",
+                "from_name": "delete(com.salesmanager.core.model.customer.Customer) return void",
+                "to_name": "getByCustomer(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerAttribute\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "delete",
+                "from_name": "delete(com.salesmanager.core.model.customer.Customer) return void",
+                "to_name": "delete(com.salesmanager.core.model.customer.attribute.CustomerAttribute) return void",
                 "calling_type": "CALL"
               },
               {
@@ -197,7 +268,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "delete",
+                "from_name": "delete(com.salesmanager.core.model.customer.Customer) return void",
                 "to_name": "CustomerAttribute",
                 "calling_type": "USE"
               },
@@ -218,8 +289,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "delete",
+                "from_name": "delete(com.salesmanager.core.model.customer.Customer) return void",
+                "to_name": "delete(java.lang.Object) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "CustomerServiceImpl",
+                "to_name": "CrudRepository\u003cT extends java.lang.Object,ID extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CrudRepository_21098.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(com.salesmanager.core.model.customer.Customer) return void",
+                "to_name": "delete(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "calling_type": "CALL"
               },
               {
@@ -239,8 +331,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "getByCustomer",
+                "from_name": "delete(com.salesmanager.core.model.customer.Customer) return void",
+                "to_name": "getByCustomer(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerAttribute\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -260,8 +352,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCustomerAddress",
-                "to_name": "getAddress",
+                "from_name": "getCustomerAddress(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.common.Address",
+                "to_name": "getAddress(java.lang.String) return com.salesmanager.core.model.common.Address",
                 "calling_type": "CALL"
               },
               {
@@ -281,8 +373,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCustomerAddress",
-                "to_name": "getAddress",
+                "from_name": "getCustomerAddress(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.common.Address",
+                "to_name": "getAddress(java.lang.String) return com.salesmanager.core.model.common.Address",
                 "calling_type": "CALL"
               },
               {
@@ -302,8 +394,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getListByStore",
-                "to_name": "listByStore",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.Customer) return void",
+                "to_name": "debug(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CustomerServiceImpl",
+                "to_name": "Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getListByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.CustomerCriteria) return com.salesmanager.core.model.customer.CustomerList",
+                "to_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.CustomerCriteria) return com.salesmanager.core.model.customer.CustomerList",
                 "calling_type": "CALL"
               },
               {
@@ -323,8 +436,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getListByStore",
-                "to_name": "getId",
+                "from_name": "getListByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.Customer\u003e",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
@@ -338,10 +451,51 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCustomerAddress(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.common.Address",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "LOGGER",
+                "to_name": "getLogger(java.lang.Class.Class\u003c? extends\u003e) return org.slf4j.Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerServiceImpl",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 12
+        "files_list_comment": ""
       }
     ]
   }

@@ -40,9 +40,37 @@
                 "from_name": "findAll() return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findOne(java.lang.Integer) return com.salesmanager.core.model.user.Permission",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct p from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from Permission",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "PermissionRepository",
+                "to_name": "Permission",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 10
           },
           {
@@ -82,9 +110,37 @@
                 "from_name": "PermissionServiceImpl",
                 "to_name": "Permission",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listPermission() return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
+                "to_name": "Permission",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.Integer\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
+                "to_name": "Permission",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByName() return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
+                "to_name": "Permission",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PermissionServiceImpl",
+                "to_name": "Permission",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9
           },
           {
@@ -124,9 +180,30 @@
                 "from_name": "SecurityApi",
                 "to_name": "Permission",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "permissions() return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "Permission",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listPermissions(java.lang.String) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "Permission",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SecurityApi",
+                "to_name": "Permission",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
@@ -166,9 +243,16 @@
                 "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "PermissionRepositoryImpl",
+                "to_name": "Permission",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
@@ -599,7 +683,7 @@
             "nb_calls_between_elements": 1
           }
         ],
-        "files_list_comment": "files list is truncated to first 15 items",
+        "files_list_comment": "",
         "nb_files_with_calling_elements": 17
       }
     ]

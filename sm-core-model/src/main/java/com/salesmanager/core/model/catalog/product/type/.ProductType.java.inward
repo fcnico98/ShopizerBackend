@@ -40,9 +40,37 @@
                 "from_name": "findById(java.lang.Long,java.lang.Integer,int) return com.salesmanager.core.model.catalog.product.type.ProductType",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByCode(java.lang.String,java.lang.Integer) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByCode(java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from ProductType",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ProductTypeRepository",
+                "to_name": "ProductType",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 13
           },
           {
@@ -82,9 +110,51 @@
                 "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
                 "to_name": "setAllowAddToCart(boolean) return void",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "setId(java.lang.Long) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "setCode(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "ProductType()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "convert(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "ProductType()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductTypeMapper",
+                "to_name": "ProductType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductTypeMapper",
+                "to_name": "ProductType",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 11
           },
           {
@@ -124,9 +194,30 @@
                 "from_name": "save(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
                 "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductTypeFacadeImpl",
+                "to_name": "ProductType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByMerchant(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.catalog.product.type.ReadableProductTypeList",
+                "to_name": "ProductType",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductTypeFacadeImpl",
+                "to_name": "ProductType",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
@@ -166,9 +257,23 @@
                 "from_name": "type(com.salesmanager.core.model.catalog.product.type.ProductType,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.type.ReadableProductType",
                 "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableProductTypeMapper",
+                "to_name": "ProductType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableProductTypeMapper",
+                "to_name": "ProductType",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7
           },
           {
@@ -208,9 +313,23 @@
                 "from_name": "ProductTypeServiceImpl",
                 "to_name": "ProductType",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "update(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.type.ProductType) return void",
+                "to_name": "Update",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "ProductTypeServiceImpl",
+                "to_name": "ProductType",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7
           },
           {

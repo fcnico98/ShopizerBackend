@@ -2,46 +2,89 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/attribute/ProductAttributeServiceImpl.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/attribute/ProductAttributeServiceImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 12,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "saveOrUpdate",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.attribute.ProductAttribute) return com.salesmanager.core.model.catalog.product.attribute.ProductAttribute",
                 "to_name": "Update",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getProductAttributesByCategoryLineage",
+                "from_name": "getProductAttributesByCategoryLineage(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttr",
                 "to_name": "ProductAttribute",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "getId",
+                "from_name": "delete(com.salesmanager.core.model.catalog.product.attribute.ProductAttribute) return void",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getByProductId",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
                 "to_name": "ProductAttribute",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getByOptionValueId",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.m",
                 "to_name": "ProductAttribute",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByOptionValueId(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "ProductAttribute",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByAttributeIds(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute",
+                "to_name": "ProductAttribute",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByOptionId(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "ProductAttribute",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductAttributeServiceImpl",
+                "to_name": "ProductAttribute",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductAttributeServiceImpl",
+                "to_name": "ProductAttribute",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "ProductAttributeServiceImpl",
+                "to_name": "ProductAttribute",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 11,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductAttribute.java"
           },
@@ -50,40 +93,61 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "saveOrUpdate",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.attribute.ProductAttribute) return com.salesmanager.core.model.catalog.product.attribute.ProductAttribute",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "delete",
+                "from_name": "delete(com.salesmanager.core.model.catalog.product.attribute.ProductAttribute) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getByProductId",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getByOptionValueId",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.m",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getByAttributeIds",
+                "from_name": "getByOptionValueId(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByAttributeIds(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByOptionId(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductAttributeServiceImpl",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
@@ -92,40 +156,54 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductAttributesByCategoryLineage",
-                "to_name": "getId",
+                "from_name": "getProductAttributesByCategoryLineage(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttr",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByProductId",
-                "to_name": "getId",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByOptionValueId",
-                "to_name": "getId",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.m",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByAttributeIds",
-                "to_name": "getId",
+                "from_name": "getByOptionValueId(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByOptionId",
-                "to_name": "getId",
+                "from_name": "getByAttributeIds(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute",
+                "to_name": "getId() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByOptionId(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "getId() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductAttributeServiceImpl",
+                "to_name": "MerchantStore",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
@@ -134,40 +212,47 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductAttributesByCategoryLineage",
-                "to_name": "findOptionsByCategoryLineage",
+                "from_name": "getProductAttributesByCategoryLineage(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttr",
+                "to_name": "findOptionsByCategoryLineage(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByOptionValueId",
-                "to_name": "findByOptionValueId",
+                "from_name": "getByOptionValueId(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "findByOptionValueId(java.lang.Integer,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByAttributeIds",
-                "to_name": "findByAttributeIds",
+                "from_name": "getByAttributeIds(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute",
+                "to_name": "findByAttributeIds(java.lang.Integer,java.lang.Long,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByOptionId",
-                "to_name": "findByOptionId",
+                "from_name": "getByOptionId(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "findByOptionId(java.lang.Integer,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getById",
-                "to_name": "findOne",
+                "from_name": "getById(java.lang.Long) return com.salesmanager.core.model.catalog.product.attribute.ProductAttribute",
+                "to_name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.attribute.ProductAttribute",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ProductAttributeServiceImpl",
+                "to_name": "ProductAttributeRepository",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/ProductAttributeRepository.java"
           },
@@ -176,15 +261,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByProductId",
-                "to_name": "getId",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByAttributeIds",
-                "to_name": "getId",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.m",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByAttributeIds(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
@@ -204,15 +296,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductAttributesByCategoryLineage",
-                "to_name": "getId",
+                "from_name": "getProductAttributesByCategoryLineage(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttr",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByProductId",
-                "to_name": "getId",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.m",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
@@ -232,15 +324,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "delete",
+                "from_name": "delete(com.salesmanager.core.model.catalog.product.attribute.ProductAttribute) return void",
+                "to_name": "delete(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "ProductAttributeServiceImpl",
-                "to_name": "SalesManagerEntityServiceImpl",
+                "from_name": "ProductAttributeServiceImpl(com.salesmanager.core.business.repositories.catalog.product.attribute.ProductAttributeRepository)",
+                "to_name": "SalesManagerEntityServiceImpl(org.springframework.data.jpa.repository.JpaRepository.JpaRepository\u003cT,ID\u003e)",
                 "calling_type": "CALL"
               },
               {
@@ -260,8 +352,43 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByProductId",
-                "to_name": "findByProductId",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "of(int,int) return org.springframework.data.domain.PageRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.m",
+                "to_name": "of(int,int) return org.springframework.data.domain.PageRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductAttributeServiceImpl",
+                "to_name": "PageRequest",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PageRequest_12637.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "findByProductId(java.lang.Integer,java.lang.Long,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.m",
+                "to_name": "findByProductId(java.lang.Integer,java.lang.Long,java.lang.Integer,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -275,10 +402,58 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/PageableProductAttributeRepository.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByAttributeIds(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute",
+                "to_name": "Long",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductAttributeServiceImpl",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.attribute.ProductAttribute) return com.salesmanager.core.model.catalog.product.attribute.ProductAttribute",
+                "to_name": "save\u003cProductAttribute\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CrudRepository_21098.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getProductAttributesByCategoryLineage(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttr",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 8
+        "files_list_comment": ""
       }
     ]
   }

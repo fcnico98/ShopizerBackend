@@ -7,63 +7,63 @@
             "from_type": "Spring MVC Put Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/orders/{}/status/",
-            "to_name": "updateOrderStatus",
+            "to_name": "updateOrderStatus(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Any Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/orders/{}/customer/",
-            "to_name": "updateOrderCustomer",
+            "to_name": "updateOrderCustomer(java.lang.Long,com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/cart/{}/checkout/",
-            "to_name": "checkout",
+            "to_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/auth/cart/{}/checkout/",
-            "to_name": "checkout",
+            "to_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/auth/orders/{}/",
-            "to_name": "getOrder",
+            "to_name": "getOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.order.v0.Re",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/orders/{}/",
-            "to_name": "get",
+            "to_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v0.ReadableOrder",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/orders/",
-            "to_name": "list",
+            "to_name": "list(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/auth/orders/",
-            "to_name": "list",
+            "to_name": "list(java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/orders/customers/{}/",
-            "to_name": "list",
+            "to_name": "list(java.lang.Long,java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.order.v0.Readable",
             "calling_type": "CALL"
           },
           {
@@ -107,9 +107,37 @@
             "from_name": "api/v1/auth/orders/{}/",
             "to_name": "OrderApi",
             "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/orders/{}/",
+            "to_name": "OrderApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/orders/",
+            "to_name": "OrderApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/auth/orders/",
+            "to_name": "OrderApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/orders/customers/{}/",
+            "to_name": "OrderApi",
+            "calling_type": "CALL"
           }
         ],
-        "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",
+        "calls_between_elements_list_comment": "",
         "nb_calls_between_elements": 19
       }
     ]

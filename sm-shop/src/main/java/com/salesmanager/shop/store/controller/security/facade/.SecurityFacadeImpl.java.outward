@@ -2,21 +2,22 @@
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/security/facade/SecurityFacadeImpl.java]": {
     "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/security/facade/SecurityFacadeImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 18,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getPermissions",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
                 "to_name": "ServiceRuntimeException",
                 "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "getPermissions",
-                "to_name": "ServiceRuntimeException",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "ServiceRuntimeException(java.lang.String)",
                 "calling_type": "CALL"
               },
               {
@@ -43,15 +44,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getPermissions",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
                 "to_name": "Group",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getPermissions",
-                "to_name": "getId",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
@@ -78,15 +79,71 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getPermissions",
-                "to_name": "setGroupIds",
+                "from_name": "matchPassword(java.lang.String,java.lang.String) return boolean",
+                "to_name": "matches(java.lang.CharSequence,java.lang.String) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "encodePassword(java.lang.String) return java.lang.String",
+                "to_name": "encode(java.lang.CharSequence) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "SecurityFacadeImpl",
+                "to_name": "PasswordEncoder",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PasswordEncoder_10940.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateUserPassword(java.lang.String) return boolean",
+                "to_name": "matcher(java.lang.CharSequence) return java.util.regex.Matcher",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "userPasswordPattern",
+                "to_name": "compile(java.lang.String) return java.util.regex.Pattern",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SecurityFacadeImpl",
+                "to_name": "Pattern",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/regex/Pattern_c8ed48e9985e85a4.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "setGroupIds(java.util.Set.Set\u003cjava.lang.Integer\u003e) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "getPermissions",
-                "to_name": "PermissionCriteria",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "PermissionCriteria()",
                 "calling_type": "CALL"
               },
               {
@@ -105,8 +162,50 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "matchRawPasswords(java.lang.String,java.lang.String) return boolean",
+                "to_name": "equals(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getPermissions",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "String",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateUserPassword(java.lang.String) return boolean",
+                "to_name": "matches() return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SecurityFacadeImpl",
+                "to_name": "Matcher",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/regex/Matcher_f6408c04ae6a3694.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "CATCH"
               },
@@ -127,7 +226,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getPermissions",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
                 "to_name": "ReadablePermission",
                 "calling_type": "USE"
               },
@@ -148,8 +247,71 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getPermissions",
-                "to_name": "listByCriteria",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "add(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "SecurityFacadeImpl",
+                "to_name": "List\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "ArrayList\u003cInteger\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "SecurityFacadeImpl",
+                "to_name": "ArrayList\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "HashSet(java.util.Collection.Collection\u003c? extends\u003e)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "SecurityFacadeImpl",
+                "to_name": "HashSet\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashSet_501b64dfacabf1a3.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
                 "calling_type": "CALL"
               },
               {
@@ -169,8 +331,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getPermissions",
-                "to_name": "listGroupByNames",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "listGroupByNames(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -190,8 +352,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getPermissions",
-                "to_name": "listByCriteria",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
                 "calling_type": "CALL"
               },
               {
@@ -211,8 +373,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getPermissions",
-                "to_name": "listGroupByNames",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "listGroupByNames(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -226,10 +388,37 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/user/GroupServiceImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "Integer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadablePermission\u003e",
+                "to_name": "printStackTrace() return void",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Throwable_59bd5118ab8c02bb.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 9
+        "files_list_comment": ""
       }
     ]
   }

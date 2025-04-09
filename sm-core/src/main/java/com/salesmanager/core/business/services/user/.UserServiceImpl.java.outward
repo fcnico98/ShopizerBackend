@@ -2,46 +2,131 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/user/UserServiceImpl.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/user/UserServiceImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 16,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "saveOrUpdate",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.user.User) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findByStore",
+                "from_name": "findByStore(java.lang.Long,java.lang.String) return com.salesmanager.core.model.user.User",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findByResetPasswordToken",
+                "from_name": "findByResetPasswordToken(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.user.User",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listByCriteria",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getByUserName",
+                "from_name": "getByUserName(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listByCriteria(com.salesmanager.core.model.common.Criteria) return com.salesmanager.core.model.common.GenericEntityList.GenericEntityList\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "ServiceException(java.lang.Throwable)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listUser() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "listUser() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "ServiceException(java.lang.Throwable)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listUser() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "delete(com.salesmanager.core.model.user.User) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByUserName(java.lang.String) return com.salesmanager.core.model.user.User",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserServiceImpl",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserServiceImpl",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserServiceImpl",
+                "to_name": "ServiceException",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 17,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
@@ -50,40 +135,68 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "saveOrUpdate",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.user.User) return void",
                 "to_name": "Update",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listByCriteria",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
                 "to_name": "User",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listByStore",
+                "from_name": "listByCriteria(com.salesmanager.core.model.common.Criteria) return com.salesmanager.core.model.common.GenericEntityList.GenericEntityList\u003ccom.salesmanager.core.model.user.User\u003e",
                 "to_name": "User",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listUser",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "User",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listUser() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
                 "to_name": "User",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "getId",
+                "from_name": "delete(com.salesmanager.core.model.user.User) return void",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserServiceImpl",
+                "to_name": "User",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserServiceImpl",
+                "to_name": "User",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "UserServiceImpl",
+                "to_name": "User",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/User.java"
           },
@@ -92,40 +205,61 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "findByStore",
-                "to_name": "findOne",
+                "from_name": "findByStore(java.lang.Long,java.lang.String) return com.salesmanager.core.model.user.User",
+                "to_name": "findOne(java.lang.Long) return com.salesmanager.core.model.user.User",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByPasswordResetToken",
-                "to_name": "findByResetPasswordToken",
+                "from_name": "getByPasswordResetToken(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
+                "to_name": "findByResetPasswordToken(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getById",
-                "to_name": "findByUserId",
+                "from_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.user.User",
+                "to_name": "findByUserId(java.lang.Long,java.lang.String) return com.salesmanager.core.model.user.User",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByUserName",
-                "to_name": "findByUserName",
+                "from_name": "getByUserName(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
+                "to_name": "findByUserName(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByStore",
-                "to_name": "findByStore",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "findByStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listUser() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "findAll() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByUserName(java.lang.String) return com.salesmanager.core.model.user.User",
+                "to_name": "findByUserName(java.lang.String) return com.salesmanager.core.model.user.User",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "UserServiceImpl",
+                "to_name": "UserRepository",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepository.java"
           },
@@ -134,22 +268,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "listByStoreIds",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "listByStoreIds(java.util.List.List\u003cjava.lang.Integer\u003e,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "listAll",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "listAll(java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "listByStore",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "listByStore(java.lang.String,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -169,22 +303,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "delete",
+                "from_name": "delete(com.salesmanager.core.model.user.User) return void",
+                "to_name": "delete(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "getById",
+                "from_name": "delete(com.salesmanager.core.model.user.User) return void",
+                "to_name": "getById(java.io.Serializable) return com.salesmanager.core.model.generic.SalesManagerEntity",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "UserServiceImpl",
-                "to_name": "SalesManagerEntityServiceImpl",
+                "from_name": "UserServiceImpl(com.salesmanager.core.business.repositories.user.UserRepository)",
+                "to_name": "SalesManagerEntityServiceImpl(org.springframework.data.jpa.repository.JpaRepository.JpaRepository\u003cT,ID\u003e)",
                 "calling_type": "CALL"
               },
               {
@@ -204,15 +338,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getById",
-                "to_name": "getCode",
+                "from_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.user.User",
+                "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByStore",
-                "to_name": "getId",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
@@ -232,15 +366,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "getStoreCode",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "getStoreCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "getStoreIds",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "getStoreIds() return java.util.List.List\u003cjava.lang.Integer\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -260,8 +394,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "findByStore",
-                "to_name": "isStoreInGroup",
+                "from_name": "findByStore(java.lang.Long,java.lang.String) return com.salesmanager.core.model.user.User",
+                "to_name": "isStoreInGroup(java.lang.String) return boolean",
                 "calling_type": "CALL"
               },
               {
@@ -281,8 +415,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "findByStore",
-                "to_name": "isStoreInGroup",
+                "from_name": "findByStore(java.lang.Long,java.lang.String) return com.salesmanager.core.model.user.User",
+                "to_name": "isStoreInGroup(java.lang.String) return boolean",
                 "calling_type": "CALL"
               },
               {
@@ -302,8 +436,50 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "getAdminEmail",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "of(int,int) return org.springframework.data.domain.PageRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserServiceImpl",
+                "to_name": "PageRequest",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PageRequest_12637.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "isBlank(java.lang.CharSequence) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserServiceImpl",
+                "to_name": "StringUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "getAdminEmail() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -323,8 +499,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "listByCriteria",
+                "from_name": "listByCriteria(com.salesmanager.core.model.common.Criteria) return com.salesmanager.core.model.common.GenericEntityList.GenericEntityList\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "listByCriteria(com.salesmanager.core.model.common.Criteria) return com.salesmanager.core.model.common.GenericEntityList.GenericEntityList\u003ccom.salesmanager.core.model.user.User\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -338,10 +514,58 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepositoryCustom.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listUser() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.user.User) return void",
+                "to_name": "save\u003cUser\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CrudRepository_21098.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserServiceImpl",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 11
+        "files_list_comment": ""
       }
     ]
   }

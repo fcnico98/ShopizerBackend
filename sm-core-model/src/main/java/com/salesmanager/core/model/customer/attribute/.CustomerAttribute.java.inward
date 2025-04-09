@@ -40,9 +40,58 @@
                 "from_name": "findByOptionValueId(java.lang.Integer,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerAttribute\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByCustomerId(java.lang.Integer,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerAttribute\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByOptionId(java.lang.Integer,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerAttribute\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByOptionId(java.lang.Integer,java.lang.Long,java.lang.Long) return com.salesmanager.core.model.customer.attribute.CustomerAttribute",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.customer.attribute.CustomerAttribute",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select a from CustomerAttribute",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct a from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "CustomerAttributeRepository",
+                "to_name": "CustomerAttribute",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 15
           },
           {
@@ -82,9 +131,30 @@
                 "from_name": "getByCustomer(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerAttribute\u003e",
                 "to_name": "CustomerAttribute",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerAttributeServiceImpl",
+                "to_name": "CustomerAttribute",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.attribute.CustomerAttribute) return void",
+                "to_name": "Update",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "CustomerAttributeServiceImpl",
+                "to_name": "CustomerAttribute",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
@@ -124,9 +194,16 @@
                 "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.",
                 "to_name": "CustomerAttribute()",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerPopulator",
+                "to_name": "CustomerAttribute",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {

@@ -40,9 +40,37 @@
                 "from_name": "finByProduct(java.lang.Long,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariantGroup\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "finByProductVariant(java.lang.Long,java.lang.String) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariantGroup\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findOne(java.lang.Long,java.lang.String) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariantGroup\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct p from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ProductVariantGroupRepository",
+                "to_name": "ProductVariantGroup",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 11
           },
           {
@@ -82,9 +110,37 @@
                 "from_name": "create(com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
                 "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductVariantGroupFacadeImpl",
+                "to_name": "ProductVariantGroup",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "group(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup",
+                "to_name": "ProductVariantGroup",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "list(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pro",
+                "to_name": "ProductVariantGroup",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductVariantGroupFacadeImpl",
+                "to_name": "ProductVariantGroup",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9
           },
           {
@@ -124,9 +180,16 @@
                 "from_name": "select p from ProductVariantImage",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ProductVariantImageRepository",
+                "to_name": "ProductVariantGroup",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9
           },
           {
@@ -166,9 +229,30 @@
                 "from_name": "convert(com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.",
                 "to_name": "ProductVariantGroup()",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.re",
+                "to_name": "ProductVariantGroup()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductVariantGroupMapper",
+                "to_name": "ProductVariantGroup",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductVariantGroupMapper",
+                "to_name": "ProductVariantGroup",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
@@ -208,9 +292,16 @@
                 "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup) return com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup",
                 "to_name": "Update",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "ProductVariantGroupServiceImpl",
+                "to_name": "ProductVariantGroup",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {

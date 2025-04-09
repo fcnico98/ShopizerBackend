@@ -2,46 +2,75 @@
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/admin/security/UserServicesImpl.java]": {
     "00. file [sm-shop/src/main/java/com/salesmanager/shop/admin/security/UserServicesImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 27,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createDefaultAdmin",
-                "to_name": "setLastName",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "setLastName(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createDefaultAdmin",
-                "to_name": "setMerchantStore",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "setMerchantStore(com.salesmanager.core.model.merchant.MerchantStore) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createDefaultAdmin",
-                "to_name": "getGroups",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "getGroups() return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createDefaultAdmin",
-                "to_name": "setFirstName",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "setFirstName(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "createDefaultAdmin",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "User(java.lang.String,java.lang.String,java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "isActive() return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getGroups() return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getAdminPassword() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserServicesImpl",
                 "to_name": "User",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/User.java"
           },
@@ -50,28 +79,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "createDefaultAdmin",
+                "from_name": "createDefaultAdmin() return void",
                 "to_name": "Group",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createDefaultAdmin",
-                "to_name": "getGroupName",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "getGroupName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "loadUserByUsername",
-                "to_name": "getId",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "loadUserByUsername",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
                 "to_name": "Group",
                 "calling_type": "USE"
               },
@@ -81,9 +110,16 @@
                 "from_name": "UserServicesImpl",
                 "to_name": "Group",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserServicesImpl",
+                "to_name": "Group",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/Group.java"
           },
@@ -92,15 +128,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "loadUserByUsername",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
                 "to_name": "SecurityDataAccessException",
                 "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "loadUserByUsername",
-                "to_name": "SecurityDataAccessException",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "SecurityDataAccessException(java.lang.String,java.lang.Exception)",
                 "calling_type": "CALL"
               },
               {
@@ -127,14 +163,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "loadUserByUsername",
-                "to_name": "getPermissionName",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getPermissionName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "loadUserByUsername",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
                 "to_name": "Permission",
                 "calling_type": "USE"
               },
@@ -162,21 +198,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "createDefaultAdmin",
+                "from_name": "createDefaultAdmin() return void",
                 "to_name": "GROUP_SUPERADMIN",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "createDefaultAdmin",
+                "from_name": "createDefaultAdmin() return void",
                 "to_name": "GROUP_ADMIN",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "loadUserByUsername",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
                 "to_name": "PERMISSION_AUTHENTICATED",
                 "calling_type": "READ"
               }
@@ -189,8 +225,57 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "add(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "add(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "UserServicesImpl",
+                "to_name": "List\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Enum Item",
-                "from_name": "createDefaultAdmin",
+                "from_name": "createDefaultAdmin() return void",
                 "to_name": "ADMIN",
                 "calling_type": "READ"
               },
@@ -211,8 +296,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createDefaultAdmin",
-                "to_name": "listGroup",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "encode(java.lang.CharSequence) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "UserServicesImpl",
+                "to_name": "PasswordEncoder",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PasswordEncoder_10940.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "listGroup(com.salesmanager.core.model.user.GroupType) return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -232,8 +338,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createDefaultAdmin",
-                "to_name": "getByCode",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
                 "calling_type": "CALL"
               },
               {
@@ -253,8 +359,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createDefaultAdmin",
-                "to_name": "create",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "create(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "calling_type": "CALL"
               },
               {
@@ -274,8 +380,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createDefaultAdmin",
-                "to_name": "listGroup",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "listGroup(com.salesmanager.core.model.user.GroupType) return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -295,8 +401,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createDefaultAdmin",
-                "to_name": "getByCode",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
                 "calling_type": "CALL"
               },
               {
@@ -315,9 +421,93 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "DataAccessException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserServicesImpl",
+                "to_name": "DataAccessException",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/DataAccessException_26816.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "loadUserByUsername",
-                "to_name": "getByUserName",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "error(java.lang.String,java.lang.Throwable) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "UserServicesImpl",
+                "to_name": "Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "add(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "UserServicesImpl",
+                "to_name": "Collection\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "ArrayList\u003cInteger\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "UserServicesImpl",
+                "to_name": "ArrayList\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getByUserName(java.lang.String) return com.salesmanager.core.model.user.User",
                 "calling_type": "CALL"
               },
               {
@@ -337,8 +527,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "loadUserByUsername",
-                "to_name": "getPermissions",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getPermissions(java.util.List.List\u003cjava.lang.Integer\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -358,8 +548,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "loadUserByUsername",
-                "to_name": "getByUserName",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getByUserName(java.lang.String) return com.salesmanager.core.model.user.User",
                 "calling_type": "CALL"
               },
               {
@@ -379,8 +569,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "loadUserByUsername",
-                "to_name": "getPermissions",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getPermissions(java.util.List.List\u003cjava.lang.Integer\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -400,7 +590,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "createDefaultAdmin",
+                "from_name": "createDefaultAdmin() return void",
                 "to_name": "DEFAULT_STORE",
                 "calling_type": "READ"
               }
@@ -413,8 +603,22 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createDefaultAdmin() return void",
+                "to_name": "equals(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Instantiated Constructor",
-                "from_name": "loadUserByUsername",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
                 "to_name": "ArrayList\u003cGrantedAuthority\u003e",
                 "calling_type": "CALL"
               }
@@ -422,10 +626,37 @@
             "comment": "",
             "nb_calls_between_elements": 1,
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/admin/JWTAdminServicesImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "Integer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "LOGGER",
+                "to_name": "getLogger(java.lang.Class.Class\u003c? extends\u003e) return org.slf4j.Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
-        "files_list_comment": "files list is truncated to first 15 items",
-        "nb_files_with_calling_elements": 17
+        "files_list_comment": ""
       }
     ]
   }

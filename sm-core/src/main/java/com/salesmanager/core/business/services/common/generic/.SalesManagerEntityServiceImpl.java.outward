@@ -2,52 +2,199 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 7,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "saveAll",
+                "from_name": "saveAll(java.lang.Iterable.Iterable\u003cT\u003e) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "delete",
+                "from_name": "delete(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "update",
+                "from_name": "update(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "create",
+                "from_name": "create(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "save",
+                "from_name": "save(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Generic Java Class",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerEntityServiceImpl\u003cK extends Serializable\u0026Comparable\u003cK\u003e,E extends SalesManagerEntity\u003cK,?\u003e\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "flush() return void",
+                "to_name": "flush() return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "saveAndFlush(com.salesmanager.core.model.generic.SalesManagerEntity) return com.salesmanager.core.model.generic.SalesManagerEntity",
+                "to_name": "saveAndFlush\u003cE\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "save(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
+                "to_name": "saveAndFlush\u003cE\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getById(java.io.Serializable) return com.salesmanager.core.model.generic.SalesManagerEntity",
+                "to_name": "getOne(java.lang.Object) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "SalesManagerEntityServiceImpl\u003cK extends Serializable\u0026Comparable\u003cK\u003e,E extends SalesManagerEntity\u003cK,?\u003e\u003e",
+                "to_name": "JpaRepository\u003cT extends java.lang.Object,ID extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/JpaRepository_1539.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "count() return java.lang.Long",
+                "to_name": "count() return long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
+                "to_name": "delete(java.lang.Object) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "SalesManagerEntityServiceImpl\u003cK extends Serializable\u0026Comparable\u003cK\u003e,E extends SalesManagerEntity\u003cK,?\u003e\u003e",
+                "to_name": "CrudRepository\u003cT extends java.lang.Object,ID extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CrudRepository_21098.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list() return java.util.List.List\u003cLanguage\u003e",
+                "to_name": "findAll() return java.util.List.List\u003cE\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "saveAll(java.lang.Iterable.Iterable\u003cT\u003e) return void",
+                "to_name": "saveAll\u003cE\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "SalesManagerEntityServiceImpl\u003cK extends Serializable\u0026Comparable\u003cK\u003e,E extends SalesManagerEntity\u003cK,?\u003e\u003e",
+                "to_name": "ListCrudRepository\u003cT extends java.lang.Object,ID extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ListCrudRepository_11422.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Method",
+                "from_name": "SalesManagerEntityServiceImpl(org.springframework.data.jpa.repository.JpaRepository.JpaRepository\u003cT,ID\u003e)",
+                "to_name": "getClass() return java.lang.Class.Class\u003c? extends\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Object_d734ceb4c3e9d1da.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Method",
+                "from_name": "SalesManagerEntityServiceImpl(org.springframework.data.jpa.repository.JpaRepository.JpaRepository\u003cT,ID\u003e)",
+                "to_name": "getActualTypeArguments() return java.lang.reflect.Type[]",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/reflect/ParameterizedType_474e74c117ce4f85.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Method",
+                "from_name": "SalesManagerEntityServiceImpl(org.springframework.data.jpa.repository.JpaRepository.JpaRepository\u003cT,ID\u003e)",
+                "to_name": "getGenericSuperclass() return java.lang.reflect.Type",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Class_74b50bb9260e31ff.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 1
+        "files_list_comment": ""
       }
     ]
   }

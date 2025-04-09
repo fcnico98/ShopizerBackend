@@ -2,46 +2,180 @@
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java]": {
     "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 21,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "page",
-                "to_name": "getContentPage",
+                "from_name": "page(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
+                "to_name": "getContentPage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "images",
-                "to_name": "getContentFolder",
+                "from_name": "images(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.content.Con",
+                "to_name": "getContentFolder(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentFolder",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteFile",
-                "to_name": "delete",
+                "from_name": "deleteFile(com.salesmanager.shop.model.content.ContentName,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteContent",
-                "to_name": "delete",
+                "from_name": "deleteContent(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "uploadMultipleFiles",
-                "to_name": "addContentFile",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "addContentFile(com.salesmanager.shop.model.content.ContentFile,java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "addContentFile(com.salesmanager.shop.model.content.ContentFile,java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getBoxByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
+                "to_name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "manageBoxByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
+                "to_name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "contents(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
+                "to_name": "getContents(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "content(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull",
+                "to_name": "getContent(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateBox(com.salesmanager.shop.model.content.box.PersistableContentBox,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "updateContentBox(java.lang.Long,com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updatePage(com.salesmanager.shop.model.content.page.PersistableContentPage,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "updateContentPage(java.lang.Long,com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteBox(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deletePage(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity",
+                "to_name": "saveContentPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "pageExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.EntityExists",
+                "to_name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "boxExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.EntityExists",
+                "to_name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity",
+                "to_name": "saveContentBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "pageByName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
+                "to_name": "getContentPageByName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "boxes(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.box.ReadableConte",
+                "to_name": "getContentBoxes(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "pages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.ReadableCont",
+                "to_name": "getContentPages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.Re",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "ContentApi()",
+                "to_name": "ContentFacadeImpl()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentApi",
+                "to_name": "ContentFacadeImpl",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentApi",
+                "to_name": "ContentFacadeImpl",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 24,
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/content/ContentFacadeImpl.java"
           },
@@ -50,40 +184,159 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "page",
-                "to_name": "getContentPage",
+                "from_name": "page(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
+                "to_name": "getContentPage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "images",
-                "to_name": "getContentFolder",
+                "from_name": "images(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.content.Con",
+                "to_name": "getContentFolder(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentFolder",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteFile",
-                "to_name": "delete",
+                "from_name": "deleteFile(com.salesmanager.shop.model.content.ContentName,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteContent",
-                "to_name": "delete",
+                "from_name": "deleteContent(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "uploadMultipleFiles",
-                "to_name": "addContentFile",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "addContentFile(com.salesmanager.shop.model.content.ContentFile,java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "addContentFile(com.salesmanager.shop.model.content.ContentFile,java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getBoxByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
+                "to_name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "manageBoxByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
+                "to_name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "contents(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
+                "to_name": "getContents(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "content(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull",
+                "to_name": "getContent(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateBox(com.salesmanager.shop.model.content.box.PersistableContentBox,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "updateContentBox(java.lang.Long,com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updatePage(com.salesmanager.shop.model.content.page.PersistableContentPage,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "updateContentPage(java.lang.Long,com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteBox(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deletePage(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity",
+                "to_name": "saveContentPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "pageExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.EntityExists",
+                "to_name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "boxExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.EntityExists",
+                "to_name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity",
+                "to_name": "saveContentBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "pageByName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
+                "to_name": "getContentPageByName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "boxes(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.box.ReadableConte",
+                "to_name": "getContentBoxes(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "pages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.ReadableCont",
+                "to_name": "getContentPages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.Re",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ContentApi",
+                "to_name": "ContentFacade",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 22,
             "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/content/facade/ContentFacade.java"
           },
@@ -92,40 +345,54 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteFile",
-                "to_name": "getContentType",
+                "from_name": "deleteFile(com.salesmanager.shop.model.content.ContentName,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getContentType() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteFile",
-                "to_name": "getName",
+                "from_name": "deleteFile(com.salesmanager.shop.model.content.ContentName,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "uploadMultipleFiles",
-                "to_name": "setContentType",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setContentType(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "uploadMultipleFiles",
-                "to_name": "setName",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setName(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "upload",
-                "to_name": "setContentType",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setContentType(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentApi",
+                "to_name": "Content",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7,
             "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/content/Content.java"
           },
@@ -134,40 +401,103 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "updatePage",
-                "to_name": "setId",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getBytes() return byte[]",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createPage",
-                "to_name": "setId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "createPage",
-                "to_name": "Entity",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getContentType() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createBox",
-                "to_name": "setId",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getBytes() return byte[]",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getContentType() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getOriginalFilename() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ContentApi",
+                "to_name": "MultipartFile",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 7,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/MultipartFile_4084.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updatePage(java.lang.Long,com.salesmanager.shop.model.content.PersistableContentEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setId(java.lang.Long) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity",
+                "to_name": "setId(java.lang.Long) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "createBox",
+                "from_name": "createPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity",
+                "to_name": "Entity()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity",
+                "to_name": "setId(java.lang.Long) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "createBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity",
+                "to_name": "Entity()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentApi",
                 "to_name": "Entity",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6,
             "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
           },
@@ -176,29 +506,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "uploadMultipleFiles",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "ServiceRuntimeException",
                 "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "uploadMultipleFiles",
-                "to_name": "ServiceRuntimeException",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "ServiceRuntimeException(java.lang.String)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "upload",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "ServiceRuntimeException",
                 "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "upload",
-                "to_name": "ServiceRuntimeException",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "ServiceRuntimeException(java.lang.String)",
                 "calling_type": "CALL"
               },
               {
@@ -207,9 +537,16 @@
                 "from_name": "ContentApi",
                 "to_name": "ServiceRuntimeException",
                 "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentApi",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6,
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
           },
@@ -218,29 +555,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "uploadMultipleFiles",
-                "to_name": "setFile",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setFile(byte[]) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "uploadMultipleFiles",
-                "to_name": "ContentFile",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "ContentFile()",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "upload",
-                "to_name": "setFile",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setFile(byte[]) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "upload",
-                "to_name": "ContentFile",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "ContentFile()",
                 "calling_type": "CALL"
               },
               {
@@ -260,14 +597,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "pagesSummary",
+                "from_name": "pagesSummary(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.box.ReadableContentBox\u003e",
                 "to_name": "ReadableContentBox",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "boxes",
+                "from_name": "boxes(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.box.ReadableConte",
                 "to_name": "ReadableContentBox",
                 "calling_type": "USE"
               },
@@ -287,16 +624,44 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "IOException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "IOException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentApi",
+                "to_name": "IOException",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "uploadMultipleFiles",
-                "to_name": "getCode",
+                "from_name": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "upload",
-                "to_name": "getCode",
+                "from_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -316,15 +681,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "pageExists",
-                "to_name": "EntityExists",
+                "from_name": "pageExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.EntityExists",
+                "to_name": "EntityExists(boolean)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "boxExists",
-                "to_name": "EntityExists",
+                "from_name": "boxExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.EntityExists",
+                "to_name": "EntityExists(boolean)",
                 "calling_type": "CALL"
               },
               {
@@ -343,8 +708,29 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Generic Java Class",
+                "from_name": "contents(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
+                "to_name": "Optional\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "ContentApi",
+                "to_name": "Optional\u003cT\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "contents",
+                "from_name": "contents(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
                 "to_name": "ReadableContentEntity",
                 "calling_type": "USE"
               },
@@ -365,7 +751,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Enum Item",
-                "from_name": "boxes",
+                "from_name": "boxes(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.box.ReadableConte",
                 "to_name": "BOX",
                 "calling_type": "READ"
               },
@@ -386,7 +772,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "pages",
+                "from_name": "pages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.ReadableCont",
                 "to_name": "ReadableContentPage",
                 "calling_type": "USE"
               },
@@ -407,8 +793,8 @@
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "ContentApi",
-                "to_name": "ImageFilePathUtils",
+                "from_name": "ContentApi()",
+                "to_name": "ImageFilePathUtils()",
                 "calling_type": "FIRE"
               },
               {
@@ -428,8 +814,8 @@
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "ContentApi",
-                "to_name": "CloudFilePathUtils",
+                "from_name": "ContentApi()",
+                "to_name": "CloudFilePathUtils()",
                 "calling_type": "FIRE"
               },
               {
@@ -449,8 +835,8 @@
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "ContentApi",
-                "to_name": "LocalImageFilePathUtils",
+                "from_name": "ContentApi()",
+                "to_name": "LocalImageFilePathUtils()",
                 "calling_type": "FIRE"
               },
               {
@@ -464,10 +850,51 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/LocalImageFilePathUtils.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "images(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.content.Con",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "contents(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
+                "to_name": "String",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "LOGGER",
+                "to_name": "getLogger(java.lang.Class.Class\u003c? extends\u003e) return org.slf4j.Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 15
+        "files_list_comment": ""
       }
     ]
   }

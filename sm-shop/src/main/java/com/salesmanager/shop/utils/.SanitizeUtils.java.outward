@@ -2,20 +2,28 @@
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/utils/SanitizeUtils.java]": {
     "00. file [sm-shop/src/main/java/com/salesmanager/shop/utils/SanitizeUtils.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 13,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "getSafeString",
-                "to_name": "ServiceRuntimeException",
+                "from_name": "getSafeString(java.lang.String) return java.lang.String",
+                "to_name": "ServiceRuntimeException(java.lang.Throwable)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getSafeString(java.lang.String) return java.lang.String",
+                "to_name": "ServiceRuntimeException(java.lang.String)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getSafeString",
+                "from_name": "getSafeString(java.lang.String) return java.lang.String",
                 "to_name": "ServiceRuntimeException",
                 "calling_type": "RAISE"
               },
@@ -23,7 +31,7 @@
                 "from_type": "Java Initializer",
                 "to_type": "Java Constructor",
                 "from_name": "{(28:5)}",
-                "to_name": "ServiceRuntimeException",
+                "to_name": "ServiceRuntimeException(java.lang.Throwable)",
                 "calling_type": "CALL"
               },
               {
@@ -39,15 +47,273 @@
                 "from_name": "SanitizeUtils",
                 "to_name": "ServiceRuntimeException",
                 "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SanitizeUtils",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7,
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSafeRequestParamString(java.lang.String) return java.lang.String",
+                "to_name": "toString() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSafeRequestParamString(java.lang.String) return java.lang.String",
+                "to_name": "append(char) return java.lang.StringBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getSafeRequestParamString(java.lang.String) return java.lang.String",
+                "to_name": "StringBuilder()",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSafeString(java.lang.String) return java.lang.String",
+                "to_name": "scan(java.lang.String,org.owasp.validator.html.Policy) return org.owasp.validator.html.CleanResults",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getSafeString(java.lang.String) return java.lang.String",
+                "to_name": "AntiSamy()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SanitizeUtils",
+                "to_name": "AntiSamy",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AntiSamy_9257.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSafeRequestParamString(java.lang.String) return java.lang.String",
+                "to_name": "charAt(int) return char",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSafeRequestParamString(java.lang.String) return java.lang.String",
+                "to_name": "length() return int",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSafeRequestParamString(java.lang.String) return java.lang.String",
+                "to_name": "escapeXml11(java.lang.String) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SanitizeUtils",
+                "to_name": "StringEscapeUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringEscapeUtils_1881.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSafeRequestParamString(java.lang.String) return java.lang.String",
+                "to_name": "isNotEmpty(java.lang.CharSequence) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SanitizeUtils",
+                "to_name": "StringUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSafeRequestParamString(java.lang.String) return java.lang.String",
+                "to_name": "contains(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "SanitizeUtils",
+                "to_name": "List\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSafeString(java.lang.String) return java.lang.String",
+                "to_name": "getCleanHTML() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SanitizeUtils",
+                "to_name": "CleanResults",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CleanResults_22750.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSafeString(java.lang.String) return java.lang.String",
+                "to_name": "getName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Initializer",
+                "to_type": "Java Method",
+                "from_name": "{(28:5)}",
+                "to_name": "getClassLoader() return java.lang.ClassLoader",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Class_74b50bb9260e31ff.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getSafeString(java.lang.String) return java.lang.String",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Initializer",
+                "to_type": "Java Class",
+                "from_name": "{(28:5)}",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Initializer",
+                "to_type": "Java Method",
+                "from_name": "{(28:5)}",
+                "to_name": "getInstance(java.io.InputStream) return org.owasp.validator.html.Policy",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SanitizeUtils",
+                "to_name": "Policy",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Policy_28614.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "blackList",
+                "to_name": "Arrays",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Arrays_4104c3d3138f8a43.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Initializer",
+                "to_type": "Java Method",
+                "from_name": "{(28:5)}",
+                "to_name": "getResourceAsStream(java.lang.String) return java.io.InputStream",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/ClassLoader_7fe3e8b59da7a0ec.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 1
+        "files_list_comment": ""
       }
     ]
   }

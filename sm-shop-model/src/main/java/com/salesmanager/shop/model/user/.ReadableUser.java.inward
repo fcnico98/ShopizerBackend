@@ -40,9 +40,44 @@
                 "from_name": "authorizedGroup(java.lang.String,java.util.List.List\u003cjava.lang.String\u003e) return void",
                 "to_name": "getGroups() return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadableGroup\u003e",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "authorizedStore(java.lang.String,java.lang.String) return boolean",
+                "to_name": "getGroups() return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadableGroup\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "convertUserToReadableUser(com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.user.User) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "ReadableUser()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserFacadeImpl",
+                "to_name": "ReadableUser",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUserList",
+                "to_name": "ReadableUser",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserFacadeImpl",
+                "to_name": "ReadableUser",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 10
           },
           {
@@ -82,9 +117,30 @@
                 "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
                 "to_name": "getGroups() return java.util.List.List\u003ccom.salesmanager.shop.model.security.ReadableGroup\u003e",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "ReadableUser()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableUserPopulator",
+                "to_name": "ReadableUser",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableUserPopulator",
+                "to_name": "ReadableUser",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {

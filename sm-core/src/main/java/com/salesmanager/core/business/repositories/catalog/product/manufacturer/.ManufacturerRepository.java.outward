@@ -2,46 +2,138 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/manufacturer/ManufacturerRepository.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/manufacturer/ManufacturerRepository.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 7,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductInCategoryId",
+                "from_name": "findByProductInCategoryId(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findByProductInCategoryId",
+                "from_name": "findByProductInCategoryId(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
                 "to_name": "Manufacturer",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "count",
+                "from_name": "count(java.lang.Integer) return int",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByCodeAndMerchandStore",
+                "from_name": "findByCodeAndMerchandStore(java.lang.String,java.lang.Integer) return com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByCategoriesAndLanguage",
+                "from_name": "findByCategoriesAndLanguage(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByCategoriesAndLanguage(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "Manufacturer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByStore(java.lang.Integer,java.lang.Integer,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByStore(java.lang.Integer,java.lang.Integer,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "Manufacturer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "Manufacturer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByStoreAndLanguage(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByStoreAndLanguage(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "Manufacturer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ManufacturerRepository",
+                "to_name": "Manufacturer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ManufacturerRepository",
+                "to_name": "Manufacturer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct manufacturer from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select count(distinct m) from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select m from Manufacturer",
                 "to_name": "Select",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 23,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/manufacturer/Manufacturer.java"
           },
@@ -50,40 +142,110 @@
               {
                 "from_type": "Java Method",
                 "to_type": "PostgreSQL Table",
-                "from_name": "findByProductInCategoryId",
+                "from_name": "findByProductInCategoryId(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
                 "to_name": "category",
                 "calling_type": "SELECT"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "PostgreSQL Table",
-                "from_name": "findByProductInCategoryId",
+                "from_name": "findByProductInCategoryId(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
                 "to_name": "manufacturer",
                 "calling_type": "SELECT"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "PostgreSQL Table",
-                "from_name": "findByProductInCategoryId",
+                "from_name": "findByProductInCategoryId(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
                 "to_name": "product",
                 "calling_type": "SELECT"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "PostgreSQL Table",
-                "from_name": "count",
+                "from_name": "count(java.lang.Integer) return int",
                 "to_name": "manufacturer",
                 "calling_type": "SELECT"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "PostgreSQL Table",
-                "from_name": "findByCodeAndMerchandStore",
+                "from_name": "findByCodeAndMerchandStore(java.lang.String,java.lang.Integer) return com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer",
                 "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByCategoriesAndLanguage(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByCategoriesAndLanguage(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByStore(java.lang.Integer,java.lang.Integer,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByStoreAndLanguage(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "countByProduct(java.lang.Long) return java.lang.Long",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ManufacturerRepository",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ManufacturerRepository",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ManufacturerRepository",
+                "to_name": "product",
                 "calling_type": "SELECT"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 15,
             "to_file": "Salesmanager.sql"
           },
@@ -92,40 +254,68 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductInCategoryId",
+                "from_name": "findByProductInCategoryId(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByCodeAndMerchandStore",
+                "from_name": "findByCodeAndMerchandStore(java.lang.String,java.lang.Integer) return com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByStore",
+                "from_name": "findByStore(java.lang.Integer,java.lang.Integer,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findOne",
+                "from_name": "findByStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByStoreAndLanguage",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByStoreAndLanguage(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ManufacturerRepository",
+                "to_name": "MerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct manufacturer from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select m from Manufacturer",
                 "to_name": "Select",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 13,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
@@ -134,21 +324,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductInCategoryId",
+                "from_name": "findByProductInCategoryId(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByCategoriesAndLanguage",
+                "from_name": "findByCategoriesAndLanguage(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "countByProduct",
+                "from_name": "countByProduct(java.lang.Long) return java.lang.Long",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
@@ -165,9 +355,16 @@
                 "from_name": "select distinct manufacturer from",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select count(distinct p) from",
+                "to_name": "Select",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
           },
@@ -176,7 +373,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductInCategoryId",
+                "from_name": "findByProductInCategoryId(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
@@ -204,7 +401,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByStore",
+                "from_name": "findByStore(java.lang.Integer,java.lang.Integer,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
@@ -226,10 +423,30 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByCategoriesAndLanguage(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "Long",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ManufacturerRepository",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 6
+        "files_list_comment": ""
       }
     ]
   }

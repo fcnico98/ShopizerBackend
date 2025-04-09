@@ -6,7 +6,7 @@
           {
             "from_type": "Java Method",
             "to_type": "Java GCP Unknown Cloud Storage Bucket",
-            "from_name": "getImages",
+            "from_name": "getImages(java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
             "to_name": "Unknown",
             "calling_type": "SELECT"
           },
@@ -20,14 +20,14 @@
           {
             "from_type": "Java Method",
             "to_type": "Java GCP Unknown Cloud Storage Bucket",
-            "from_name": "removeImages",
+            "from_name": "removeImages(java.lang.String) return void",
             "to_name": "Unknown",
             "calling_type": "DELETE"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java GCP Unknown Cloud Storage Bucket",
-            "from_name": "removeProductImages",
+            "from_name": "removeProductImages(com.salesmanager.core.model.catalog.product.Product) return void",
             "to_name": "Unknown",
             "calling_type": "DELETE"
           },
@@ -41,75 +41,131 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "removeImages",
-            "to_name": "bucketName",
+            "from_name": "removeImages(java.lang.String) return void",
+            "to_name": "bucketName() return java.lang.String",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "removeProductImages",
-            "to_name": "bucketName",
+            "from_name": "removeProductImages(com.salesmanager.core.model.catalog.product.Product) return void",
+            "to_name": "bucketName() return java.lang.String",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "removeProductImage",
-            "to_name": "bucketName",
+            "from_name": "removeProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage) return void",
+            "to_name": "bucketName() return java.lang.String",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "addProductImage",
-            "to_name": "bucketName",
+            "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
+            "to_name": "bucketName() return java.lang.String",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "getImages",
-            "to_name": "bucketName",
+            "from_name": "getImages(java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
+            "to_name": "bucketName() return java.lang.String",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "getProductImage",
-            "to_name": "bucketName",
+            "from_name": "getProductImage(java.lang.String,java.lang.String,java.lang.String,com.salesmanager.core.model.catalog.product.file.ProductImageSize) return com.salesmanager.core.model.content.OutputContentFile",
+            "to_name": "bucketName() return java.lang.String",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "removeProductImage",
-            "to_name": "filePath",
+            "from_name": "removeProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage) return void",
+            "to_name": "filePath(java.lang.String,java.lang.String,java.lang.String,java.lang.String) return java.lang.String",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "getProductImage",
-            "to_name": "filePath",
+            "from_name": "getProductImage(java.lang.String,java.lang.String,java.lang.String,com.salesmanager.core.model.catalog.product.file.ProductImageSize) return com.salesmanager.core.model.content.OutputContentFile",
+            "to_name": "filePath(java.lang.String,java.lang.String,java.lang.String,java.lang.String) return java.lang.String",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "addProductImage",
-            "to_name": "filePath",
+            "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
+            "to_name": "filePath(java.lang.String,java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.lang.String",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "addProductImage",
-            "to_name": "createBucket",
+            "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
+            "to_name": "createBucket(com.google.cloud.storage.Storage,java.lang.String) return com.google.cloud.storage.Bucket",
             "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
+            "to_name": "bucketExists(com.google.cloud.storage.Storage,java.lang.String) return boolean",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "getImages(java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
+            "to_name": "bucketExists(com.google.cloud.storage.Storage,java.lang.String) return boolean",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "getProductImage(java.lang.String,java.lang.String,java.lang.String,com.salesmanager.core.model.catalog.product.file.ProductImageSize) return com.salesmanager.core.model.content.OutputContentFile",
+            "to_name": "bucketExists(com.google.cloud.storage.Storage,java.lang.String) return boolean",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "removeProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage) return void",
+            "to_name": "LARGE",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "filePath(java.lang.String,java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.lang.String",
+            "to_name": "LARGE",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "removeProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage) return void",
+            "to_name": "SMALL",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "filePath(java.lang.String,java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.lang.String",
+            "to_name": "SMALL",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "bucketName() return java.lang.String",
+            "to_name": "DEFAULT_BUCKET_NAME",
+            "calling_type": "READ"
           }
         ],
-        "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",
+        "calls_between_elements_list_comment": "",
         "nb_calls_between_elements": 23
       }
     ]

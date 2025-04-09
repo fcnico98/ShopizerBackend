@@ -2,46 +2,110 @@
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductInventoryFacadeImpl.java]": {
     "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductInventoryFacadeImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 31,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "update",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "ResourceNotFoundException",
                 "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "update",
-                "to_name": "ResourceNotFoundException",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "ResourceNotFoundException(java.lang.String)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "validateProductHasSameStore",
-                "to_name": "ResourceNotFoundException",
+                "from_name": "validateProductHasSameStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "to_name": "ResourceNotFoundException(java.lang.String)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "validateProductHasSameStore",
+                "from_name": "validateProductHasSameStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
                 "to_name": "ResourceNotFoundException",
                 "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "get",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.inventory.ReadableInventory",
+                "to_name": "ResourceNotFoundException(java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getProductByInstance(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.variant.ProductVariant",
+                "to_name": "ResourceNotFoundException(java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getProductById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.Product",
+                "to_name": "ResourceNotFoundException(java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
                 "to_name": "ResourceNotFoundException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "ResourceNotFoundException(java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "ResourceNotFoundException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "ResourceNotFoundException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Constructor",
+                "from_name": "get$lambda$0() return java.lang.Object",
+                "to_name": "ResourceNotFoundException(java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Constructor",
+                "from_name": "getProductByInstance$lambda$0() return java.lang.Object",
+                "to_name": "ResourceNotFoundException(java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Constructor",
+                "from_name": "getProductById$lambda$0() return java.lang.Object",
+                "to_name": "ResourceNotFoundException(java.lang.String)",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 14,
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
           },
@@ -50,40 +114,82 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "update",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "ProductAvailability",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "update",
-                "to_name": "setMerchantStore",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setMerchantStore(com.salesmanager.core.model.merchant.MerchantStore) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "update",
-                "to_name": "setProduct",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setProduct(com.salesmanager.core.model.catalog.product.Product) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "update",
-                "to_name": "getId",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "get",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.prod",
                 "to_name": "ProductAvailability",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "ProductAvailability",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "ProductAvailability",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "ProductAvailability",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "ProductAvailability",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "update$lambda$0(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return boolean",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 11,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/availability/ProductAvailability.java"
           },
@@ -92,40 +198,61 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "get",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
                 "to_name": "ServiceRuntimeException",
                 "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "get",
-                "to_name": "ServiceRuntimeException",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "saveOrUpdate",
-                "to_name": "ServiceRuntimeException",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return void",
+                "to_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "saveOrUpdate",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return void",
                 "to_name": "ServiceRuntimeException",
                 "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "delete",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
                 "to_name": "ServiceRuntimeException",
                 "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8,
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
           },
@@ -134,40 +261,110 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "update",
-                "to_name": "getAvailabilities",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "findAny() return java.util.Optional.Optional\u003cT\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "update",
-                "to_name": "getId",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "filter(java.util.function.Predicate.Predicate\u003cT\u003e) return java.util.stream.Stream.Stream\u003cT\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateProductHasSameStore",
-                "to_name": "getMerchantStore",
+                "to_type": "Generic Java Method",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.prod",
+                "to_name": "collect\u003cR,A\u003e(java.util.stream.Collector.Collector\u003cReadableImage\u003e) return java.lang.Object",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateProductHasSameStore",
-                "to_name": "getId",
+                "to_type": "Java Instantiated Method",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.prod",
+                "to_name": "map\u003cR\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "get",
-                "to_name": "getAvailabilities",
+                "to_type": "Generic Java Method",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "collect\u003cR,A\u003e(java.util.stream.Collector.Collector\u003cReadableImage\u003e) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "map\u003cR\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "Stream\u003cT\u003e",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
+            "nb_calls_between_elements": 7,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getAvailabilities() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateProductHasSameStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "to_name": "getMerchantStore() return com.salesmanager.core.model.merchant.MerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateProductHasSameStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "getAvailabilities() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "Product",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
             "nb_calls_between_elements": 7,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
           },
@@ -176,15 +373,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "add",
-                "to_name": "convert",
+                "from_name": "add(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.inventory.Readabl",
+                "to_name": "convert(com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.inventory.R",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "get",
-                "to_name": "convert",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.prod",
+                "to_name": "convert(com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.inventory.R",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "convert(com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.inventory.R",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.inventory.ReadableInventory",
+                "to_name": "convert(com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.inventory.R",
                 "calling_type": "CALL"
               },
               {
@@ -197,12 +408,12 @@
               {
                 "from_type": "Java Lambda Expression",
                 "to_type": "Java Method",
-                "from_name": "get$lambda$0",
-                "to_name": "convert",
+                "from_name": "get$lambda$0(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return R",
+                "to_name": "convert(com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.inventory.R",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7,
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/inventory/ReadableInventoryMapper.java"
           },
@@ -211,40 +422,47 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "get",
-                "to_name": "listByProduct",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.prod",
+                "to_name": "listByProduct(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "get",
-                "to_name": "getBySku",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "getBySku(java.lang.String,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "get",
-                "to_name": "getById",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.inventory.ReadableInventory",
+                "to_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrUpdate",
-                "to_name": "saveOrUpdate",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return void",
+                "to_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return com.salesmanager.core.model.catalog.product.availability.ProductAvailability",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "getById",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "ProductAvailabilityService",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/availability/ProductAvailabilityService.java"
           },
@@ -253,40 +471,47 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "get",
-                "to_name": "listByProduct",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.prod",
+                "to_name": "listByProduct(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "get",
-                "to_name": "getBySku",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "getBySku(java.lang.String,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "get",
-                "to_name": "getById",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.inventory.ReadableInventory",
+                "to_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrUpdate",
-                "to_name": "saveOrUpdate",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return void",
+                "to_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return com.salesmanager.core.model.catalog.product.availability.ProductAvailability",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "getById",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "ProductAvailabilityServiceImpl",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/availability/ProductAvailabilityServiceImpl.java"
           },
@@ -294,30 +519,72 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Generic Java Method",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "notNull\u003cT extends java.lang.Object\u003e(java.lang.Object,java.lang.String,java.lang.Object[]) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Generic Java Method",
+                "from_name": "add(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.inventory.Readabl",
+                "to_name": "notNull\u003cT extends java.lang.Object\u003e(java.lang.Object,java.lang.String,java.lang.Object[]) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Generic Java Method",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.prod",
+                "to_name": "notNull\u003cT extends java.lang.Object\u003e(java.lang.Object,java.lang.String,java.lang.Object[]) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Generic Java Method",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "notNull\u003cT extends java.lang.Object\u003e(java.lang.Object,java.lang.String,java.lang.Object[]) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "Validate",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductAvailabilityToSave",
-                "to_name": "getDefaultLanguage",
+                "from_name": "getProductAvailabilityToSave(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.availability.ProductAvailability",
+                "to_name": "getDefaultLanguage() return com.salesmanager.core.model.reference.language.Language",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateProductHasSameStore",
-                "to_name": "getInvoiceTemplate",
+                "from_name": "validateProductHasSameStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "to_name": "getInvoiceTemplate() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateProductHasSameStore",
-                "to_name": "getId",
+                "from_name": "validateProductHasSameStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "getId",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
@@ -336,23 +603,135 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.prod",
+                "to_name": "Collectors",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.prod",
+                "to_name": "toList\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "Collectors",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "toList\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "Collectors",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "update",
-                "to_name": "getVariant",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "orElse(java.lang.Object) return java.lang.Object",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "update",
-                "to_name": "setProductId",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "isPresent() return boolean",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "update",
-                "to_name": "getProductId",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "get() return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "Optional\u003cT\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "stream() return java.util.stream.Stream.Stream\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.prod",
+                "to_name": "stream() return java.util.stream.Stream.Stream\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "stream() return java.util.stream.Stream.Stream\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "Collection\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getVariant() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setProductId(java.lang.Long) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getProductId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
@@ -372,21 +751,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "get",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
                 "to_name": "ServiceException",
                 "calling_type": "CATCH"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "saveOrUpdate",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return void",
                 "to_name": "ServiceException",
                 "calling_type": "CATCH"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "delete",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
                 "to_name": "ServiceException",
                 "calling_type": "CATCH"
               },
@@ -407,15 +786,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "update",
-                "to_name": "getAvailabilities",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getAvailabilities() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "update",
-                "to_name": "getProduct",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
                 "calling_type": "CALL"
               },
               {
@@ -435,15 +814,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "update",
-                "to_name": "merge",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "merge(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductAvailabilityToSave",
-                "to_name": "convert",
+                "from_name": "getProductAvailabilityToSave(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.availability.ProductAvailability",
+                "to_name": "convert(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.availability.",
                 "calling_type": "CALL"
               },
               {
@@ -463,8 +842,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "update",
-                "to_name": "getId",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
@@ -477,8 +856,8 @@
               {
                 "from_type": "Java Lambda Expression",
                 "to_type": "Java Method",
-                "from_name": "update$lambda$0",
-                "to_name": "getId",
+                "from_name": "update$lambda$0(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return boolean",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               }
             ],
@@ -491,7 +870,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "get",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.prod",
+                "to_name": "ReadableInventory",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
                 "to_name": "ReadableInventory",
                 "calling_type": "USE"
               },
@@ -512,15 +898,43 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "get",
-                "to_name": "getBySku",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.prod",
+                "to_name": "getContent() return java.util.List.List\u003cE\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductById",
-                "to_name": "retrieveById",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "getContent() return java.util.List.List\u003cE\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "Slice\u003cT extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Slice_28712.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "getBySku(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.Product",
+                "to_name": "retrieveById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.Product\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -540,15 +954,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "get",
-                "to_name": "getBySku",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "getBySku(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.Product",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductById",
-                "to_name": "retrieveById",
+                "from_name": "getProductById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.Product",
+                "to_name": "retrieveById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.Product\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -568,21 +982,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Instantiated Method",
-                "from_name": "get",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.inventory.ReadableInventory",
                 "to_name": "orElseThrow\u003cX\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Instantiated Method",
-                "from_name": "getProductByInstance",
+                "from_name": "getProductByInstance(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.variant.ProductVariant",
                 "to_name": "orElseThrow\u003cX\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Instantiated Method",
-                "from_name": "getProductById",
+                "from_name": "getProductById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.Product",
                 "to_name": "orElseThrow\u003cX\u003e",
                 "calling_type": "CALL"
               }
@@ -596,8 +1010,50 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductByInstance",
-                "to_name": "getById",
+                "from_name": "update(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "longValue() return long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "update$lambda$0(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return boolean",
+                "to_name": "longValue() return long",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pr",
+                "to_name": "isEmpty() return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "Streamable\u003cT extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Streamable_17546.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductByInstance(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.variant.ProductVariant",
+                "to_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -617,8 +1073,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductByInstance",
-                "to_name": "getById",
+                "from_name": "getProductByInstance(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.variant.ProductVariant",
+                "to_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -638,8 +1094,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "delete",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "delete(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "calling_type": "CALL"
               },
               {
@@ -653,10 +1109,51 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateProductHasSameStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "to_name": "equals(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "PageImpl\u003cT extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PageImpl_17103.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "ProductInventoryFacadeImpl",
+                "to_name": "ArrayList\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           }
         ],
-        "files_list_comment": "files list is truncated to first 15 items",
-        "nb_files_with_calling_elements": 20
+        "files_list_comment": ""
       }
     ]
   }

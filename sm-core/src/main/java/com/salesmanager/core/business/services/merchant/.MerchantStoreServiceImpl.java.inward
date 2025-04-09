@@ -40,9 +40,58 @@
                 "from_name": "findAll(com.salesmanager.core.model.merchant.MerchantStoreCriteria,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.store.ReadableMerchantStoreList",
                 "to_name": "listAll(java.util.Optional.Optional\u003cjava.lang.String\u003e,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getChildStores(com.salesmanager.core.model.reference.language.Language,java.lang.String,int,int) return com.salesmanager.shop.model.store.ReadableMerchantStoreList",
+                "to_name": "listChildren(java.lang.String,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getMerchantStoresByCriteria(com.salesmanager.core.model.merchant.MerchantStoreCriteria,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.store.ReadableMerchantStoreList",
+                "to_name": "getByCriteria(com.salesmanager.core.model.merchant.MerchantStoreCriteria) return com.salesmanager.core.model.common.GenericEntityList.GenericEntityList\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "existByCode(java.lang.String) return boolean",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "supportedLanguages(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.reference.language.Language\u003e",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createMerchantStore(com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "saveOrUpdate(com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "StoreFacadeImpl",
+                "to_name": "MerchantStoreServiceImpl",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 12
           },
           {

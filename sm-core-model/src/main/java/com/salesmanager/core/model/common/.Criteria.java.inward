@@ -40,9 +40,30 @@
                 "from_name": "list(java.lang.String,com.salesmanager.core.model.catalog.product.ProductCriteria,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.prod",
                 "to_name": "setMaxCount(int) return void",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProductList",
+                "to_name": "setMaxCount(int) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list(java.lang.String,com.salesmanager.core.model.catalog.product.ProductCriteria,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.prod",
+                "to_name": "getName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductApiV2",
+                "to_name": "Criteria",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
@@ -82,9 +103,16 @@
                 "from_name": "getReadableOrderList(com.salesmanager.core.model.order.OrderCriteria,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.order.v0.ReadableOrderList",
                 "to_name": "setLegacyPagination(boolean) return void",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "Criteria",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {
@@ -124,9 +152,16 @@
                 "from_name": "paginateQuery(javax.persistence.Query,java.lang.Number,com.salesmanager.core.model.common.GenericEntityList\u003cT\u003e,com.salesmanager.core.model.common.Criteria) return javax.persistence.Query",
                 "to_name": "getStartIndex() return int",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RepositoryHelper",
+                "to_name": "Criteria",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {
@@ -382,41 +417,6 @@
             "nb_calls_between_elements": 5
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/store/facade/StoreFacadeImpl.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getMerchantStoreNames(com.salesmanager.core.model.merchant.MerchantStoreCriteria) return java.util.List.List\u003ccom.salesmanager.shop.model.store.ReadableMerchantStore\u003e",
-                "to_name": "getStoreCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "findAll(com.salesmanager.core.model.merchant.MerchantStoreCriteria,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.store.ReadableMerchantStoreList",
-                "to_name": "getStoreCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "findAll(com.salesmanager.core.model.merchant.MerchantStoreCriteria,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.store.ReadableMerchantStoreList",
-                "to_name": "getName() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "StoreFacadeImpl",
-                "to_name": "Criteria",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4
-          },
-          {
             "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java",
             "calls_between_elements": [
               {
@@ -444,6 +444,41 @@
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "UserFacadeImpl",
+                "to_name": "Criteria",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/store/facade/StoreFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getMerchantStoreNames(com.salesmanager.core.model.merchant.MerchantStoreCriteria) return java.util.List.List\u003ccom.salesmanager.shop.model.store.ReadableMerchantStore\u003e",
+                "to_name": "getStoreCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findAll(com.salesmanager.core.model.merchant.MerchantStoreCriteria,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.store.ReadableMerchantStoreList",
+                "to_name": "getStoreCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findAll(com.salesmanager.core.model.merchant.MerchantStoreCriteria,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.store.ReadableMerchantStoreList",
+                "to_name": "getName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "StoreFacadeImpl",
                 "to_name": "Criteria",
                 "calling_type": "CALL"
               }
@@ -753,7 +788,7 @@
             "nb_calls_between_elements": 2
           }
         ],
-        "files_list_comment": "files list is truncated to first 15 items",
+        "files_list_comment": "",
         "nb_files_with_calling_elements": 22
       }
     ]

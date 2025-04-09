@@ -2,46 +2,61 @@
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/AbstractController.java]": {
     "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/AbstractController.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 5,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Generic Java Method",
                 "to_type": "Java Class",
-                "from_name": "getSessionAttribute\u003cT\u003e",
+                "from_name": "getSessionAttribute\u003cT\u003e(java.lang.String,javax.servlet.http.HttpServletRequest) return java.lang.Object",
                 "to_name": "SessionUtil",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Generic Java Method",
                 "to_type": "Java Instantiated Method",
-                "from_name": "getSessionAttribute\u003cT\u003e",
+                "from_name": "getSessionAttribute\u003cT\u003e(java.lang.String,javax.servlet.http.HttpServletRequest) return java.lang.Object",
                 "to_name": "getSessionAttribute\u003cT\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removeAttribute",
-                "to_name": "removeSessionAttribute",
+                "from_name": "removeAttribute(java.lang.String,javax.servlet.http.HttpServletRequest) return void",
+                "to_name": "removeSessionAttribute(java.lang.String,javax.servlet.http.HttpServletRequest) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "removeAttribute",
+                "from_name": "removeAttribute(java.lang.String,javax.servlet.http.HttpServletRequest) return void",
                 "to_name": "SessionUtil",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "setSessionAttribute",
-                "to_name": "setSessionAttribute",
+                "from_name": "setSessionAttribute(java.lang.String,java.lang.Object,javax.servlet.http.HttpServletRequest) return void",
+                "to_name": "setSessionAttribute(java.lang.String,java.lang.Object,javax.servlet.http.HttpServletRequest) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setSessionAttribute(java.lang.String,java.lang.Object,javax.servlet.http.HttpServletRequest) return void",
+                "to_name": "SessionUtil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AbstractController",
+                "to_name": "SessionUtil",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7,
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/SessionUtil.java"
           },
@@ -50,29 +65,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "calculatePaginaionData",
-                "to_name": "setCountByPage",
+                "from_name": "calculatePaginaionData(com.salesmanager.shop.store.model.paging.PaginationData,int,int) return com.salesmanager.shop.store.model.paging.PaginationData",
+                "to_name": "setCountByPage(int) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "calculatePaginaionData",
-                "to_name": "setTotalCount",
+                "from_name": "calculatePaginaionData(com.salesmanager.shop.store.model.paging.PaginationData,int,int) return com.salesmanager.shop.store.model.paging.PaginationData",
+                "to_name": "setTotalCount(int) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "calculatePaginaionData",
-                "to_name": "getCurrentPage",
+                "from_name": "calculatePaginaionData(com.salesmanager.shop.store.model.paging.PaginationData,int,int) return com.salesmanager.shop.store.model.paging.PaginationData",
+                "to_name": "getCurrentPage() return int",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "createPaginaionData",
-                "to_name": "PaginationData",
+                "from_name": "createPaginaionData(int,int) return com.salesmanager.shop.store.model.paging.PaginationData",
+                "to_name": "PaginationData(int,int)",
                 "calling_type": "CALL"
               },
               {
@@ -91,8 +106,43 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getLanguage(javax.servlet.http.HttpServletRequest) return com.salesmanager.core.model.reference.language.Language",
+                "to_name": "getAttribute(java.lang.String) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "AbstractController",
+                "to_name": "ServletRequest",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ServletRequest_20448.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculatePaginaionData(com.salesmanager.shop.store.model.paging.PaginationData,int,int) return com.salesmanager.shop.store.model.paging.PaginationData",
+                "to_name": "min(int,int) return int",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Math_2f53a0a798fc26ef.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "getLanguage",
+                "from_name": "getLanguage(javax.servlet.http.HttpServletRequest) return com.salesmanager.core.model.reference.language.Language",
                 "to_name": "LANGUAGE",
                 "calling_type": "READ"
               }
@@ -102,8 +152,7 @@
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 3
+        "files_list_comment": ""
       }
     ]
   }

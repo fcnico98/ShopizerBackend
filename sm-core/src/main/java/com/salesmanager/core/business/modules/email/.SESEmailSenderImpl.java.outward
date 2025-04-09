@@ -2,52 +2,535 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/email/SESEmailSenderImpl.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/modules/email/SESEmailSenderImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 19,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareHtml",
-                "to_name": "getTemplateTokens",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "getTemplateTokens() return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareHtml",
-                "to_name": "getTemplateName",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "getTemplateName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "send",
-                "to_name": "getFromEmail",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getFromEmail() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "send",
-                "to_name": "getTo",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getTo() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "send",
-                "to_name": "getSubject",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getSubject() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "Email",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/email/Email.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "withMessage(com.amazonaws.services.simpleemail.model.Message) return com.amazonaws.services.simpleemail.model.SendEmailRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "withDestination(com.amazonaws.services.simpleemail.model.Destination) return com.amazonaws.services.simpleemail.model.SendEmailRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "withSource(java.lang.String) return com.amazonaws.services.simpleemail.model.SendEmailRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "SendEmailRequest()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "SendEmailRequest",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/SendEmailRequest_142.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "MailPreparationException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "MailPreparationException(java.lang.String,java.lang.Throwable)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "MailPreparationException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "MailPreparationException",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/MailPreparationException_28070.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "withBody(com.amazonaws.services.simpleemail.model.Body) return com.amazonaws.services.simpleemail.model.Message",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "withSubject(com.amazonaws.services.simpleemail.model.Content) return com.amazonaws.services.simpleemail.model.Message",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "Message()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "Message",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Message_8492.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "withCharset(java.lang.String) return com.amazonaws.services.simpleemail.model.Content",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "withData(java.lang.String) return com.amazonaws.services.simpleemail.model.Content",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "Content()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "Content",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Content_22725.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "withText(com.amazonaws.services.simpleemail.model.Content) return com.amazonaws.services.simpleemail.model.Body",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "withHtml(com.amazonaws.services.simpleemail.model.Content) return com.amazonaws.services.simpleemail.model.Body",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "Body()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "Body",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Body_27593.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "getTemplate(java.lang.String) return freemarker.template.Template",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "setClassForTemplateLoading(java.lang.Class\u003cT\u003e,java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "Configuration",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Configuration_8177.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "toString() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "append(java.lang.String) return java.lang.StringBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "StringBuilder(java.lang.String)",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "toString() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "StringWriter()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "StringWriter",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/StringWriter_31a8cc657a9812ab.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "withToAddresses(java.lang.String[]) return com.amazonaws.services.simpleemail.model.Destination",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "Destination()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "Destination",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Destination_13031.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "TemplateException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "TemplateException",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/TemplateException_32270.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "process(java.lang.Object,java.io.Writer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "Template",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Template_17773.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "standard() return com.amazonaws.services.simpleemail.AmazonSimpleEmailServiceClientBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "AmazonSimpleEmailServiceClientBuilder",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AmazonSimpleEmailServiceClientBuilder_17505.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "sendEmail(com.amazonaws.services.simpleemail.model.SendEmailRequest) return com.amazonaws.services.simpleemail.model.SendEmailResult",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "AmazonSimpleEmailService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AmazonSimpleEmailService_27432.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "valueOf(java.lang.String) return com.amazonaws.regions.Regions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "Regions",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Regions_21425.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "withRegion(com.amazonaws.regions.Regions) return com.amazonaws.client.builder.AwsClientBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "AwsClientBuilder\u003cSubclass extends com.amazonaws.client.builder.AwsClientBuilder,TypeToBuild extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AwsClientBuilder_28692.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "build() return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "AwsSyncClientBuilder\u003cSubclass extends com.amazonaws.client.builder.AwsSyncClientBuilder,TypeToBuild extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AwsSyncClientBuilder_2368.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "toUpperCase() return java.lang.String",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 1
+        "files_list_comment": ""
       }
     ]
   }

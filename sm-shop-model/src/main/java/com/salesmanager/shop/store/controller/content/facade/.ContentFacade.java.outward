@@ -2,13 +2,21 @@
   "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/content/facade/ContentFacade.java]": {
     "00. file [sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/content/facade/ContentFacade.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 6,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getContentBoxes",
+                "from_name": "getContentBoxes(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntity",
+                "to_name": "ReadableContentBox",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getContentBoxes(com.salesmanager.core.model.content.ContentType,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityLi",
                 "to_name": "ReadableContentBox",
                 "calling_type": "USE"
               },
@@ -29,7 +37,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getContents",
+                "from_name": "getContents(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
                 "to_name": "ReadableContentEntity",
                 "calling_type": "USE"
               },
@@ -50,7 +58,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "addContentFiles",
+                "from_name": "addContentFiles(java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentFile\u003e,java.lang.String) return void",
                 "to_name": "ContentFile",
                 "calling_type": "USE"
               },
@@ -71,7 +79,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getContentPages",
+                "from_name": "getContentPages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.Re",
                 "to_name": "ReadableContentPage",
                 "calling_type": "USE"
               },
@@ -86,10 +94,37 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/content/page/ReadableContentPage.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getContents(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
+                "to_name": "String",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getContentFolder(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentFolder",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 4
+        "files_list_comment": ""
       }
     ]
   }

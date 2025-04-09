@@ -2,46 +2,75 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/user/PermissionServiceImpl.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/user/PermissionServiceImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 8,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listPermission",
+                "from_name": "listPermission() return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
                 "to_name": "Permission",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removePermission",
-                "to_name": "getId",
+                "from_name": "removePermission(com.salesmanager.core.model.user.Permission,com.salesmanager.core.model.user.Group) return void",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removePermission",
-                "to_name": "getGroups",
+                "from_name": "removePermission(com.salesmanager.core.model.user.Permission,com.salesmanager.core.model.user.Group) return void",
+                "to_name": "getGroups() return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getPermissions",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.Integer\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
                 "to_name": "Permission",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deletePermission",
-                "to_name": "getId",
+                "from_name": "deletePermission(com.salesmanager.core.model.user.Permission) return void",
+                "to_name": "getId() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deletePermission(com.salesmanager.core.model.user.Permission) return void",
+                "to_name": "setGroups(java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByName() return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
+                "to_name": "Permission",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PermissionServiceImpl",
+                "to_name": "Permission",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PermissionServiceImpl",
+                "to_name": "Permission",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/Permission.java"
           },
@@ -50,40 +79,47 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listPermission",
+                "from_name": "listPermission() return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "removePermission",
+                "from_name": "removePermission(com.salesmanager.core.model.user.Permission,com.salesmanager.core.model.user.Group) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listByCriteria",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getPermissions",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.Integer\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "deletePermission",
+                "from_name": "deletePermission(com.salesmanager.core.model.user.Permission) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PermissionServiceImpl",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
@@ -92,22 +128,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listPermission",
-                "to_name": "findAll",
+                "from_name": "listPermission() return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
+                "to_name": "findAll() return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getPermissions",
-                "to_name": "findByGroups",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.Integer\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
+                "to_name": "findByGroups(java.util.Set.Set\u003cjava.lang.Integer\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getById",
-                "to_name": "findOne",
+                "from_name": "getById(java.lang.Integer) return com.salesmanager.core.model.user.Permission",
+                "to_name": "findOne(java.lang.Integer) return com.salesmanager.core.model.user.Permission",
                 "calling_type": "CALL"
               },
               {
@@ -127,15 +163,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deletePermission",
-                "to_name": "delete",
+                "from_name": "deletePermission(com.salesmanager.core.model.user.Permission) return void",
+                "to_name": "delete(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "PermissionServiceImpl",
-                "to_name": "SalesManagerEntityServiceImpl",
+                "from_name": "PermissionServiceImpl(com.salesmanager.core.business.repositories.user.PermissionRepository)",
+                "to_name": "SalesManagerEntityServiceImpl(org.springframework.data.jpa.repository.JpaRepository.JpaRepository\u003cT,ID\u003e)",
                 "calling_type": "CALL"
               },
               {
@@ -155,8 +191,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listByCriteria",
-                "to_name": "listByCriteria",
+                "from_name": "removePermission(com.salesmanager.core.model.user.Permission,com.salesmanager.core.model.user.Group) return void",
+                "to_name": "remove(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "PermissionServiceImpl",
+                "to_name": "List\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
                 "calling_type": "CALL"
               },
               {
@@ -170,10 +227,51 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/user/PermissionRepositoryCustom.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.Integer\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
+                "to_name": "HashSet(java.util.Collection.Collection\u003c? extends\u003e)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "PermissionServiceImpl",
+                "to_name": "HashSet\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashSet_501b64dfacabf1a3.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getPermissions(java.util.List.List\u003cjava.lang.Integer\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
+                "to_name": "Integer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PermissionServiceImpl",
+                "to_name": "Integer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 5
+        "files_list_comment": ""
       }
     ]
   }

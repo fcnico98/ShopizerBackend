@@ -40,9 +40,100 @@
                 "from_name": "getReadableOrderList(com.salesmanager.core.model.order.OrderCriteria,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v0.ReadableOrderList",
                 "to_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
+                "to_name": "getOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.order.Order",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.TransactionType",
+                "to_name": "getOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.order.Order",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateOrderCustomre(java.lang.Long,com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.order.Order",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createOrderStatus(com.salesmanager.shop.model.order.history.PersistableOrderStatusHistory,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.order.Order",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getReadableOrderHistory(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.history.ReadableOrderStatusHistory\u003e",
+                "to_name": "getOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.order.Order",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getReadableOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v0.ReadableOrder",
+                "to_name": "getOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.order.Order",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrder(com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.util.Locale) return com.salesm",
+                "to_name": "caculateOrderTotal(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderTotal(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.shop.model.order.v0.PersistableOrder,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.cor",
+                "to_name": "caculateOrderTotal(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "processOrder(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.mod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrder(com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.util.Locale) return com.salesm",
+                "to_name": "processOrder(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.mod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateOrderStatus(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatus,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "addOrderStatusHistory(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createOrderStatus(com.salesmanager.shop.model.order.history.PersistableOrderStatusHistory,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "addOrderStatusHistory(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "OrderServiceImpl",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 19
           },
           {

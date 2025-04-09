@@ -6,21 +6,21 @@
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "listByProduct",
+            "from_name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
             "to_name": "select category from Product",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "listByStoreAndParent",
+            "from_name": "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
             "to_name": "select c from Category",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "countProductsByCategories",
+            "from_name": "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e",
             "to_name": "select category.id, count(product.id) from",
             "calling_type": "CALL"
           }

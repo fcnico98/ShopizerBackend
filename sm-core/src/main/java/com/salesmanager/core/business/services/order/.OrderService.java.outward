@@ -2,46 +2,89 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderService.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderService.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 4,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "hasDownloadFiles",
+                "from_name": "hasDownloadFiles(com.salesmanager.core.model.order.Order) return boolean",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "processOrder",
+                "from_name": "processOrder(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.mod",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "saveOrUpdate",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.order.Order) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "caculateOrderTotal",
+                "from_name": "caculateOrderTotal(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.OrderTotalSummary",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "addOrderStatusHistory",
+                "from_name": "caculateOrderTotal(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "addOrderStatusHistory(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCapturableOrders(com.salesmanager.core.model.merchant.MerchantStore,java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.order.Order\u003e",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "generateInvoice(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.reference.language.Language) return java.io.ByteArrayOutputStream",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "calculateShoppingCartTotal(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.OrderTotalSummary",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "calculateShoppingCartTotal(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "OrderService",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 12,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
@@ -50,7 +93,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "processOrder",
+                "from_name": "processOrder(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.mod",
                 "to_name": "ShoppingCartItem",
                 "calling_type": "USE"
               },
@@ -71,7 +114,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getCapturableOrders",
+                "from_name": "getCapturableOrders(com.salesmanager.core.model.merchant.MerchantStore,java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.order.Order\u003e",
                 "to_name": "Order",
                 "calling_type": "USE"
               },
@@ -86,10 +129,23 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/Order.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "OrderService",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 3
+        "files_list_comment": ""
       }
     ]
   }

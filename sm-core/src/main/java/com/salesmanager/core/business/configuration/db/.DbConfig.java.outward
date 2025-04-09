@@ -2,21 +2,22 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/configuration/db/DbConfig.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/configuration/db/DbConfig.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 3,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "dbCredentials",
-                "to_name": "setPassword",
+                "from_name": "dbCredentials() return com.salesmanager.core.model.system.credentials.DbCredentials",
+                "to_name": "setPassword(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "dbCredentials",
-                "to_name": "setUserName",
+                "from_name": "dbCredentials() return com.salesmanager.core.model.system.credentials.DbCredentials",
+                "to_name": "setUserName(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
@@ -35,9 +36,30 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "dbCredentials() return com.salesmanager.core.model.system.credentials.DbCredentials",
+                "to_name": "getProperty(java.lang.String) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "DbConfig",
+                "to_name": "PropertyResolver",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PropertyResolver_4966.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "dbCredentials",
-                "to_name": "DbCredentials",
+                "from_name": "dbCredentials() return com.salesmanager.core.model.system.credentials.DbCredentials",
+                "to_name": "DbCredentials()",
                 "calling_type": "CALL"
               },
               {
@@ -53,8 +75,7 @@
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/credentials/DbCredentials.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 2
+        "files_list_comment": ""
       }
     ]
   }

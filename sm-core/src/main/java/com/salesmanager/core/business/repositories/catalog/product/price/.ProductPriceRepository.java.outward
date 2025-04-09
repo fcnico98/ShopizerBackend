@@ -2,46 +2,82 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/price/ProductPriceRepository.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/price/ProductPriceRepository.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 6,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductInventoty",
+                "from_name": "findByProductInventoty(java.lang.String,java.lang.Long,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findByProductInventoty",
+                "from_name": "findByProductInventoty(java.lang.String,java.lang.Long,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
                 "to_name": "ProductPrice",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProduct",
+                "from_name": "findByProduct(java.lang.String,java.lang.Long,java.lang.String) return com.salesmanager.core.model.catalog.product.price.ProductPrice",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByProduct(java.lang.String,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findByProduct",
+                "from_name": "findByProduct(java.lang.String,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
                 "to_name": "ProductPrice",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findOne",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.price.ProductPrice",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ProductPriceRepository",
+                "to_name": "ProductPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ProductPriceRepository",
+                "to_name": "ProductPrice",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct p from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from ProductPrice",
                 "to_name": "Select",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 12,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/ProductPrice.java"
           },
@@ -50,21 +86,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductInventoty",
+                "from_name": "findByProductInventoty(java.lang.String,java.lang.Long,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProduct",
+                "from_name": "findByProduct(java.lang.String,java.lang.Long,java.lang.String) return com.salesmanager.core.model.catalog.product.price.ProductPrice",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findOne",
+                "from_name": "findByProduct(java.lang.String,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.price.ProductPrice",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
@@ -81,9 +124,16 @@
                 "from_name": "select distinct p from",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from ProductPrice",
+                "to_name": "Select",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/availability/ProductAvailability.java"
           },
@@ -92,21 +142,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductInventoty",
+                "from_name": "findByProductInventoty(java.lang.String,java.lang.Long,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProduct",
+                "from_name": "findByProduct(java.lang.String,java.lang.Long,java.lang.String) return com.salesmanager.core.model.catalog.product.price.ProductPrice",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findOne",
+                "from_name": "findByProduct(java.lang.String,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.price.ProductPrice",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
@@ -123,9 +180,16 @@
                 "from_name": "select distinct p from",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from ProductPrice",
+                "to_name": "Select",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
@@ -134,21 +198,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductInventoty",
+                "from_name": "findByProductInventoty(java.lang.String,java.lang.Long,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProduct",
+                "from_name": "findByProduct(java.lang.String,java.lang.Long,java.lang.String) return com.salesmanager.core.model.catalog.product.price.ProductPrice",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findOne",
+                "from_name": "findByProduct(java.lang.String,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.price.ProductPrice",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
@@ -165,9 +236,16 @@
                 "from_name": "select distinct p from",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from ProductPrice",
+                "to_name": "Select",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
           },
@@ -176,14 +254,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProductInventoty",
+                "from_name": "findByProductInventoty(java.lang.String,java.lang.Long,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByProduct",
+                "from_name": "findByProduct(java.lang.String,java.lang.Long,java.lang.String) return com.salesmanager.core.model.catalog.product.price.ProductPrice",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByProduct(java.lang.String,java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
@@ -202,13 +287,26 @@
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariant.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ProductPriceRepository",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 5
+        "files_list_comment": ""
       }
     ]
   }

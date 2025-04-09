@@ -4,7 +4,7 @@
       {
         "types": [
           {
-            "comment": "elements list is truncated to first 5 items",
+            "comment": "",
             "nb_elements": 24,
             "type": "Java Method",
             "elements": [
@@ -27,11 +27,87 @@
               {
                 "name": "images",
                 "signature": "images(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.content.Con"
+              },
+              {
+                "name": "deleteFile",
+                "signature": "deleteFile(com.salesmanager.shop.model.content.ContentName,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
+              },
+              {
+                "name": "deleteContent",
+                "signature": "deleteContent(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void"
+              },
+              {
+                "name": "uploadMultipleFiles",
+                "signature": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
+              },
+              {
+                "name": "upload",
+                "signature": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
+              },
+              {
+                "name": "getBoxByCode",
+                "signature": "getBoxByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox"
+              },
+              {
+                "name": "manageBoxByCode",
+                "signature": "manageBoxByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox"
+              },
+              {
+                "name": "contents",
+                "signature": "contents(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e"
+              },
+              {
+                "name": "content",
+                "signature": "content(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull"
+              },
+              {
+                "name": "updateBox",
+                "signature": "updateBox(com.salesmanager.shop.model.content.box.PersistableContentBox,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
+              },
+              {
+                "name": "updatePage",
+                "signature": "updatePage(com.salesmanager.shop.model.content.page.PersistableContentPage,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
+              },
+              {
+                "name": "deleteBox",
+                "signature": "deleteBox(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
+              },
+              {
+                "name": "deletePage",
+                "signature": "deletePage(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
+              },
+              {
+                "name": "createPage",
+                "signature": "createPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity"
+              },
+              {
+                "name": "pageExists",
+                "signature": "pageExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.EntityExists"
+              },
+              {
+                "name": "boxExists",
+                "signature": "boxExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.EntityExists"
+              },
+              {
+                "name": "createBox",
+                "signature": "createBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity"
+              },
+              {
+                "name": "pageByName",
+                "signature": "pageByName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage"
+              },
+              {
+                "name": "boxes",
+                "signature": "boxes(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.box.ReadableConte"
+              },
+              {
+                "name": "pages",
+                "signature": "pages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.ReadableCont"
               }
             ]
           },
           {
-            "comment": "elements list is truncated to first 5 items",
+            "comment": "",
             "nb_elements": 14,
             "type": "Spring MVC Get Operation",
             "elements": [
@@ -54,11 +130,47 @@
               {
                 "name": "api/v1/private/content/any/{}/",
                 "signature": ""
+              },
+              {
+                "name": "api/v1/private/content/page/{}/exists/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/private/content/box/{}/exists/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/content/pages/name/{}/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/content/pages/{}/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/private/content/boxes/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/content/boxes/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/content/summary/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/content/pages/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/private/content/pages/",
+                "signature": ""
               }
             ]
           },
           {
-            "comment": "elements list is truncated to first 5 items",
+            "comment": "",
             "nb_elements": 6,
             "type": "Java Field",
             "elements": [
@@ -80,6 +192,10 @@
               },
               {
                 "name": "DEFAULT_PATH",
+                "signature": ""
+              },
+              {
+                "name": "LOGGER",
                 "signature": ""
               }
             ]

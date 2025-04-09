@@ -2,46 +2,68 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 16,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getLanguages",
+                "from_name": "getLanguages() return java.util.List.List\u003ccom.salesmanager.core.model.reference.language.Language\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "getLanguages",
-                "to_name": "ServiceException",
+                "from_name": "getLanguages() return java.util.List.List\u003ccom.salesmanager.core.model.reference.language.Language\u003e",
+                "to_name": "ServiceException(java.lang.Throwable)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getLanguages",
+                "from_name": "getLanguages() return java.util.List.List\u003ccom.salesmanager.core.model.reference.language.Language\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getLanguagesMap",
+                "from_name": "getLanguagesMap() return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.language.Language\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getByCode",
+                "from_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LanguageServiceImpl",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LanguageServiceImpl",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LanguageServiceImpl",
+                "to_name": "ServiceException",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
@@ -50,40 +72,54 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getLanguages",
+                "from_name": "getLanguages() return java.util.List.List\u003ccom.salesmanager.core.model.reference.language.Language\u003e",
                 "to_name": "Language",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getLanguagesMap",
-                "to_name": "getCode",
+                "from_name": "getLanguagesMap() return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.language.Language\u003e",
+                "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getLanguagesMap",
+                "from_name": "getLanguagesMap() return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.language.Language\u003e",
                 "to_name": "Language",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "toLanguage",
-                "to_name": "Language",
+                "from_name": "toLanguage(java.util.Locale) return com.salesmanager.core.model.reference.language.Language",
+                "to_name": "Language(java.lang.String)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "toLocale",
-                "to_name": "getCode",
+                "from_name": "toLocale(com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Locale",
+                "to_name": "getCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LanguageServiceImpl",
+                "to_name": "Language",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LanguageServiceImpl",
+                "to_name": "Language",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
           },
@@ -91,16 +127,86 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "defaultLanguage() return com.salesmanager.core.model.reference.language.Language",
+                "to_name": "ENGLISH",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getLanguages",
-                "to_name": "getFromCache",
+                "from_name": "toLanguage(java.util.Locale) return com.salesmanager.core.model.reference.language.Language",
+                "to_name": "getLanguage() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "toLocale(com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Locale",
+                "to_name": "Locale(java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "toLocale(com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Locale",
+                "to_name": "Locale(java.lang.String,java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LanguageServiceImpl",
+                "to_name": "Locale",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Locale_eca3cf2c5fb1b76b.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getLanguages() return java.util.List.List\u003ccom.salesmanager.core.model.reference.language.Language\u003e",
+                "to_name": "error(java.lang.String,java.lang.Throwable) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getLanguages",
-                "to_name": "putInCache",
+                "from_name": "toLanguage(java.util.Locale) return com.salesmanager.core.model.reference.language.Language",
+                "to_name": "error(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "LanguageServiceImpl",
+                "to_name": "Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getLanguages() return java.util.List.List\u003ccom.salesmanager.core.model.reference.language.Language\u003e",
+                "to_name": "getFromCache(java.lang.String) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getLanguages() return java.util.List.List\u003ccom.salesmanager.core.model.reference.language.Language\u003e",
+                "to_name": "putInCache(java.lang.Object,java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
@@ -120,15 +226,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getLanguages",
-                "to_name": "list",
+                "from_name": "getLanguages() return java.util.List.List\u003ccom.salesmanager.core.model.reference.language.Language\u003e",
+                "to_name": "list() return java.util.List.List\u003cLanguage\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "LanguageServiceImpl",
-                "to_name": "SalesManagerEntityServiceImpl",
+                "from_name": "LanguageServiceImpl(com.salesmanager.core.business.repositories.reference.language.LanguageRepository)",
+                "to_name": "SalesManagerEntityServiceImpl(org.springframework.data.jpa.repository.JpaRepository.JpaRepository\u003cT,ID\u003e)",
                 "calling_type": "CALL"
               },
               {
@@ -148,8 +254,78 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "toLocale",
-                "to_name": "getIsoCode",
+                "from_name": "getLanguagesMap() return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.language.Language\u003e",
+                "to_name": "put(java.lang.Object,java.lang.Object) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "toLanguage(java.util.Locale) return com.salesmanager.core.model.reference.language.Language",
+                "to_name": "get(java.lang.Object) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "LanguageServiceImpl",
+                "to_name": "Map\u003cK,V\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getLanguages() return java.util.List.List\u003ccom.salesmanager.core.model.reference.language.Language\u003e",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "toLanguage(java.util.Locale) return com.salesmanager.core.model.reference.language.Language",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "getLanguagesMap() return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.language.Language\u003e",
+                "to_name": "LinkedHashMap\u003cString,Language\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "LanguageServiceImpl",
+                "to_name": "LinkedHashMap\u003cK,V\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/LinkedHashMap_8ed7b6559d26731a.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "toLocale(com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Locale",
+                "to_name": "getIsoCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -169,8 +345,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "toLocale",
-                "to_name": "getCountry",
+                "from_name": "toLocale(com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Locale",
+                "to_name": "getCountry() return com.salesmanager.core.model.reference.country.Country",
                 "calling_type": "CALL"
               },
               {
@@ -190,8 +366,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByCode",
-                "to_name": "findByCode",
+                "from_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
+                "to_name": "findByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
                 "calling_type": "CALL"
               },
               {
@@ -210,8 +386,22 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getLanguagesMap() return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.language.Language\u003e",
+                "to_name": "String",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "toLanguage",
+                "from_name": "toLanguage(java.util.Locale) return com.salesmanager.core.model.reference.language.Language",
                 "to_name": "DEFAULT_LANGUAGE",
                 "calling_type": "READ"
               }
@@ -219,10 +409,37 @@
             "comment": "",
             "nb_calls_between_elements": 1,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "LOGGER",
+                "to_name": "getLogger(java.lang.Class.Class\u003c? extends\u003e) return org.slf4j.Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LanguageServiceImpl",
+                "to_name": "Integer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 8
+        "files_list_comment": ""
       }
     ]
   }

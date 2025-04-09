@@ -2,21 +2,71 @@
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/application/config/ShopServletContextListener.java]": {
     "00. file [sm-shop/src/main/java/com/salesmanager/shop/application/config/ShopServletContextListener.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 6,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "contextDestroyed",
-                "to_name": "getManager",
+                "from_name": "contextDestroyed(javax.servlet.ServletContextEvent) return void",
+                "to_name": "info(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "contextDestroyed",
-                "to_name": "getInstance",
+                "from_name": "contextInitialized(javax.servlet.ServletContextEvent) return void",
+                "to_name": "info(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "contextInitialized(javax.servlet.ServletContextEvent) return void",
+                "to_name": "debug(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ShopServletContextListener",
+                "to_name": "Logger",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "contextInitialized$lambda$1(java.lang.Object,java.lang.Object) return void",
+                "to_name": "debug(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "contextInitialized$lambda$0(java.lang.String,java.lang.String) return void",
+                "to_name": "debug(java.lang.String) return void",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 6,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "contextDestroyed(javax.servlet.ServletContextEvent) return void",
+                "to_name": "getManager() return EmbeddedCacheManager",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "contextDestroyed(javax.servlet.ServletContextEvent) return void",
+                "to_name": "getInstance() return com.salesmanager.core.business.modules.cms.impl.VendorCacheManager",
                 "calling_type": "CALL"
               },
               {
@@ -30,10 +80,86 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/VendorCacheManager.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "contextInitialized(javax.servlet.ServletContextEvent) return void",
+                "to_name": "forEach(java.util.function.BiConsumer.BiConsumer\u003cjava.lang.Object,java.lang.Object\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShopServletContextListener",
+                "to_name": "Properties",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Properties_c636b5d27b5bee00.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "contextInitialized(javax.servlet.ServletContextEvent) return void",
+                "to_name": "forEach(java.util.function.BiConsumer.BiConsumer\u003cT,U\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "ShopServletContextListener",
+                "to_name": "Map\u003cK,V\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "contextInitialized(javax.servlet.ServletContextEvent) return void",
+                "to_name": "getenv() return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "contextInitialized(javax.servlet.ServletContextEvent) return void",
+                "to_name": "getProperties() return java.util.Properties",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/System_c5178e292449fdc.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "logger",
+                "to_name": "getLogger(java.lang.Class.Class\u003c? extends\u003e) return org.slf4j.Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 1
+        "files_list_comment": ""
       }
     ]
   }

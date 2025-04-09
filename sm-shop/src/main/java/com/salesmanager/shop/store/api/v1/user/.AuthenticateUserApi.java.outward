@@ -2,46 +2,124 @@
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/user/AuthenticateUserApi.java]": {
     "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/user/AuthenticateUserApi.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 16,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "refreshAndGetAuthenticationToken",
-                "to_name": "refreshToken",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "badRequest() return org.springframework.http.ResponseEntity.BodyBuilder\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Generic Java Class",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "ResponseEntity\u003cT extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "body\u003cnull\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "ok\u003cAuthenticationResponse\u003cAuthenticationResponse\u003e\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Generic Java Class",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "ResponseEntity\u003cT extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "ResponseEntity\u003c?\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "ok\u003cAuthenticationResponse\u003c?\u003e\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "AuthenticateUserApi",
+                "to_name": "ResponseEntity\u003cT extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 9,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ResponseEntity_17692.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "refreshToken(java.lang.String) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "refreshAndGetAuthenticationToken",
-                "to_name": "canTokenBeRefreshedWithGrace",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "canTokenBeRefreshedWithGrace(java.lang.String,java.util.Date) return java.lang.Boolean",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "refreshAndGetAuthenticationToken",
-                "to_name": "getUsernameFromToken",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "getUsernameFromToken(java.lang.String) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "authenticate",
-                "to_name": "generateToken",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "generateToken(org.springframework.security.core.userdetails.UserDetails) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
+                "from_name": "AuthenticateUserApi()",
+                "to_name": "JWTTokenUtil()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
                 "from_name": "AuthenticateUserApi",
                 "to_name": "JWTTokenUtil",
                 "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuthenticateUserApi",
+                "to_name": "JWTTokenUtil",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7,
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java"
           },
@@ -50,21 +128,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "refreshAndGetAuthenticationToken",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
                 "to_name": "AuthenticationResponse",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Instantiated Constructor",
-                "from_name": "refreshAndGetAuthenticationToken",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
                 "to_name": "AuthenticationResponse\u003cAuthenticationResponse\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Instantiated Constructor",
-                "from_name": "authenticate",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
                 "to_name": "AuthenticationResponse\u003c?\u003e",
                 "calling_type": "CALL"
               },
@@ -92,22 +170,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "refreshAndGetAuthenticationToken",
-                "to_name": "getLastPasswordResetDate",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "getLastPasswordResetDate() return java.util.Date",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "refreshAndGetAuthenticationToken",
-                "to_name": "getId",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "authenticate",
-                "to_name": "getId",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
@@ -127,15 +205,71 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "authenticate",
-                "to_name": "getPassword",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "length() return int",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "authenticate",
-                "to_name": "getUsername",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "contains(java.lang.CharSequence) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "substring(int,int) return java.lang.String",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "NOT_FOUND",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "UNAUTHORIZED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "AuthenticateUserApi",
+                "to_name": "HttpStatus",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpStatus_958.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "getPassword() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "getUsername() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -153,10 +287,73 @@
           {
             "calls_between_elements": [
               {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.store.security.AuthenticationResponse\u003e",
+                "to_name": "getHeader(java.lang.String) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "AuthenticateUserApi",
+                "to_name": "HttpServletRequest",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpServletRequest_4098.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "AuthenticationException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuthenticateUserApi",
+                "to_name": "AuthenticationException",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AuthenticationException_23856.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "error(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "AuthenticateUserApi",
+                "to_name": "Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+          },
+          {
+            "calls_between_elements": [
+              {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "AuthenticateUserApi",
-                "to_name": "JWTAdminServicesImpl",
+                "from_name": "AuthenticateUserApi()",
+                "to_name": "JWTAdminServicesImpl()",
                 "calling_type": "FIRE"
               },
               {
@@ -176,8 +373,8 @@
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "AuthenticateUserApi",
-                "to_name": "SocialCustomerServicesImpl",
+                "from_name": "AuthenticateUserApi()",
+                "to_name": "SocialCustomerServicesImpl()",
                 "calling_type": "FIRE"
               },
               {
@@ -197,8 +394,8 @@
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "AuthenticateUserApi",
-                "to_name": "UserServicesImpl",
+                "from_name": "AuthenticateUserApi()",
+                "to_name": "UserServicesImpl()",
                 "calling_type": "FIRE"
               },
               {
@@ -212,10 +409,51 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/admin/security/UserServicesImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "getMessage() return java.lang.String",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Throwable_59bd5118ab8c02bb.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "LOGGER",
+                "to_name": "getLogger(java.lang.Class.Class\u003c? extends\u003e) return org.slf4j.Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 7
+        "files_list_comment": ""
       }
     ]
   }

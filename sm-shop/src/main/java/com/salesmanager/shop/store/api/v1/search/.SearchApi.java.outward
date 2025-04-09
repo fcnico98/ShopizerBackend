@@ -2,28 +2,29 @@
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/search/SearchApi.java]": {
     "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/search/SearchApi.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 4,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "autocomplete",
-                "to_name": "autocompleteRequest",
+                "from_name": "autocomplete(com.salesmanager.shop.model.catalog.SearchProductRequest,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ValueList",
+                "to_name": "autocompleteRequest(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ValueList",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "search",
-                "to_name": "search",
+                "from_name": "search(com.salesmanager.shop.model.catalog.SearchProductRequest,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
+                "to_name": "search(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.catalog.SearchProductRequest) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "SearchApi",
-                "to_name": "SearchFacadeImpl",
+                "from_name": "SearchApi()",
+                "to_name": "SearchFacadeImpl()",
                 "calling_type": "FIRE"
               },
               {
@@ -50,15 +51,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "autocomplete",
-                "to_name": "autocompleteRequest",
+                "from_name": "autocomplete(com.salesmanager.shop.model.catalog.SearchProductRequest,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ValueList",
+                "to_name": "autocompleteRequest(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ValueList",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "search",
-                "to_name": "search",
+                "from_name": "search(com.salesmanager.shop.model.catalog.SearchProductRequest,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
+                "to_name": "search(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.catalog.SearchProductRequest) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -78,8 +79,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "autocomplete",
-                "to_name": "getQuery",
+                "from_name": "autocomplete(com.salesmanager.shop.model.catalog.SearchProductRequest,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ValueList",
+                "to_name": "getQuery() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -93,10 +94,30 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/SearchProductRequest.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "search(com.salesmanager.shop.model.catalog.SearchProductRequest,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
+                "to_name": "SearchItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SearchApi",
+                "to_name": "SearchItem",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/SearchItem_11643.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 3
+        "files_list_comment": ""
       }
     ]
   }

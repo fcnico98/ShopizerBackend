@@ -2,46 +2,89 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryServiceImpl.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryServiceImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 20,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getByCode",
+                "from_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.country.Country",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listCountryZones",
+                "from_name": "listCountryZones(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "listCountryZones",
-                "to_name": "ServiceException",
+                "from_name": "listCountryZones(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "ServiceException(java.lang.Throwable)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listCountryZones",
+                "from_name": "listCountryZones(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getCountries",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCountries(java.util.List.List\u003cjava.lang.String\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCountriesMap(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "addCountryDescription(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.country.CountryDescription) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "ServiceException",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 11,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
@@ -50,40 +93,82 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listCountryZones",
+                "from_name": "listCountryZones(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
                 "to_name": "Country",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getCountries",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
                 "to_name": "Country",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCountries",
-                "to_name": "getDescriptions",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "getDescriptions() return java.util.Set.Set\u003ccom.salesmanager.core.model.reference.country.CountryDescription\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCountries",
-                "to_name": "setName",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "setName(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCountries",
-                "to_name": "getIsoCode",
+                "from_name": "getCountries(java.util.List.List\u003cjava.lang.String\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "getIsoCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCountries(java.util.List.List\u003cjava.lang.String\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCountriesMap(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountriesMap(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "getIsoCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addCountryDescription(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.country.CountryDescription) return void",
+                "to_name": "getDescriptions() return java.util.Set.Set\u003ccom.salesmanager.core.model.reference.country.CountryDescription\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "Country",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 11,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
           },
@@ -92,22 +177,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getByCode",
-                "to_name": "findByIsoCode",
+                "from_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.country.Country",
+                "to_name": "findByIsoCode(java.lang.String) return com.salesmanager.core.model.reference.country.Country",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listCountryZones",
-                "to_name": "listCountryZonesByLanguage",
+                "from_name": "listCountryZones(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "listCountryZonesByLanguage(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCountries",
-                "to_name": "listByLanguage",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "listByLanguage(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -127,22 +212,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "listCountryZones",
-                "to_name": "getId",
+                "from_name": "listCountryZones(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCountries",
-                "to_name": "getId",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCountries",
-                "to_name": "getCode",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -162,15 +247,71 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCountries",
-                "to_name": "getFromCache",
+                "from_name": "listCountryZones(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "error(java.lang.String,java.lang.Throwable) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCountries",
-                "to_name": "putInCache",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "error(java.lang.String,java.lang.Throwable) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CountryServiceImpl",
+                "to_name": "Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "iterator() return java.util.Iterator.Iterator\u003cE\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addCountryDescription(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.country.CountryDescription) return void",
+                "to_name": "add(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "CountryServiceImpl",
+                "to_name": "Set\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "getFromCache(java.lang.String) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "putInCache(java.lang.Object,java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
@@ -190,15 +331,43 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addCountryDescription",
-                "to_name": "update",
+                "from_name": "getCountries(java.util.List.List\u003cjava.lang.String\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "add(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries(java.util.List.List\u003cjava.lang.String\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "contains(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "CountryServiceImpl",
+                "to_name": "List\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addCountryDescription(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.country.CountryDescription) return void",
+                "to_name": "update(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "CountryServiceImpl",
-                "to_name": "SalesManagerEntityServiceImpl",
+                "from_name": "CountryServiceImpl(com.salesmanager.core.business.repositories.reference.country.CountryRepository)",
+                "to_name": "SalesManagerEntityServiceImpl(org.springframework.data.jpa.repository.JpaRepository.JpaRepository\u003cT,ID\u003e)",
                 "calling_type": "CALL"
               },
               {
@@ -217,9 +386,51 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listCountryZones(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCountries",
-                "to_name": "getName",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "next() return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "CountryServiceImpl",
+                "to_name": "Iterator\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Iterator_19d1eba3a02154d3.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountries(com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "getName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -239,8 +450,113 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addCountryDescription",
-                "to_name": "setCountry",
+                "from_name": "getCountries(java.util.List.List\u003cjava.lang.String\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "CollectionUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CollectionUtils_1588.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "getCountries(java.util.List.List\u003cjava.lang.String\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "ArrayList\u003cCountry\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "ArrayList\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCountries(java.util.List.List\u003cjava.lang.String\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "String",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCountriesMap(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "String",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountriesMap(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "put(java.lang.Object,java.lang.Object) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "CountryServiceImpl",
+                "to_name": "Map\u003cK,V\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "getCountriesMap(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "LinkedHashMap\u003cString,Country\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "LinkedHashMap\u003cK,V\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/LinkedHashMap_8ed7b6559d26731a.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addCountryDescription(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.country.CountryDescription) return void",
+                "to_name": "setCountry(com.salesmanager.core.model.reference.country.Country) return void",
                 "calling_type": "CALL"
               },
               {
@@ -254,10 +570,37 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/CountryDescription.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "LOGGER",
+                "to_name": "getLogger(java.lang.Class.Class\u003c? extends\u003e) return org.slf4j.Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "Integer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 8
+        "files_list_comment": ""
       }
     ]
   }

@@ -40,9 +40,23 @@
                 "from_name": "PayPalExpressCheckoutPayment()",
                 "to_name": "PricingServiceImpl()",
                 "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "PricingServiceImpl",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "PricingServiceImpl",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7
           },
           {
@@ -114,6 +128,90 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductCommonFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setAvailability(com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.shop.model.catalog.product.LightPersistableProduct) return void",
+                "to_name": "getAmount(java.lang.String) return java.math.BigDecimal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.LightPersistableProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getAmount(java.lang.String) return java.math.BigDecimal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductCommonFacadeImpl",
+                "to_name": "PricingServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableProductAttributeMapper.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.catalog.product.attribute.ProductAttribute,com.salesmanager.shop.model.catalog.product.attribute.api.ReadableProductAttributeEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.",
+                "to_name": "getStringAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.catalog.product.attribute.ProductAttribute,com.salesmanager.shop.model.catalog.product.attribute.api.ReadableProductAttributeEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.",
+                "to_name": "getDisplayAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableProductAttributeMapper",
+                "to_name": "PricingServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/ReadableProductPricePopulator.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.catalog.product.price.ProductPrice,com.salesmanager.shop.model.catalog.product.ReadableProductPrice,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com",
+                "to_name": "getDisplayAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.catalog.product.price.ProductPrice,com.salesmanager.shop.model.catalog.product.ReadableProductPrice,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com",
+                "to_name": "calculateProductPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableProductPricePopulator",
+                "to_name": "PricingServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           },
           {
             "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/ReadableProductPopulator.java",
@@ -276,90 +374,6 @@
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShoppingCartFacadeImpl",
-                "to_name": "PricingServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3
-          },
-          {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductCommonFacadeImpl.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "setAvailability(com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.shop.model.catalog.product.LightPersistableProduct) return void",
-                "to_name": "getAmount(java.lang.String) return java.math.BigDecimal",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.LightPersistableProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getAmount(java.lang.String) return java.math.BigDecimal",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProductCommonFacadeImpl",
-                "to_name": "PricingServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3
-          },
-          {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableProductAttributeMapper.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.catalog.product.attribute.ProductAttribute,com.salesmanager.shop.model.catalog.product.attribute.api.ReadableProductAttributeEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.",
-                "to_name": "getStringAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.catalog.product.attribute.ProductAttribute,com.salesmanager.shop.model.catalog.product.attribute.api.ReadableProductAttributeEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.",
-                "to_name": "getDisplayAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ReadableProductAttributeMapper",
-                "to_name": "PricingServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3
-          },
-          {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/ReadableProductPricePopulator.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.core.model.catalog.product.price.ProductPrice,com.salesmanager.shop.model.catalog.product.ReadableProductPrice,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com",
-                "to_name": "getDisplayAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.core.model.catalog.product.price.ProductPrice,com.salesmanager.shop.model.catalog.product.ReadableProductPrice,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com",
-                "to_name": "calculateProductPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ReadableProductPricePopulator",
                 "to_name": "PricingServiceImpl",
                 "calling_type": "CALL"
               }
@@ -704,7 +718,7 @@
             "nb_calls_between_elements": 2
           }
         ],
-        "files_list_comment": "files list is truncated to first 15 items",
+        "files_list_comment": "",
         "nb_files_with_calling_elements": 28
       }
     ]

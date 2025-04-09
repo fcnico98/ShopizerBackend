@@ -2,20 +2,21 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/price/ProductPriceService.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/price/ProductPriceService.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 3,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findByInventoryId",
+                "from_name": "findByInventoryId(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
                 "to_name": "ProductPrice",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findByProductSku",
+                "from_name": "findByProductSku(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
                 "to_name": "ProductPrice",
                 "calling_type": "USE"
               },
@@ -36,14 +37,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "saveOrUpdate",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.price.ProductPrice) return com.salesmanager.core.model.catalog.product.price.ProductPrice",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "addDescription",
+                "from_name": "addDescription(com.salesmanager.core.model.catalog.product.price.ProductPrice,com.salesmanager.core.model.catalog.product.price.ProductPriceDescription) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -58,10 +59,23 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ProductPriceService",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 2
+        "files_list_comment": ""
       }
     ]
   }

@@ -40,9 +40,23 @@
                 "from_name": "onUpdate(java.lang.Object) return void",
                 "to_name": "setDateCreated(java.util.Date) return void",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onSave(java.lang.Object) return void",
+                "to_name": "setDateCreated(java.util.Date) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuditListener",
+                "to_name": "AuditSection",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7
           },
           {
@@ -219,104 +233,6 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2
-          },
-          {
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/availability/ProductAvailability.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Constructor",
-                "from_name": "auditSection",
-                "to_name": "AuditSection()",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1
-          },
-          {
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Constructor",
-                "from_name": "auditSection",
-                "to_name": "AuditSection()",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1
-          },
-          {
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/marketplace/MarketPlace.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Constructor",
-                "from_name": "auditSection",
-                "to_name": "AuditSection()",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1
-          },
-          {
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/marketplace/Catalog.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Constructor",
-                "from_name": "auditSection",
-                "to_name": "AuditSection()",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1
-          },
-          {
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/category/Category.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Constructor",
-                "from_name": "auditSection",
-                "to_name": "AuditSection()",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1
-          },
-          {
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/CatalogCategoryEntry.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Constructor",
-                "from_name": "auditSection",
-                "to_name": "AuditSection()",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1
-          },
-          {
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/Catalog.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Constructor",
-                "from_name": "auditSection",
-                "to_name": "AuditSection()",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1
           },
           {
             "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/User.java",
@@ -639,9 +555,107 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/availability/ProductAvailability.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Constructor",
+                "from_name": "auditSection",
+                "to_name": "AuditSection()",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Constructor",
+                "from_name": "auditSection",
+                "to_name": "AuditSection()",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/marketplace/MarketPlace.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Constructor",
+                "from_name": "auditSection",
+                "to_name": "AuditSection()",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/marketplace/Catalog.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Constructor",
+                "from_name": "auditSection",
+                "to_name": "AuditSection()",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/category/Category.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Constructor",
+                "from_name": "auditSection",
+                "to_name": "AuditSection()",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/CatalogCategoryEntry.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Constructor",
+                "from_name": "auditSection",
+                "to_name": "AuditSection()",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/Catalog.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Constructor",
+                "from_name": "auditSection",
+                "to_name": "AuditSection()",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
           }
         ],
-        "files_list_comment": "files list is truncated to first 15 items",
+        "files_list_comment": "",
         "nb_files_with_calling_elements": 38
       }
     ]

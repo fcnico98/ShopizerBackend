@@ -40,9 +40,65 @@
                 "from_name": "ProductReviewRepository",
                 "to_name": "ProductReview",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByCustomer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from ProductReview",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ProductReviewRepository",
+                "to_name": "ProductReview",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 18
           },
           {
@@ -82,9 +138,44 @@
                 "from_name": "ProductReviewServiceImpl",
                 "to_name": "ProductReview",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByProductNoCustomers(com.salesmanager.core.model.catalog.product.Product) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
+                "to_name": "ProductReview",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByProduct(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
+                "to_name": "ProductReview",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByProduct(com.salesmanager.core.model.catalog.product.Product) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
+                "to_name": "ProductReview",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByCustomer(com.salesmanager.core.model.customer.Customer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
+                "to_name": "ProductReview",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductReviewServiceImpl",
+                "to_name": "ProductReview",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 10
           },
           {
@@ -124,9 +215,37 @@
                 "from_name": "populate(com.salesmanager.shop.model.catalog.product.PersistableProductReview,com.salesmanager.core.model.catalog.product.review.ProductReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) retu",
                 "to_name": "setReviewRating(java.lang.Double) return void",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.catalog.product.PersistableProductReview,com.salesmanager.core.model.catalog.product.review.ProductReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) retu",
+                "to_name": "setProduct(com.salesmanager.core.model.catalog.product.Product) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "populate(com.salesmanager.shop.model.catalog.product.PersistableProductReview,com.salesmanager.core.model.catalog.product.review.ProductReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) retu",
+                "to_name": "ProductReview()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductReviewPopulator",
+                "to_name": "ProductReview",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductReviewPopulator",
+                "to_name": "ProductReview",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9
           },
           {
@@ -166,9 +285,30 @@
                 "from_name": "populate(com.salesmanager.core.model.catalog.product.review.ProductReview,com.salesmanager.shop.model.catalog.product.ReadableProductReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return ",
                 "to_name": "getReviewRating() return java.lang.Double",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.catalog.product.review.ProductReview,com.salesmanager.shop.model.catalog.product.ReadableProductReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return ",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableProductReviewPopulator",
+                "to_name": "ProductReview",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableProductReviewPopulator",
+                "to_name": "ProductReview",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {

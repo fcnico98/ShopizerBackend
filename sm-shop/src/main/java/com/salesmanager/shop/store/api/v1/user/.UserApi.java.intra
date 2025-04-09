@@ -7,63 +7,63 @@
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/user/profile/",
-            "to_name": "getAuthUser",
+            "to_name": "getAuthUser(com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.user.ReadableUser",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/user/unique/",
-            "to_name": "exists",
+            "to_name": "exists(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.entity.UniqueEntity) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.en",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Delete Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/user/{}/",
-            "to_name": "delete",
+            "to_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long,javax.servlet.http.HttpServletRequest) return void",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Any Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/user/{}/enabled/",
-            "to_name": "updateEnabled",
+            "to_name": "updateEnabled(java.lang.Long,com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.merchant.MerchantStore) return void",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/users/",
-            "to_name": "list",
+            "to_name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Integer,java.lang.Integer,java.lang.String) return com.salesmanager.shop.model.user.ReadableUserList",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Any Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/user/{}/password/",
-            "to_name": "password",
+            "to_name": "password(com.salesmanager.shop.model.user.UserPassword,java.lang.Long) return void",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Put Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/user/{}/",
-            "to_name": "update",
+            "to_name": "update(com.salesmanager.shop.model.user.PersistableUser,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/user/",
-            "to_name": "create",
+            "to_name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.user.PersistableUser,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.user.ReadableUser",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/users/{}/",
-            "to_name": "get",
+            "to_name": "get(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.user.ReadableUser",
             "calling_type": "CALL"
           },
           {
@@ -107,9 +107,37 @@
             "from_name": "api/v1/private/user/{}/enabled/",
             "to_name": "UserApi",
             "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/user/profile/",
+            "to_name": "UserApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/users/",
+            "to_name": "UserApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/users/{}/",
+            "to_name": "UserApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Delete Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/user/{}/",
+            "to_name": "UserApi",
+            "calling_type": "CALL"
           }
         ],
-        "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",
+        "calls_between_elements_list_comment": "",
         "nb_calls_between_elements": 19
       }
     ]

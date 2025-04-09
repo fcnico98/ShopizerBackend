@@ -40,9 +40,30 @@
                 "from_name": "createPackage(com.salesmanager.core.model.shipping.PackageDetails,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "createPackage(com.salesmanager.core.model.shipping.PackageDetails,com.salesmanager.core.model.merchant.MerchantStore) return void",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveShippingOrigin(com.salesmanager.shop.model.references.PersistableAddress,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "saveShippingOrigin(com.salesmanager.shop.model.references.PersistableAddress,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "shippingOrigin(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.references.ReadableAddress",
+                "to_name": "getShippingOrigin(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.references.ReadableAddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingConfigurationApi",
+                "to_name": "ShippingFacadeImpl",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
@@ -82,9 +103,23 @@
                 "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
                 "to_name": "shipToCountry$lambda$0(com.salesmanager.core.model.reference.country.Country) return R",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Method",
+                "to_type": "Java Lambda Expression",
+                "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+                "to_name": "listPackages$lambda$0(com.salesmanager.core.model.shipping.Package) return R",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Method",
+                "to_type": "Java Lambda Expression",
+                "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+                "to_name": "getExpeditionConfiguration$lambda$0(java.lang.String) return R",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7
           },
           {

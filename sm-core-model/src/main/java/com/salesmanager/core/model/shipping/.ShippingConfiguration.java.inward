@@ -40,9 +40,79 @@
                 "from_name": "listPackages(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
                 "to_name": "getPackages() return java.util.List.List\u003ccom.salesmanager.core.model.shipping.Package\u003e",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "packageDetails(com.salesmanager.core.model.shipping.ShippingConfiguration,java.lang.String) return com.salesmanager.core.model.shipping.Package",
+                "to_name": "getPackages() return java.util.List.List\u003ccom.salesmanager.core.model.shipping.Package\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "packageExists(com.salesmanager.core.model.shipping.ShippingConfiguration,com.salesmanager.core.model.shipping.PackageDetails) return boolean",
+                "to_name": "getPackages() return java.util.List.List\u003ccom.salesmanager.core.model.shipping.Package\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createPackage(com.salesmanager.core.model.shipping.PackageDetails,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getPackages() return java.util.List.List\u003ccom.salesmanager.core.model.shipping.Package\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveExpeditionConfiguration(com.salesmanager.shop.model.shipping.ExpeditionConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "setTaxOnShipping(boolean) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getDbConfig(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingConfiguration",
+                "to_name": "setShippingType(com.salesmanager.core.model.shipping.ShippingType) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveExpeditionConfiguration(com.salesmanager.shop.model.shipping.ExpeditionConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "setShippingType(com.salesmanager.core.model.shipping.ShippingType) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getExpeditionConfiguration(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shipping.ExpeditionConfiguration",
+                "to_name": "getShipType() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getExpeditionConfiguration(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shipping.ExpeditionConfiguration",
+                "to_name": "isTaxOnShipping() return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getDbConfig(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingConfiguration",
+                "to_name": "ShippingConfiguration()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingFacadeImpl",
+                "to_name": "ShippingConfiguration",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 15
           },
           {
@@ -82,9 +152,72 @@
                 "from_name": "getShippingQuote(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.common.Delivery,java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.reference.language.Languag",
                 "to_name": "getOrderTotalFreeShipping() return java.math.BigDecimal",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.common.Delivery,java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.reference.language.Languag",
+                "to_name": "isFreeShippingEnabled() return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveShippingConfiguration(com.salesmanager.core.model.shipping.ShippingConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "toJSONString() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
+                "to_name": "getShippingPackageType() return com.salesmanager.core.model.shipping.ShippingPackageType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShipToCountryList(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "getShippingType() return com.salesmanager.core.model.shipping.ShippingType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.common.Delivery,java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.reference.language.Languag",
+                "to_name": "getShippingType() return com.salesmanager.core.model.shipping.ShippingType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.common.Delivery,java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.reference.language.Languag",
+                "to_name": "getShippingOptionPriceType() return com.salesmanager.core.model.shipping.ShippingOptionPriceType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getShipToCountryList(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "ShippingConfiguration()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getShippingQuote(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.common.Delivery,java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.reference.language.Languag",
+                "to_name": "ShippingConfiguration()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingServiceImpl",
+                "to_name": "ShippingConfiguration",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 14
           },
           {
@@ -124,9 +257,16 @@
                 "from_name": "getBoxPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
                 "to_name": "getBoxWidth() return int",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DefaultPackagingImpl",
+                "to_name": "ShippingConfiguration",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {

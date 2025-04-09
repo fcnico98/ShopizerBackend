@@ -2,6 +2,7 @@
   "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/Catalog.java]": {
     "00. file [sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/Catalog.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 4,
         "files": [
           {
             "calls_between_elements": [
@@ -39,9 +40,16 @@
                 "from_name": "Catalog",
                 "to_name": "catalog",
                 "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Catalog",
+                "to_name": "catalog",
+                "calling_type": "UPDATE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6,
             "to_file": "Salesmanager.sql"
           },
@@ -50,14 +58,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getEntry",
+                "from_name": "getEntry() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry\u003e",
                 "to_name": "CatalogCategoryEntry",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "setEntry",
+                "from_name": "setEntry(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry\u003e) return void",
                 "to_name": "CatalogCategoryEntry",
                 "calling_type": "USE"
               },
@@ -79,17 +87,30 @@
                 "from_type": "Java Field",
                 "to_type": "Java Constructor",
                 "from_name": "auditSection",
-                "to_name": "AuditSection",
+                "to_name": "AuditSection()",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/audit/AuditSection.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "Catalog",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 3
+        "files_list_comment": ""
       }
     ]
   }

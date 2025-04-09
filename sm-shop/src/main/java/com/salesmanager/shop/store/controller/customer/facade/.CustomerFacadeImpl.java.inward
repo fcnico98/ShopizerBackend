@@ -40,9 +40,72 @@
                 "from_name": "getAuthUser(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.ReadableCustomer",
                 "to_name": "getCustomerByNick(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
+                "to_name": "create(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list(java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.populator.customer.ReadableCustomerList",
+                "to_name": "getListByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.CustomerCriteria,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.populator.customer.ReadableCustomerList",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
+                "to_name": "delete(com.salesmanager.core.model.customer.Customer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.PersistableCustomer",
+                "to_name": "update(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.customer.PersistableCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
+                "to_name": "getCustomerById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
+                "to_name": "getCustomerByUserName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.customer.Customer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "CustomerApi()",
+                "to_name": "CustomerFacadeImpl()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerApi",
+                "to_name": "CustomerFacadeImpl",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerApi",
+                "to_name": "CustomerFacadeImpl",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 14
           },
           {
@@ -82,9 +145,30 @@
                 "from_name": "changePassword(com.salesmanager.shop.store.security.PasswordRequest,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
                 "to_name": "getCustomerByUserName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.customer.Customer",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "AuthenticateCustomerApi()",
+                "to_name": "CustomerFacadeImpl()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuthenticateCustomerApi",
+                "to_name": "CustomerFacadeImpl",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuthenticateCustomerApi",
+                "to_name": "CustomerFacadeImpl",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
@@ -124,9 +208,23 @@
                 "from_name": "CustomerReviewApi()",
                 "to_name": "CustomerFacadeImpl()",
                 "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerReviewApi",
+                "to_name": "CustomerFacadeImpl",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerReviewApi",
+                "to_name": "CustomerFacadeImpl",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7
           },
           {
@@ -166,9 +264,23 @@
                 "from_name": "OrderFacadeImpl()",
                 "to_name": "CustomerFacadeImpl()",
                 "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "CustomerFacadeImpl",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "CustomerFacadeImpl",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7
           },
           {

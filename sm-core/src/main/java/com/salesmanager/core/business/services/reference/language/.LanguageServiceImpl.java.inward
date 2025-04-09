@@ -40,9 +40,30 @@
                 "from_name": "getRequestLanguage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.core.model.reference.language.Language",
                 "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getRESTLanguage(javax.servlet.http.HttpServletRequest,org.springframework.web.context.request.NativeWebRequest) return com.salesmanager.core.model.reference.language.Language",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getServiceLanguage(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class MVC",
+                "to_type": "Java Class",
+                "from_name": "LanguageUtils",
+                "to_name": "LanguageServiceImpl",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
@@ -82,9 +103,23 @@
                 "from_name": "authorizedStore(java.lang.String,java.lang.String) return boolean",
                 "to_name": "defaultLanguage() return com.salesmanager.core.model.reference.language.Language",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "toLocale(com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Locale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserFacadeImpl",
+                "to_name": "LanguageServiceImpl",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7
           },
           {
@@ -367,48 +402,6 @@
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PersistableManufacturerPopulator",
-                "to_name": "LanguageServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductOptionMapper.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "description(com.salesmanager.shop.model.catalog.product.attribute.ProductOptionDescription) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionDescription",
-                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProductOptionMapper",
-                "to_name": "LanguageServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/init/InitializationDatabaseImpl.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createMerchant() return void",
-                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "InitializationDatabaseImpl",
                 "to_name": "LanguageServiceImpl",
                 "calling_type": "CALL"
               }
@@ -730,9 +723,51 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductOptionMapper.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "description(com.salesmanager.shop.model.catalog.product.attribute.ProductOptionDescription) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionDescription",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductOptionMapper",
+                "to_name": "LanguageServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/init/InitializationDatabaseImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createMerchant() return void",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InitializationDatabaseImpl",
+                "to_name": "LanguageServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
-        "files_list_comment": "files list is truncated to first 15 items",
+        "files_list_comment": "",
         "nb_files_with_calling_elements": 32
       }
     ]

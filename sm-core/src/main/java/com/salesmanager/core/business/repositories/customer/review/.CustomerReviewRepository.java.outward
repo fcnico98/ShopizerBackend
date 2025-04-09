@@ -2,46 +2,82 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/review/CustomerReviewRepository.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/review/CustomerReviewRepository.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 4,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByRevieweAndReviewed",
+                "from_name": "findByRevieweAndReviewed(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.customer.review.CustomerReview",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByReviewed",
+                "from_name": "findByReviewed(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findByReviewed",
+                "from_name": "findByReviewed(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
                 "to_name": "CustomerReview",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByReviewer",
+                "from_name": "findByReviewer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findByReviewer",
+                "from_name": "findByReviewer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
                 "to_name": "CustomerReview",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.customer.review.CustomerReview",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "CustomerReviewRepository",
+                "to_name": "CustomerReview",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "CustomerReviewRepository",
+                "to_name": "CustomerReview",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct r from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select r from CustomerReview",
+                "to_name": "Select",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 12,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/review/CustomerReview.java"
           },
@@ -50,28 +86,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByRevieweAndReviewed",
+                "from_name": "findByRevieweAndReviewed(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.customer.review.CustomerReview",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByReviewed",
+                "from_name": "findByReviewed(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByReviewer",
+                "from_name": "findByReviewer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findOne",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.customer.review.CustomerReview",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
@@ -81,9 +117,23 @@
                 "from_name": "CustomerReviewRepository",
                 "to_name": "Customer",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct r from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select r from CustomerReview",
+                "to_name": "Select",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
           },
@@ -92,21 +142,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByReviewed",
+                "from_name": "findByReviewed(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findByReviewer",
+                "from_name": "findByReviewer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "findOne",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.customer.review.CustomerReview",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
@@ -123,15 +173,35 @@
                 "from_name": "select distinct r from",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select r from CustomerReview",
+                "to_name": "Select",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "CustomerReviewRepository",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 3
+        "files_list_comment": ""
       }
     ]
   }

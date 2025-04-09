@@ -2,20 +2,161 @@
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/application/config/MultipleEntryPointsSecurityConfig.java]": {
     "00. file [sm-shop/src/main/java/com/salesmanager/shop/application/config/MultipleEntryPointsSecurityConfig.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 15,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "configure(org.springframework.security.config.annotation.web.builders.HttpSecurity) return void",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder) return void",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authenticationManagerBean() return org.springframework.security.authentication.AuthenticationManager",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 11,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "apiCustomerAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint",
+                "to_name": "setRealmName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "apiCustomerAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint",
+                "to_name": "BasicAuthenticationEntryPoint()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "apiAdminAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint",
+                "to_name": "setRealmName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "apiAdminAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint",
+                "to_name": "BasicAuthenticationEntryPoint()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "servicesAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint",
+                "to_name": "setRealmName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "servicesAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint",
+                "to_name": "BasicAuthenticationEntryPoint()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "shopAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint",
+                "to_name": "setRealmName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "shopAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint",
+                "to_name": "BasicAuthenticationEntryPoint()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MultipleEntryPointsSecurityConfig",
+                "to_name": "BasicAuthenticationEntryPoint",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 9,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/BasicAuthenticationEntryPoint_2623.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder) return void",
+                "to_name": "userDetailsService\u003cUserDetailsService\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder) return void",
+                "to_name": "authenticationProvider(org.springframework.security.authentication.AuthenticationProvider) return org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder) return void",
+                "to_name": "userDetailsService\u003cJWTAdminServicesImpl\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder) return void",
+                "to_name": "userDetailsService\u003cWebUserServices\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MultipleEntryPointsSecurityConfig",
+                "to_name": "AuthenticationManagerBuilder",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 6,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AuthenticationManagerBuilder_19949.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "PostgreSQL Table",
-                "from_name": "apiCustomerAuthenticationEntryPoint",
+                "from_name": "apiCustomerAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint",
                 "to_name": "customer",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "PostgreSQL Table",
-                "from_name": "servicesAuthenticationEntryPoint",
+                "from_name": "servicesAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint",
                 "to_name": "customer",
                 "calling_type": "USE"
               },
@@ -35,9 +176,30 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "configure(org.springframework.security.config.annotation.web.builders.WebSecurity) return void",
+                "to_name": "ignoring() return org.springframework.security.config.annotation.web.builders.WebSecurity.IgnoredRequestConfigurer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MultipleEntryPointsSecurityConfig",
+                "to_name": "WebSecurity",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/WebSecurity_2505.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "authenticationProvider",
-                "to_name": "JWTCustomerAuthenticationProvider",
+                "from_name": "authenticationProvider() return org.springframework.security.authentication.AuthenticationProvider",
+                "to_name": "JWTCustomerAuthenticationProvider()",
                 "calling_type": "CALL"
               },
               {
@@ -56,9 +218,23 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "configure(org.springframework.security.config.annotation.web.builders.HttpSecurity) return void",
+                "to_name": "OPTIONS",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpMethod_31591.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "authenticationProvider",
-                "to_name": "JWTAdminAuthenticationProvider",
+                "from_name": "authenticationProvider() return org.springframework.security.authentication.AuthenticationProvider",
+                "to_name": "JWTAdminAuthenticationProvider()",
                 "calling_type": "CALL"
               },
               {
@@ -78,8 +254,50 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "customerFacade",
-                "to_name": "CustomerFacadeImpl",
+                "from_name": "passwordEncoder() return org.springframework.security.crypto.password.PasswordEncoder",
+                "to_name": "BCryptPasswordEncoder()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MultipleEntryPointsSecurityConfig",
+                "to_name": "BCryptPasswordEncoder",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/BCryptPasswordEncoder_10004.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder) return void",
+                "to_name": "and() return org.springframework.security.config.annotation.SecurityBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "MultipleEntryPointsSecurityConfig",
+                "to_name": "SecurityConfigurerAdapter\u003cO extends java.lang.Object,B extends org.springframework.security.config.annotation.SecurityBuilder\u003cO \u003e\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/SecurityConfigurerAdapter_1941.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "customerFacade() return com.salesmanager.shop.store.controller.customer.facade.CustomerFacade",
+                "to_name": "CustomerFacadeImpl()",
                 "calling_type": "CALL"
               },
               {
@@ -99,8 +317,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "servicesAuthenticationSuccessHandler",
-                "to_name": "ServicesAuthenticationSuccessHandler",
+                "from_name": "servicesAuthenticationSuccessHandler() return com.salesmanager.shop.store.security.ServicesAuthenticationSuccessHandler",
+                "to_name": "ServicesAuthenticationSuccessHandler()",
                 "calling_type": "CALL"
               },
               {
@@ -120,8 +338,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "userAuthenticationSuccessHandler",
-                "to_name": "UserAuthenticationSuccessHandler",
+                "from_name": "userAuthenticationSuccessHandler() return com.salesmanager.shop.admin.security.UserAuthenticationSuccessHandler",
+                "to_name": "UserAuthenticationSuccessHandler()",
                 "calling_type": "CALL"
               },
               {
@@ -141,8 +359,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "credentialsService",
-                "to_name": "CredentialsServiceImpl",
+                "from_name": "credentialsService() return com.salesmanager.shop.store.security.services.CredentialsService",
+                "to_name": "CredentialsServiceImpl()",
                 "calling_type": "CALL"
               },
               {
@@ -162,8 +380,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "authenticationTokenFilter",
-                "to_name": "AuthenticationTokenFilter",
+                "from_name": "authenticationTokenFilter() return com.salesmanager.shop.store.security.AuthenticationTokenFilter",
+                "to_name": "AuthenticationTokenFilter()",
                 "calling_type": "CALL"
               },
               {
@@ -179,8 +397,7 @@
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 8
+        "files_list_comment": ""
       }
     ]
   }

@@ -7,69 +7,69 @@
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v2/private/product/variations/",
-            "to_name": "list",
+            "to_name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Integer,java.lang.Integer) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.mode",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Delete Operation",
             "to_type": "Java Method",
             "from_name": "api/v2/private/product/variation/{}/",
-            "to_name": "delete",
+            "to_name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Put Operation",
             "to_type": "Java Method",
             "from_name": "api/v2/private/product/variation/{}/",
-            "to_name": "update",
+            "to_name": "update(com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v2/private/product/variation/{}/",
-            "to_name": "get",
+            "to_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.ReadableProductVariation",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v2/private/product/variation/unique/",
-            "to_name": "exists",
+            "to_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Method",
             "from_name": "api/v2/private/product/variation/",
-            "to_name": "create",
+            "to_name": "create(com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v2/category/{}/variations/",
-            "to_name": "categoryVariantList",
+            "to_name": "categoryVariantList(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.at",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Method",
             "from_name": "api/v2/product/{}/variation/",
-            "to_name": "calculateVariant",
+            "to_name": "calculateVariant(java.lang.Long,com.salesmanager.shop.model.catalog.product.attribute.ReadableSelectedProductVariant,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletR",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "calculateVariant",
+            "from_name": "calculateVariant(java.lang.Long,com.salesmanager.shop.model.catalog.product.attribute.ReadableSelectedProductVariant,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletR",
             "to_name": "pricingService",
             "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Instantiated Constructor",
-            "from_name": "exists",
+            "from_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e",
             "to_name": "EntityExists\u003cEntityExists\u003e",
             "calling_type": "CALL"
           },
@@ -107,9 +107,37 @@
             "from_name": "api/v2/private/product/variations/",
             "to_name": "ProductVariationApi",
             "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v2/private/product/variation/{}/",
+            "to_name": "ProductVariationApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v2/private/product/variation/unique/",
+            "to_name": "ProductVariationApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v2/category/{}/variations/",
+            "to_name": "ProductVariationApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Delete Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v2/private/product/variation/{}/",
+            "to_name": "ProductVariationApi",
+            "calling_type": "CALL"
           }
         ],
-        "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",
+        "calls_between_elements_list_comment": "",
         "nb_calls_between_elements": 19
       }
     ]

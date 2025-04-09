@@ -40,38 +40,38 @@
                 "from_name": "findByStoreAndCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.tax.taxrate.TaxRate",
                 "to_name": "Select",
                 "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 15
-          },
-          {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepositoryImpl.java",
-            "calls_between_elements": [
+              },
               {
-                "from_type": "JPQL Query",
+                "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "select distinct m from",
+                "from_name": "findByStoreAndLanguage(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "listByCriteria(com.salesmanager.core.model.merchant.MerchantStoreCriteria) return com.salesmanager.core.model.common.GenericEntityList\u003cT\u003e",
+                "from_name": "findByStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class",
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select t from TaxRate",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
                 "to_type": "JPA Entity",
-                "from_name": "MerchantRepositoryImpl",
+                "from_name": "TaxRateRepository",
                 "to_name": "Zone",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 14
+            "comment": "",
+            "nb_calls_between_elements": 15
           },
           {
             "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneServiceImpl.java",
@@ -110,9 +110,100 @@
                 "from_name": "getZones(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
                 "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getZones(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "setName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getZones(java.lang.String,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "setName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getZones(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "setName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addDescription(com.salesmanager.core.model.reference.zone.Zone,com.salesmanager.core.model.reference.zone.ZoneDescription) return void",
+                "to_name": "setDescriptons(java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.ZoneDescription\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ZoneServiceImpl",
+                "to_name": "Zone",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getZones(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getZones(java.lang.String,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getZones(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ZoneServiceImpl",
+                "to_name": "Zone",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
+            "nb_calls_between_elements": 14
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepositoryImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct m from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "listByCriteria(com.salesmanager.core.model.merchant.MerchantStoreCriteria) return com.salesmanager.core.model.common.GenericEntityList\u003cT\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "MerchantRepositoryImpl",
+                "to_name": "Zone",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
             "nb_calls_between_elements": 14
           },
           {
@@ -152,9 +243,44 @@
                 "from_name": "mapZone(com.salesmanager.core.model.reference.language.Language,java.util.Map.Map\u003cjava.lang.String,List\u003ccom.salesmanager.core.model.reference.zone.ZoneDescription\u003e\u003e,java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e,",
                 "to_name": "Zone()",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ZonesLoader",
+                "to_name": "Zone",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "mapZone(com.salesmanager.core.model.reference.language.Language,java.util.Map.Map\u003cjava.lang.String,List\u003ccom.salesmanager.core.model.reference.zone.ZoneDescription\u003e\u003e,java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e,",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "loadIndividualZones() return java.util.List.List\u003cMap\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e\u003e",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ZonesLoader",
+                "to_name": "Zone",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 10
           },
           {
@@ -194,9 +320,30 @@
                 "from_name": "listByLanguageAndCountry(java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "listByLanguage(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select z from Zone",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ZoneRepository",
+                "to_name": "Zone",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9
           },
           {
@@ -236,9 +383,16 @@
                 "from_name": "select distinct m from",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "PageableMerchantRepository",
+                "to_name": "Zone",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 9
           },
           {
@@ -278,9 +432,16 @@
                 "from_name": "select distinct m from",
                 "to_name": "Select",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "MerchantRepository",
+                "to_name": "Zone",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7
           },
           {
@@ -322,7 +483,7 @@
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7
           },
           {
@@ -362,9 +523,16 @@
                 "from_name": "ReadableZonePopulator",
                 "to_name": "Zone",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableZonePopulator",
+                "to_name": "Zone",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {
@@ -404,9 +572,16 @@
                 "from_name": "createZones() return void",
                 "to_name": "Zone",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InitializationDatabaseImpl",
+                "to_name": "Zone",
+                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {
@@ -564,6 +739,62 @@
             "nb_calls_between_elements": 4
           },
           {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "getName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TaxServiceImpl",
+                "to_name": "Zone",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/references/ReadableCountryPopulator.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.reference.country.Country,com.salesmanager.shop.model.references.ReadableCountry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.",
+                "to_name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.ZoneDescription\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.reference.country.Country,com.salesmanager.shop.model.references.ReadableCountry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableCountryPopulator",
+                "to_name": "Zone",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java",
             "calls_between_elements": [
               {
@@ -640,62 +871,6 @@
                 "from_type": "Java Interface",
                 "to_type": "JPA Entity",
                 "from_name": "OrderRepository",
-                "to_name": "Zone",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3
-          },
-          {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "getName() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "getId() return java.lang.Long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TaxServiceImpl",
-                "to_name": "Zone",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3
-          },
-          {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/references/ReadableCountryPopulator.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.core.model.reference.country.Country,com.salesmanager.shop.model.references.ReadableCountry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.",
-                "to_name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.ZoneDescription\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.core.model.reference.country.Country,com.salesmanager.shop.model.references.ReadableCountry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.",
-                "to_name": "getId() return java.lang.Long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ReadableCountryPopulator",
                 "to_name": "Zone",
                 "calling_type": "CALL"
               }
@@ -866,27 +1041,6 @@
                 "from_name": "ReadableCustomerMapper",
                 "to_name": "Zone",
                 "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/order/PersistableOrderPopulator.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "populate(com.salesmanager.shop.model.order.v0.PersistableOrder,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.Ord",
-                "to_name": "Zone",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableOrderPopulator",
-                "to_name": "Zone",
-                "calling_type": "USE"
               }
             ],
             "comment": "",
@@ -1124,6 +1278,27 @@
             "nb_calls_between_elements": 2
           },
           {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/order/PersistableOrderPopulator.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "populate(com.salesmanager.shop.model.order.v0.PersistableOrder,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.Ord",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableOrderPopulator",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java",
             "calls_between_elements": [
               {
@@ -1152,7 +1327,7 @@
             "nb_calls_between_elements": 1
           }
         ],
-        "files_list_comment": "files list is truncated to first 15 items",
+        "files_list_comment": "",
         "nb_files_with_calling_elements": 41
       }
     ]

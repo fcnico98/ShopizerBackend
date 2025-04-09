@@ -2,46 +2,54 @@
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/security/customer/JWTCustomerServicesImpl.java]": {
     "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/security/customer/JWTCustomerServicesImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 4,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "userDetails",
-                "to_name": "getAuditSection",
+                "from_name": "userDetails(java.lang.String,com.salesmanager.core.model.customer.Customer,java.util.Collection.Collection\u003corg.springframework.security.core.GrantedAuthority\u003e) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "userDetails",
-                "to_name": "getPassword",
+                "from_name": "userDetails(java.lang.String,com.salesmanager.core.model.customer.Customer,java.util.Collection.Collection\u003corg.springframework.security.core.GrantedAuthority\u003e) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getPassword() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "userDetails",
-                "to_name": "getBilling",
+                "from_name": "userDetails(java.lang.String,com.salesmanager.core.model.customer.Customer,java.util.Collection.Collection\u003corg.springframework.security.core.GrantedAuthority\u003e) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getBilling() return com.salesmanager.core.model.common.Billing",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "userDetails",
-                "to_name": "getEmailAddress",
+                "from_name": "userDetails(java.lang.String,com.salesmanager.core.model.customer.Customer,java.util.Collection.Collection\u003corg.springframework.security.core.GrantedAuthority\u003e) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getEmailAddress() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "userDetails",
-                "to_name": "getId",
+                "from_name": "userDetails(java.lang.String,com.salesmanager.core.model.customer.Customer,java.util.Collection.Collection\u003corg.springframework.security.core.GrantedAuthority\u003e) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "JWTCustomerServicesImpl",
+                "to_name": "Customer",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
           },
@@ -50,15 +58,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "userDetails",
-                "to_name": "getLastName",
+                "from_name": "userDetails(java.lang.String,com.salesmanager.core.model.customer.Customer,java.util.Collection.Collection\u003corg.springframework.security.core.GrantedAuthority\u003e) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getLastName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "userDetails",
-                "to_name": "getFirstName",
+                "from_name": "userDetails(java.lang.String,com.salesmanager.core.model.customer.Customer,java.util.Collection.Collection\u003corg.springframework.security.core.GrantedAuthority\u003e) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "getFirstName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -78,8 +86,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "userDetails",
-                "to_name": "JWTUser",
+                "from_name": "userDetails(java.lang.String,com.salesmanager.core.model.customer.Customer,java.util.Collection.Collection\u003corg.springframework.security.core.GrantedAuthority\u003e) return org.springframework.security.core.userdetails.UserDetails",
+                "to_name": "JWTUser(java.lang.Long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Collection.Collection\u003c? extends\u003e,boolean,java.util.Date)",
                 "calling_type": "CALL"
               },
               {
@@ -99,8 +107,8 @@
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "JWTCustomerServicesImpl",
-                "to_name": "AbstractCustomerServices",
+                "from_name": "JWTCustomerServicesImpl(com.salesmanager.core.business.services.customer.CustomerService,com.salesmanager.core.business.services.user.PermissionService,com.salesmanager.core.business.services.user.GroupService)",
+                "to_name": "AbstractCustomerServices(com.salesmanager.core.business.services.customer.CustomerService,com.salesmanager.core.business.services.user.PermissionService,com.salesmanager.core.business.services.user.GroupService)",
                 "calling_type": "CALL"
               },
               {
@@ -116,8 +124,7 @@
             "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/AbstractCustomerServices.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 4
+        "files_list_comment": ""
       }
     ]
   }

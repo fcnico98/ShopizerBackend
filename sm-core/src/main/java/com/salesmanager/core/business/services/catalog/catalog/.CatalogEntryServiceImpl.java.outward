@@ -2,34 +2,35 @@
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/catalog/CatalogEntryServiceImpl.java]": {
     "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/catalog/CatalogEntryServiceImpl.java] defines elements relying on elements defined following source files": [
       {
+        "nb_files_with_called_elements": 10,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "remove",
+                "from_name": "remove(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return void",
                 "to_name": "Remove",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "add",
-                "to_name": "setCatalog",
+                "from_name": "add(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry,com.salesmanager.core.model.catalog.catalog.Catalog) return void",
+                "to_name": "setCatalog(com.salesmanager.core.model.catalog.catalog.Catalog) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
-                "from_name": "add",
+                "from_name": "add(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry,com.salesmanager.core.model.catalog.catalog.Catalog) return void",
                 "to_name": "Update",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "list",
+                "from_name": "list(com.salesmanager.core.model.catalog.catalog.Catalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager",
                 "to_name": "CatalogCategoryEntry",
                 "calling_type": "USE"
               },
@@ -39,9 +40,23 @@
                 "from_name": "CatalogEntryServiceImpl",
                 "to_name": "CatalogCategoryEntry",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogEntryServiceImpl",
+                "to_name": "CatalogCategoryEntry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "JPA Entity",
+                "from_name": "CatalogEntryServiceImpl",
+                "to_name": "CatalogCategoryEntry",
+                "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7,
             "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/CatalogCategoryEntry.java"
           },
@@ -49,8 +64,36 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "remove(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return void",
+                "to_name": "delete(java.lang.Object) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "add(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry,com.salesmanager.core.model.catalog.catalog.Catalog) return void",
+                "to_name": "save\u003cCatalogCategoryEntry\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "CatalogEntryServiceImpl",
+                "to_name": "CrudRepository\u003cT extends java.lang.Object,ID extends java.lang.Object\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CrudRepository_21098.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "remove",
+                "from_name": "remove(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -71,8 +114,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "list",
-                "to_name": "getId",
+                "from_name": "list(com.salesmanager.core.model.catalog.catalog.Catalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager",
+                "to_name": "of(int,int) return org.springframework.data.domain.PageRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogEntryServiceImpl",
+                "to_name": "PageRequest",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PageRequest_12637.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list(com.salesmanager.core.model.catalog.catalog.Catalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
@@ -92,8 +156,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "list",
-                "to_name": "getId",
+                "from_name": "list(com.salesmanager.core.model.catalog.catalog.Catalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
@@ -113,8 +177,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "list",
-                "to_name": "getId",
+                "from_name": "list(com.salesmanager.core.model.catalog.catalog.Catalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
@@ -134,8 +198,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "list",
-                "to_name": "listByCatalog",
+                "from_name": "list(com.salesmanager.core.model.catalog.catalog.Catalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager",
+                "to_name": "listByCatalog(java.lang.Long,java.lang.Integer,java.lang.Integer,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -155,8 +219,8 @@
               {
                 "from_type": "Java Constructor",
                 "to_type": "Java Constructor",
-                "from_name": "CatalogEntryServiceImpl",
-                "to_name": "SalesManagerEntityServiceImpl",
+                "from_name": "CatalogEntryServiceImpl(com.salesmanager.core.business.repositories.catalog.catalog.CatalogEntryRepository)",
+                "to_name": "SalesManagerEntityServiceImpl(org.springframework.data.jpa.repository.JpaRepository.JpaRepository\u003cT,ID\u003e)",
                 "calling_type": "CALL"
               },
               {
@@ -170,10 +234,23 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogEntryServiceImpl",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
-        "files_list_comment": "",
-        "nb_files_with_calling_elements": 7
+        "files_list_comment": ""
       }
     ]
   }

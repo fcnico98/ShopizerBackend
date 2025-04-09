@@ -1,0 +1,2588 @@
+{
+  "main facts about source code file [Salesmanager.sql]": {
+    "00. source files defining elements dependent on elements defined in file [Salesmanager.sql]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/resources/bundles/shopizer.properties",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Property Mapping",
+                "to_type": "PostgreSQL Table",
+                "from_name": "label.productedit.choosecategory",
+                "to_name": "category",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Property Mapping",
+                "to_type": "PostgreSQL Table",
+                "from_name": "label.productedit.categoryname",
+                "to_name": "category",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Property Mapping",
+                "to_type": "PostgreSQL Table",
+                "from_name": "label.category.title",
+                "to_name": "category",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Property Mapping",
+                "to_type": "PostgreSQL Table",
+                "from_name": "label.category.parentcategory",
+                "to_name": "category",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Property Mapping",
+                "to_type": "PostgreSQL Table",
+                "from_name": "label.category.moveundercategory",
+                "to_name": "category",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 96
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "count(java.lang.Integer) return int",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByStore(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByParent(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByDepthFilterByFeatured(java.lang.Integer,int,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 24
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/manufacturer/ManufacturerRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByProductInCategoryId(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ManufacturerRepository",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByProductInCategoryId(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "count(java.lang.Integer) return int",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByCodeAndMerchandStore(java.lang.String,java.lang.Integer) return com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 15
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "getByFriendlyUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.util.Locale) return com.salesmanager.core.model.catalog.product.Product",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.Product",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByTaxClass(com.salesmanager.core.model.tax.taxclass.TaxClass) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Product\u003e",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Product\u003e",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria) return com.salesmanager.core.model.catalog.product.ProductList",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 15
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/content/ContentRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.content.Content",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByIdAndLanguage(java.lang.Long,java.lang.Integer) return com.salesmanager.core.model.content.Content",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByCode(java.lang.String,java.lang.Integer,java.lang.Integer) return com.salesmanager.core.model.content.Content",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByCodeLike(com.salesmanager.core.model.content.ContentType,java.lang.String,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.content.Content\u003e",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByCodeAndType(java.lang.String,com.salesmanager.core.model.content.ContentType,java.lang.Integer) return com.salesmanager.core.model.content.Content",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 11
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findBySku(java.lang.String,java.lang.Integer) return java.util.List.List\u003cjava.lang.Object\u003e",
+                "to_name": "merchant_store",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductRepository",
+                "to_name": "merchant_store",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Spring Data Query",
+                "to_type": "PostgreSQL Table",
+                "from_name": "select p.PRODUCT_ID from PRODUCT",
+                "to_name": "merchant_store",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findBySku(java.lang.String,java.lang.Integer) return java.util.List.List\u003cjava.lang.Object\u003e",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "existsBySku(java.lang.String,java.lang.Integer) return boolean",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "REQUEST_CONTENT_OBJECTS",
+                "to_name": "content",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CONTENT_CACHE_KEY",
+                "to_name": "content",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CONTENT_IMAGE",
+                "to_name": "content",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "GROUP_CUSTOMER",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CUSTOMER",
+                "to_name": "customer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/CustomerRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByStore(int) return java.util.List.List\u003ccom.salesmanager.core.model.customer.Customer\u003e",
+                "to_name": "customer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByResetPasswordToken(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "customer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByNick(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "customer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByNick(java.lang.String,int) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "customer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByNick(java.lang.String) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "customer",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CategoryRepositoryImpl",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/Catalog.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Remove",
+                "to_name": "catalog",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Catalog",
+                "to_name": "catalog",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Update",
+                "to_name": "catalog",
+                "calling_type": "UPDATE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Catalog",
+                "to_name": "catalog",
+                "calling_type": "UPDATE"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "catalog",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/CatalogCategoryEntry.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "catalog_entry",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CatalogCategoryEntry",
+                "to_name": "catalog_entry",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Remove",
+                "to_name": "catalog_entry",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CatalogCategoryEntry",
+                "to_name": "catalog_entry",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Update",
+                "to_name": "catalog_entry",
+                "calling_type": "UPDATE"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/optin/CustomerOptin.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "customer_optin",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CustomerOptin",
+                "to_name": "customer_optin",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Remove",
+                "to_name": "customer_optin",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CustomerOptin",
+                "to_name": "customer_optin",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Update",
+                "to_name": "customer_optin",
+                "calling_type": "UPDATE"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Remove",
+                "to_name": "customer",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Customer",
+                "to_name": "customer",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "customer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Customer",
+                "to_name": "customer",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/attribute/CustomerAttribute.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "customer_attribute",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CustomerAttribute",
+                "to_name": "customer_attribute",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Update",
+                "to_name": "customer_attribute",
+                "calling_type": "UPDATE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CustomerAttribute",
+                "to_name": "customer_attribute",
+                "calling_type": "UPDATE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/catalog/CatalogRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "existsByCode(java.lang.String,java.lang.Integer) return boolean",
+                "to_name": "catalog",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByCode(java.lang.String,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.catalog.Catalog\u003e",
+                "to_name": "catalog",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findById(java.lang.Long,java.lang.Integer) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.catalog.Catalog\u003e",
+                "to_name": "catalog",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CatalogRepository",
+                "to_name": "catalog",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/category/Category.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Remove",
+                "to_name": "category",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Category",
+                "to_name": "category",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Category",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/ControllerConstants.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "category",
+                "to_name": "category",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "content",
+                "to_name": "content",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "customer",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "product",
+                "to_name": "product",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/user/PermissionRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByGroups(java.util.Set.Set\u003cjava.lang.Integer\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
+                "to_name": "permission",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findAll() return java.util.List.List\u003ccom.salesmanager.core.model.user.Permission\u003e",
+                "to_name": "permission",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findOne(java.lang.Integer) return com.salesmanager.core.model.user.Permission",
+                "to_name": "permission",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "PermissionRepository",
+                "to_name": "permission",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductAttribute.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_attribute",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductAttribute",
+                "to_name": "product_attribute",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Update",
+                "to_name": "product_attribute",
+                "calling_type": "UPDATE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductAttribute",
+                "to_name": "product_attribute",
+                "calling_type": "UPDATE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImage.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_image",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductImage",
+                "to_name": "product_image",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Update",
+                "to_name": "product_image",
+                "calling_type": "UPDATE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductImage",
+                "to_name": "product_image",
+                "calling_type": "UPDATE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/ProductPrice.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_price",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductPrice",
+                "to_name": "product_price",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Update",
+                "to_name": "product_price",
+                "calling_type": "UPDATE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductPrice",
+                "to_name": "product_price",
+                "calling_type": "UPDATE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/system/OptinRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByMerchantAndCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.system.optin.Optin",
+                "to_name": "optin",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByMerchantAndType(java.lang.Integer,com.salesmanager.core.model.system.optin.OptinType) return com.salesmanager.core.model.system.optin.Optin",
+                "to_name": "optin",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByMerchant(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.system.optin.Optin\u003e",
+                "to_name": "optin",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "OptinRepository",
+                "to_name": "optin",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/init/InitializationDatabaseImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "createSecurityGroups() return void",
+                "to_name": "content",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "InitializationDatabaseImpl",
+                "to_name": "content",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "createSecurityGroups() return void",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "InitializationDatabaseImpl",
+                "to_name": "customer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/reference/country/CountryRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listCountryZonesByLanguage(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "country",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByLanguage(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.reference.country.Country\u003e",
+                "to_name": "country",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByIsoCode(java.lang.String) return com.salesmanager.core.model.reference.country.Country",
+                "to_name": "country",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CountryRepository",
+                "to_name": "country",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/CustomerRepositoryImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.CustomerCriteria) return com.salesmanager.core.model.customer.CustomerList",
+                "to_name": "country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CustomerRepositoryImpl",
+                "to_name": "country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.CustomerCriteria) return com.salesmanager.core.model.customer.CustomerList",
+                "to_name": "customer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CustomerRepositoryImpl",
+                "to_name": "customer",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/currency/Currency.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "currency",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Currency",
+                "to_name": "currency",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Add",
+                "to_name": "currency",
+                "calling_type": "INSERT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Currency",
+                "to_name": "currency",
+                "calling_type": "INSERT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/type/ProductType.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_type",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductType",
+                "to_name": "product_type",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Update",
+                "to_name": "product_type",
+                "calling_type": "UPDATE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductType",
+                "to_name": "product_type",
+                "calling_type": "UPDATE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariant.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Update",
+                "to_name": "product_variant",
+                "calling_type": "UPDATE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductVariant",
+                "to_name": "product_variant",
+                "calling_type": "UPDATE"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_variant",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductVariant",
+                "to_name": "product_variant",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariantGroup.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_variant_group",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductVariantGroup",
+                "to_name": "product_variant_group",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Update",
+                "to_name": "product_variant_group",
+                "calling_type": "UPDATE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductVariantGroup",
+                "to_name": "product_variant_group",
+                "calling_type": "UPDATE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCart.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "shopping_cart",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ShoppingCart",
+                "to_name": "shopping_cart",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Remove",
+                "to_name": "shopping_cart",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ShoppingCart",
+                "to_name": "shopping_cart",
+                "calling_type": "DELETE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "shopping_cart_item",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ShoppingCartItem",
+                "to_name": "shopping_cart_item",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Remove",
+                "to_name": "shopping_cart_item",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ShoppingCartItem",
+                "to_name": "shopping_cart_item",
+                "calling_type": "DELETE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRate.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "TaxRate",
+                "to_name": "tax_rate",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "tax_rate",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "TaxRate",
+                "to_name": "tax_rate",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Remove",
+                "to_name": "tax_rate",
+                "calling_type": "DELETE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/User.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "users",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "User",
+                "to_name": "users",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Update",
+                "to_name": "users",
+                "calling_type": "UPDATE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "User",
+                "to_name": "users",
+                "calling_type": "UPDATE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/reference/zone/ZoneRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByLanguageAndCountry(java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "zone",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByLanguage(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "zone",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ZoneRepository",
+                "to_name": "zone",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/application/config/MultipleEntryPointsSecurityConfig.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "apiCustomerAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "servicesAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "MultipleEntryPointsSecurityConfig",
+                "to_name": "customer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/search/SearchServiceImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "mappings(modules.commons.search.configuration.SearchConfiguration,java.lang.String) return void",
+                "to_name": "language",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "settings(modules.commons.search.configuration.SearchConfiguration,java.lang.String) return void",
+                "to_name": "language",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "SearchServiceImpl",
+                "to_name": "language",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/manufacturer/PageableManufacturerRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByStore(java.lang.Integer,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByStore(java.lang.Integer,java.lang.Integer,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "PageableManufacturerRepository",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/PageableMerchantRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByGroup(java.lang.String,java.lang.Integer,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
+                "to_name": "merchant_store",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "PageableMerchantRepository",
+                "to_name": "merchant_store",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Spring Data Query",
+                "to_type": "PostgreSQL Table",
+                "from_name": "select * from MERCHANT_STORE",
+                "to_name": "merchant_store",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByGroup(java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
+                "to_name": "merchant_store",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "MerchantRepository",
+                "to_name": "merchant_store",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Spring Data Query",
+                "to_type": "PostgreSQL Table",
+                "from_name": "select * from MERCHANT_STORE",
+                "to_name": "merchant_store",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/content/PageContentRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByContentType(com.salesmanager.core.model.content.ContentType,java.lang.Integer,java.lang.Integer,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.content.Content\u003e",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findByContentType(com.salesmanager.core.model.content.ContentType,java.lang.Integer,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.content.Content\u003e",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "PageContentRepository",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/content/ContentRepositoryImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.content.ContentDescription",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listNameByType(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ContentRepositoryImpl",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/StripePayment.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "currency",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "authorize(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com",
+                "to_name": "currency",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "StripePayment",
+                "to_name": "currency",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/filter/CorsFilter.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "preHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object) return boolean",
+                "to_name": "content",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class MVC",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CorsFilter",
+                "to_name": "content",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "downloadProduct(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return byte[]",
+                "to_name": "content",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "FilesController",
+                "to_name": "content",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "sendTransaction(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String,com.salesmanager.core.model.payments.TransactionType,com.salesmanager.core.model.payments.PaymentType,java.math.BigDecimal,com.salesmanag",
+                "to_name": "content",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "BeanStreamPayment",
+                "to_name": "content",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/Content.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Content",
+                "to_name": "content",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "country",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Country",
+                "to_name": "country",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxclass/TaxClass.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "tax_class",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "TaxClass",
+                "to_name": "tax_class",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "zone",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Zone",
+                "to_name": "zone",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/attribute/CustomerOption.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "customer_option",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CustomerOption",
+                "to_name": "customer_option",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/attribute/CustomerOptionSet.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "customer_option_set",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CustomerOptionSet",
+                "to_name": "customer_option_set",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/attribute/CustomerOptionValue.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "customer_option_value",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CustomerOptionValue",
+                "to_name": "customer_option_value",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/review/CustomerReview.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "customer_review",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CustomerReview",
+                "to_name": "customer_review",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "language",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Language",
+                "to_name": "language",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "sendResetPasswordEmail(com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "language",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "UserFacadeImpl",
+                "to_name": "language",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/user/PermissionRepositoryImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "to_name": "permission",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "PermissionRepositoryImpl",
+                "to_name": "permission",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/Permission.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "permission",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Permission",
+                "to_name": "permission",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/utils/query/ProductQueryBuilder.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "buildProductQuery() return java.lang.String",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductQueryBuilder",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Product",
+                "to_name": "product",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/availability/ProductAvailability.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_availability",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductAvailability",
+                "to_name": "product_availability",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/file/DigitalProduct.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_digital",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "DigitalProduct",
+                "to_name": "product_digital",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductOptionSet.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_option_set",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductOptionSet",
+                "to_name": "product_option_set",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductOption.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_option",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductOption",
+                "to_name": "product_option",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductOptionValue.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_option_value",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductOptionValue",
+                "to_name": "product_option_value",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/catalog/PageableCatalogRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByStore(java.lang.Integer,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.catalog.Catalog\u003e",
+                "to_name": "catalog",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "PageableCatalogRepository",
+                "to_name": "catalog",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/PageableCategoryRepositoryImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByStore(java.lang.Integer,java.lang.Integer,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "to_name": "category",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "PageableCategoryRepositoryImpl",
+                "to_name": "category",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/ProductAttributeRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "findOptionsByCategoryLineage(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductAttributeRepository",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/PageableCategoryRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "listByStore(java.lang.Integer,java.lang.Integer,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
+                "from_name": "PageableCategoryRepository",
+                "to_name": "category",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/category/CategoryDescription.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "category_description",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CategoryDescription",
+                "to_name": "category_description",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "doFilterInternal(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.FilterChain) return void",
+                "to_name": "content",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "AuthenticationTokenFilter",
+                "to_name": "content",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/relationship/ProductRelationship.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_relationship",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductRelationship",
+                "to_name": "product_relationship",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/review/ProductReview.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_review",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductReview",
+                "to_name": "product_review",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariantImage.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_var_image",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductVariantImage",
+                "to_name": "product_var_image",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variation/ProductVariation.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "product_variation",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductVariation",
+                "to_name": "product_variation",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingOrigin.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "shiping_origin",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ShippingOrigin",
+                "to_name": "shiping_origin",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shipping/Quote.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "shipping_quote",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Quote",
+                "to_name": "shipping_quote",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartAttributeItem.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Remove",
+                "to_name": "shopping_cart_attr_item",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ShoppingCartAttributeItem",
+                "to_name": "shopping_cart_attr_item",
+                "calling_type": "DELETE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/Group.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "sm_group",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Group",
+                "to_name": "sm_group",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "sm_transaction",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Transaction",
+                "to_name": "sm_transaction",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/SystemConfiguration.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "system_configuration",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "SystemConfiguration",
+                "to_name": "system_configuration",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/manufacturer/Manufacturer.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Manufacturer",
+                "to_name": "manufacturer",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/MerchantConfiguration.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "merchant_configuration",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "MerchantConfiguration",
+                "to_name": "merchant_configuration",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/MerchantLog.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "merchant_log",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "MerchantLog",
+                "to_name": "merchant_log",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "merchant_store",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "MerchantStore",
+                "to_name": "merchant_store",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "module_configuration",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "IntegrationModule",
+                "to_name": "module_configuration",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/optin/Optin.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "optin",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Optin",
+                "to_name": "optin",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/orderproduct/OrderProduct.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "order_product",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "OrderProduct",
+                "to_name": "order_product",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/orderproduct/OrderProductDownload.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "order_product_download",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "OrderProductDownload",
+                "to_name": "order_product_download",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/orderstatus/OrderStatusHistory.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "order_status_history",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "OrderStatusHistory",
+                "to_name": "order_status_history",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotal.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "order_total",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "OrderTotal",
+                "to_name": "order_total",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/Order.java",
+            "calls_between_elements": [
+              {
+                "from_type": "JPA Entity Operation",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Select",
+                "to_name": "orders",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA Entity",
+                "to_type": "PostgreSQL Table",
+                "from_name": "Order",
+                "to_name": "orders",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/aws/S3ProductContentFileManager.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "DEFAULT_BUCKET_NAME",
+                "to_name": "content",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          },
+          {
+            "from_file": "sm-shop/src/main/resources/bundles/shipping.properties",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Property Mapping",
+                "to_type": "PostgreSQL Table",
+                "from_name": "module.shipping.ups.package.02",
+                "to_name": "customer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "MANUFACTURER_FACET_NAME",
+                "to_name": "manufacturer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/infinispan/CmsImageFileManagerImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ROOT_NAME",
+                "to_name": "product",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          }
+        ],
+        "files_list_comment": "files list is truncated to first 15 items",
+        "nb_files_with_calling_elements": 95
+      }
+    ]
+  }
+}

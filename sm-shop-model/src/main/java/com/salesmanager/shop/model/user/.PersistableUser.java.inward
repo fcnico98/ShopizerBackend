@@ -4,41 +4,87 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateEnabled(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.user.PersistableUser) return void",
+                "to_name": "isActive() return boolean",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 2
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.user.PersistableUser) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "getUserName() return java.lang.String",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 3
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "getUserName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "authorizedGroups(java.lang.String,com.salesmanager.shop.model.user.PersistableUser) return void",
+                "to_name": "getGroups() return java.util.List.List\u003ccom.salesmanager.shop.model.security.PersistableGroup\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "getRepeatPassword() return java.lang.String",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java",
-            "comment": "",
+            "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 8
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/user/PersistableUserPopulator.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 5
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "isActive() return boolean",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "getUserName() return java.lang.String",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "getStore() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "getGroups() return java.util.List.List\u003ccom.salesmanager.shop.model.security.PersistableGroup\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "getPassword() return java.lang.String",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/user/PersistableUserPopulator.java",
-            "comment": "",
+            "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 7
           }
         ],

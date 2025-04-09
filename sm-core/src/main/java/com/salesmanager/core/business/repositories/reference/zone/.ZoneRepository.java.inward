@@ -4,13 +4,44 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.zone.Zone",
+                "to_name": "findByCode(java.lang.String) return com.salesmanager.core.model.reference.zone.Zone",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getZones(java.lang.String,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "listByLanguageAndCountry(java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getZones(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "listByLanguageAndCountry(java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getZones(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "listByLanguage(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.Zone\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ZoneServiceImpl",
+                "to_name": "ZoneRepository",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 5
           }

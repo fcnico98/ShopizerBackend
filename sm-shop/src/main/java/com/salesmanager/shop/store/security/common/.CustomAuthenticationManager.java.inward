@@ -4,35 +4,65 @@
       {
         "files": [
           {
-            "calling_types": [
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/customer/JWTCustomerAuthenticationManager.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "attemptAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return org.springframework.security.core.Authentication",
+                "to_name": "getTokenHeader() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "JWTCustomerAuthenticationManager",
+                "to_name": "CustomAuthenticationManager",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/admin/JWTAdminAuthenticationManager.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "attemptAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return org.springframework.security.core.Authentication",
+                "to_name": "getTokenHeader() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "JWTAdminAuthenticationManager",
+                "to_name": "CustomAuthenticationManager",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doFilterInternal(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.FilterChain) return void",
+                "to_name": "authenticateRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuthenticationTokenFilter",
+                "to_name": "CustomAuthenticationManager",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

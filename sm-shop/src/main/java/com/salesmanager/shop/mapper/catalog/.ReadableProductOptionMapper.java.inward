@@ -4,57 +4,107 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductOptionFacadeImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOption(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.attribute.api.ReadableProductOptionEntity",
+                "to_name": "convert(com.salesmanager.core.model.catalog.product.attribute.ProductOption,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.attribute.api.Readab",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "options(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,int,int) return com.salesmanager.shop.model.catalog.product.attribute.api.ReadableProductOptionList",
+                "to_name": "convert(com.salesmanager.core.model.catalog.product.attribute.ProductOption,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.attribute.api.Readab",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOption(com.salesmanager.shop.model.catalog.product.attribute.api.PersistableProductOptionEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.prod",
+                "to_name": "convert(com.salesmanager.core.model.catalog.product.attribute.ProductOption,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.attribute.api.Readab",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "options$lambda$0(com.salesmanager.core.model.catalog.product.attribute.ProductOption) return R",
+                "to_name": "convert(com.salesmanager.core.model.catalog.product.attribute.ProductOption,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.attribute.api.Readab",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductOptionFacadeImpl",
+                "to_name": "ReadableProductOptionMapper",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductOptionFacadeImpl.java",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableProductAttributeMapper.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.catalog.product.attribute.ProductAttribute,com.salesmanager.shop.model.catalog.product.attribute.api.ReadableProductAttributeEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.",
+                "to_name": "convert(com.salesmanager.core.model.catalog.product.attribute.ProductOption,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.attribute.api.Readab",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableProductAttributeMapper",
+                "to_name": "ReadableProductOptionMapper",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableProductAttributeMapper.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/api/ReadableProductOptionFull.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "descriptions",
+                "to_name": "ArrayList\u003cProductOptionDescription\u003e",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 1
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/api/PersistableProductOptionEntity.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "descriptions",
+                "to_name": "ArrayList\u003cProductOptionDescription\u003e",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 1
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/PersistableProductOption.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Field",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "descriptions",
+                "to_name": "ArrayList\u003cProductOptionDescription\u003e",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/PersistableProductOption.java",
             "comment": "",
             "nb_calls_between_elements": 1
           }

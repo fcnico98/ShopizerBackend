@@ -4,28 +4,58 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 2
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria) return com.salesmanager.core.model.catalog.product.ProductList",
+                "to_name": "getAttributeValue() return java.lang.String",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria) return com.salesmanager.core.model.catalog.product.ProductList",
+                "to_name": "getAttributeCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductRepositoryImpl",
+                "to_name": "AttributeCriteria",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/ProductCriteria.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setAttributeCriteria(java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.AttributeCriteria\u003e) return void",
+                "to_name": "AttributeCriteria",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getAttributeCriteria() return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.AttributeCriteria\u003e",
+                "to_name": "AttributeCriteria",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductCriteria",
+                "to_name": "AttributeCriteria",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/ProductCriteria.java",
             "comment": "",
             "nb_calls_between_elements": 3
           }

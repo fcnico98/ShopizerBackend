@@ -4,24 +4,37 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "OrderServiceImpl",
+                "to_name": "OrderValueType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "caculateOrder(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order",
+                "to_name": "ONE_TIME",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotal.java",
+            "calls_between_elements": [
               {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Field",
+                "to_type": "Java Enum Item",
+                "from_name": "orderValueType",
+                "to_name": "ONE_TIME",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotal.java",
             "comment": "",
             "nb_calls_between_elements": 1
           }

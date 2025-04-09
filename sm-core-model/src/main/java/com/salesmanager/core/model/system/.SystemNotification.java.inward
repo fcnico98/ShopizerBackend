@@ -4,43 +4,86 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/audit/AuditListener.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 2
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onUpdate(java.lang.Object) return void",
+                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onSave(java.lang.Object) return void",
+                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onUpdate(java.lang.Object) return void",
+                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onSave(java.lang.Object) return void",
+                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuditListener",
+                "to_name": "SystemNotification",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/audit/AuditListener.java",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/PersistableAuditAspect.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 2
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "afterReturning(org.aspectj.lang.JoinPoint,java.lang.Object) return void",
+                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "afterReturning(org.aspectj.lang.JoinPoint,java.lang.Object) return void",
+                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableAuditAspect",
+                "to_name": "SystemNotification",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/PersistableAuditAspect.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/system/SystemNotificationRepository.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "SystemNotificationRepository",
+                "to_name": "SystemNotification",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/system/SystemNotificationRepository.java",
             "comment": "",
             "nb_calls_between_elements": 1
           }

@@ -4,32 +4,79 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/shipping/model/CustomShippingQuotesRegion.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "toJSONString() return java.lang.String",
+                "to_name": "toJSONString() return java.lang.String",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setQuoteItems(java.util.List.List\u003ccom.salesmanager.core.modules.integration.shipping.model.CustomShippingQuoteWeightItem\u003e) return void",
+                "to_name": "CustomShippingQuoteWeightItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getQuoteItems() return java.util.List.List\u003ccom.salesmanager.core.modules.integration.shipping.model.CustomShippingQuoteWeightItem\u003e",
+                "to_name": "CustomShippingQuoteWeightItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomShippingQuotesRegion",
+                "to_name": "CustomShippingQuoteWeightItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomShippingQuotesRegion",
+                "to_name": "CustomShippingQuoteWeightItem",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/shipping/model/CustomShippingQuotesRegion.java",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/CustomWeightBasedShippingQuote.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "getMaximumWeight() return int",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "CustomShippingQuoteWeightItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomWeightBasedShippingQuote",
+                "to_name": "CustomShippingQuoteWeightItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomWeightBasedShippingQuote",
+                "to_name": "CustomShippingQuoteWeightItem",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/CustomWeightBasedShippingQuote.java",
             "comment": "",
             "nb_calls_between_elements": 4
           }

@@ -4,13 +4,44 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxClassServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+                "to_name": "findByStoreAndCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.tax.taxclass.TaxClass",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.tax.taxclass.TaxClass",
+                "to_name": "findByStoreAndCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.tax.taxclass.TaxClass",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByCode(java.lang.String) return com.salesmanager.core.model.tax.taxclass.TaxClass",
+                "to_name": "findByCode(java.lang.String) return com.salesmanager.core.model.tax.taxclass.TaxClass",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxclass.TaxClass\u003e",
+                "to_name": "findByStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxclass.TaxClass\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "TaxClassServiceImpl",
+                "to_name": "TaxClassRepository",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxClassServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 5
           }

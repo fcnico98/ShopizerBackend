@@ -4,173 +4,422 @@
       {
         "files": [
           {
-            "calling_types": [
-              {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
-              },
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 2
-              },
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              },
-              {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 3
-              }
-            ],
             "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java",
-            "comment": "",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "PaymentServiceImpl",
+                "to_name": "TransactionType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "processPayment(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Payment,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.co",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "PaymentServiceImpl",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processPayment(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Payment,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.co",
+                "to_name": "valueOf(java.lang.String) return com.salesmanager.core.model.payments.TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "processPayment(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Payment,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.co",
+                "to_name": "AUTHORIZECAPTURE",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 7
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
-              },
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/PayPalExpressCheckoutPayment.java",
-            "comment": "calling_types list is truncated to first 5 items",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "TransactionType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
+                "to_name": "REFUND",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 7
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
-              },
-              {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 2
-              }
-            ],
             "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java",
-            "comment": "calling_types list is truncated to first 5 items",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "BeanStreamPayment",
+                "to_name": "TransactionType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
+                "to_name": "REFUND",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.TransactionType,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com.salesmanager.cor",
+                "to_name": "AUTHORIZECAPTURE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "AUTHORIZECAPTURE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
+                "to_name": "CAPTURE",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 7
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
-              },
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              },
-              {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 3
-              }
-            ],
             "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java",
-            "comment": "",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "TransactionType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.TransactionType",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.TransactionType",
+                "to_name": "OK",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.TransactionType",
+                "to_name": "REFUND",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 6
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java",
-            "comment": "calling_types list is truncated to first 5 items",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "Stripe3Payment",
+                "to_name": "TransactionType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "AUTHORIZECAPTURE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
+                "to_name": "CAPTURE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
+                "to_name": "CAPTURE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "authorize(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com",
+                "to_name": "AUTHORIZE",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 6
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/StripePayment.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "StripePayment",
+                "to_name": "TransactionType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "AUTHORIZECAPTURE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
+                "to_name": "CAPTURE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
+                "to_name": "CAPTURE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "authorize(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com",
+                "to_name": "AUTHORIZE",
+                "calling_type": "READ"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BraintreePayment.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "BraintreePayment",
+                "to_name": "TransactionType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
+                "to_name": "REFUND",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "AUTHORIZECAPTURE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
+                "to_name": "CAPTURE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "authorize(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com",
+                "to_name": "AUTHORIZE",
+                "calling_type": "READ"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/payments/TransactionServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "getRefundableTransaction(com.salesmanager.core.model.order.Order) return com.salesmanager.core.model.payments.Transaction",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "getCapturableTransaction(com.salesmanager.core.model.order.Order) return com.salesmanager.core.model.payments.Transaction",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "TransactionServiceImpl",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/payments/TransactionServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/MoneyOrderPayment.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "MoneyOrderPayment",
+                "to_name": "TransactionType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "AUTHORIZECAPTURE",
+                "calling_type": "READ"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderServiceImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "getCapturableOrders(com.salesmanager.core.model.merchant.MerchantStore,java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.order.Order\u003e",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "OrderServiceImpl",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/order/transaction/PersistableTransactionPopulator.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "PersistableTransactionPopulator",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.order.transaction.PersistableTransaction,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+                "to_name": "valueOf(java.lang.String) return com.salesmanager.core.model.payments.TransactionType",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/order/transaction/PersistablePaymentPopulator.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "PersistablePaymentPopulator",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.order.transaction.PersistablePayment,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core",
+                "to_name": "valueOf(java.lang.String) return com.salesmanager.core.model.payments.TransactionType",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/Payment.java",
+            "calls_between_elements": [
               {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Field",
+                "to_type": "Java Enum Item",
+                "from_name": "transactionType",
+                "to_name": "AUTHORIZECAPTURE",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/Payment.java",
             "comment": "",
             "nb_calls_between_elements": 1
           }

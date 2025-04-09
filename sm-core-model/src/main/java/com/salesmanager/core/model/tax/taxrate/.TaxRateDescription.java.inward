@@ -4,35 +4,79 @@
       {
         "files": [
           {
-            "calling_types": [
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/PersistableTaxRateMapper.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "taxRate(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.PersistableTaxRate) return com.salesmanager.core.model.tax.taxrate.TaxRate",
+                "to_name": "setTaxRate(com.salesmanager.core.model.tax.taxrate.TaxRate) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "description(com.salesmanager.shop.model.tax.TaxRateDescription) return com.salesmanager.core.model.tax.taxrate.TaxRateDescription",
+                "to_name": "TaxRateDescription()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableTaxRateMapper",
+                "to_name": "TaxRateDescription",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRate.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e",
+                "to_name": "TaxRateDescription",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setDescriptions(java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e) return void",
+                "to_name": "TaxRateDescription",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TaxRate",
+                "to_name": "TaxRateDescription",
+                "calling_type": "USE"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/ReadableTaxRateMapper.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "convertDescription(java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.shop.model.tax.ReadableTaxRateDescription\u003e",
+                "to_name": "TaxRateDescription",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableTaxRateMapper",
+                "to_name": "TaxRateDescription",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/ReadableTaxRateMapper.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

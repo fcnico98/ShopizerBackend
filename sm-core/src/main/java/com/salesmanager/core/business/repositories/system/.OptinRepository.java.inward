@@ -4,13 +4,30 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/optin/OptinServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOptinByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.system.optin.Optin",
+                "to_name": "findByMerchantAndCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.system.optin.Optin",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOptinByMerchantAndType(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.system.optin.OptinType) return com.salesmanager.core.model.system.optin.Optin",
+                "to_name": "findByMerchantAndType(java.lang.Integer,com.salesmanager.core.model.system.optin.OptinType) return com.salesmanager.core.model.system.optin.Optin",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "OptinServiceImpl",
+                "to_name": "OptinRepository",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/optin/OptinServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 3
           }

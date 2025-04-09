@@ -4,24 +4,58 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/common/CustomAuthenticationManager.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "unsuccess(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return void",
+                "to_name": "unSuccessfullAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "success(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication) return void",
+                "to_name": "successfullAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.Authentication) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "authenticateRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return void",
+                "to_name": "attemptAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return org.springframework.security.core.Authentication",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomAuthenticationManager",
+                "to_name": "JWTCustomerAuthenticationManager",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/common/CustomAuthenticationManager.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java",
+            "calls_between_elements": [
               {
-                "calling_type": "FIRE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "AuthenticationTokenFilter()",
+                "to_name": "JWTCustomerAuthenticationManager()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuthenticationTokenFilter",
+                "to_name": "JWTCustomerAuthenticationManager",
+                "calling_type": "FIRE"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

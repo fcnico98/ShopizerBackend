@@ -4,17 +4,44 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/init/InitializationDatabaseImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 4
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createSecurityGroups() return void",
+                "to_name": "build() return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createSecurityGroups() return void",
+                "to_name": "addPermission(com.salesmanager.core.model.user.Permission) return com.salesmanager.core.business.utils.SecurityGroupsBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createSecurityGroups() return void",
+                "to_name": "addGroup(java.lang.String,com.salesmanager.core.model.user.GroupType) return com.salesmanager.core.business.utils.SecurityGroupsBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "createSecurityGroups() return void",
+                "to_name": "SecurityGroupsBuilder()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InitializationDatabaseImpl",
+                "to_name": "SecurityGroupsBuilder",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/init/InitializationDatabaseImpl.java",
             "comment": "",
             "nb_calls_between_elements": 5
           }

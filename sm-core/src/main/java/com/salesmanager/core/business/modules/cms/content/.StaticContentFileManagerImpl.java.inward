@@ -4,28 +4,72 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listFolders(com.salesmanager.core.model.merchant.MerchantStore,java.util.Optional.Optional\u003cjava.lang.String\u003e) return java.util.List.List\u003cjava.lang.String\u003e",
+                "to_name": "listFolders(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return java.util.List.List\u003cjava.lang.String\u003e",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 3
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addFolder(com.salesmanager.core.model.merchant.MerchantStore,java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.String) return void",
+                "to_name": "addFolder(java.lang.String,java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeFolder(com.salesmanager.core.model.merchant.MerchantStore,java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.String) return void",
+                "to_name": "removeFolder(java.lang.String,java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeFiles(java.lang.String) return void",
+                "to_name": "removeFiles(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getContentFiles(java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
+                "to_name": "getFiles(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentServiceImpl.java",
-            "comment": "calling_types list is truncated to first 5 items",
+            "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 16
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/file/DigitalProductServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductFile(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.file.DigitalProduct,com.salesmanager.core.model.content.InputContentFile) return void",
+                "to_name": "addFile(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.InputContentFile) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(com.salesmanager.core.model.catalog.product.file.DigitalProduct) return void",
+                "to_name": "removeFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DigitalProductServiceImpl",
+                "to_name": "StaticContentFileManagerImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/file/DigitalProductServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 3
           }

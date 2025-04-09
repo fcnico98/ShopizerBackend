@@ -4,46 +4,93 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/utils/DataUtils.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "getMeasure(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
+                "to_name": "MeasureUnit",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "getWeight(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
+                "to_name": "MeasureUnit",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "DataUtils",
+                "to_name": "MeasureUnit",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/utils/DataUtils.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/store/facade/StoreFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "convertPersistableMerchantStoreToMerchantStore(com.salesmanager.shop.model.store.PersistableMerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.merchant.MerchantStore",
+                "to_name": "MeasureUnit",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "StoreFacadeImpl",
+                "to_name": "MeasureUnit",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/USPSShippingQuote.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "MeasureUnit",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "USPSShippingQuote",
+                "to_name": "MeasureUnit",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Field",
+                "to_type": "Java Enum",
+                "from_name": "seizeunitcode",
+                "to_name": "MeasureUnit",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Enum",
+                "from_name": "weightunitcode",
+                "to_name": "MeasureUnit",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

@@ -4,24 +4,86 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/configuration/events/products/listeners/IndexProductEventListener.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteProductAttribute(com.salesmanager.core.business.configuration.events.products.DeleteProductAttributeEvent) return void",
+                "to_name": "index(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveProductAttribute(com.salesmanager.core.business.configuration.events.products.SaveProductAttributeEvent) return void",
+                "to_name": "index(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveProductImage(com.salesmanager.core.business.configuration.events.products.SaveProductImageEvent) return void",
+                "to_name": "index(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteProductVariant(com.salesmanager.core.business.configuration.events.products.DeleteProductVariantEvent) return void",
+                "to_name": "index(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveProductVariant(com.salesmanager.core.business.configuration.events.products.SaveProductVariantEvent) return void",
+                "to_name": "index(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/configuration/events/products/listeners/IndexProductEventListener.java",
-            "comment": "calling_types list is truncated to first 5 items",
+            "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 8
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "indexAllData(com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "index(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "indexAllData$lambda$0(com.salesmanager.core.model.catalog.product.Product) return void",
+                "to_name": "index(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "search(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer) return modules.commons.search.request.SearchResponse",
+                "to_name": "search(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,modules.commons.search.request.SearchRequest,int,int) return modules.commons.search.request.SearchResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "autocompleteRequest(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ValueList",
+                "to_name": "searchKeywords(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,modules.commons.search.request.SearchRequest,int) return modules.commons.search.request.SearchResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SearchFacadeImpl",
+                "to_name": "SearchServiceImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java",
             "comment": "",
             "nb_calls_between_elements": 5
           }

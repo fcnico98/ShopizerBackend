@@ -4,24 +4,44 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/configuration/events/products/listeners/IndexProductEventListener.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveProductVariant(com.salesmanager.core.business.configuration.events.products.SaveProductVariantEvent) return void",
+                "to_name": "getVariant() return com.salesmanager.core.model.catalog.product.variant.ProductVariant",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "IndexProductEventListener",
+                "to_name": "SaveProductVariantEvent",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/configuration/events/products/listeners/IndexProductEventListener.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/configuration/events/products/PublishProductAspect.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "createProductVariantEvent(org.aspectj.lang.JoinPoint,java.lang.Object) return void",
+                "to_name": "SaveProductVariantEvent(java.lang.Object,com.salesmanager.core.model.catalog.product.variant.ProductVariant,com.salesmanager.core.model.catalog.product.Product)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PublishProductAspect",
+                "to_name": "SaveProductVariantEvent",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/configuration/events/products/PublishProductAspect.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

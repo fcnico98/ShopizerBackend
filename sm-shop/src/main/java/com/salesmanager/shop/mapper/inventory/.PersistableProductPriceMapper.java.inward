@@ -4,24 +4,44 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductPriceFacadeImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save(com.salesmanager.shop.model.catalog.product.PersistableProductPrice,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.Long",
+                "to_name": "convert(com.salesmanager.shop.model.catalog.product.PersistableProductPrice,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.price.ProductPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductPriceFacadeImpl",
+                "to_name": "PersistableProductPriceMapper",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductPriceFacadeImpl.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/inventory/PersistableInventoryMapper.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "getLanguage(com.salesmanager.shop.model.catalog.product.ProductPriceDescription) return com.salesmanager.core.model.reference.language.Language",
+                "to_name": "ofNullable\u003cLanguage\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "getProductPriceDescriptions(com.salesmanager.core.model.catalog.product.price.ProductPrice,java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ProductPriceDescription\u003e) return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.price",
+                "to_name": "emptySet\u003cT\u003e",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/inventory/PersistableInventoryMapper.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

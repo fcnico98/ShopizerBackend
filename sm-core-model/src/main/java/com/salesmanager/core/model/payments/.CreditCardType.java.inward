@@ -4,32 +4,65 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "validateOrder(com.salesmanager.shop.model.order.ShopOrder,org.springframework.validation.BindingResult,java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "CreditCardType",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "CreditCardType",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 5
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "CreditCardType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "CreditCardType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "validateOrder(com.salesmanager.shop.model.order.ShopOrder,org.springframework.validation.BindingResult,java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "DISCOVERY",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java",
-            "comment": "calling_types list is truncated to first 5 items",
+            "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 14
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "validateCreditCardNumber(java.lang.String,com.salesmanager.core.model.payments.CreditCardType) return void",
+                "to_name": "CreditCardType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "PaymentServiceImpl",
+                "to_name": "CreditCardType",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

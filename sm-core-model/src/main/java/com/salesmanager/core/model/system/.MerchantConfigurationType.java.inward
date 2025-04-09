@@ -4,39 +4,93 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/MerchantConfigurationServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "saveMerchantConfig(com.salesmanager.core.model.system.MerchantConfig,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "MerchantConfigurationType",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.MerchantConfig",
+                "to_name": "MerchantConfigurationType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "MerchantConfigurationServiceImpl",
+                "to_name": "MerchantConfigurationType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "MerchantConfigurationServiceImpl",
+                "to_name": "MerchantConfigurationType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "saveMerchantConfig(com.salesmanager.core.model.system.MerchantConfig,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "CONFIG",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/MerchantConfigurationServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/store/facade/StoreFacadeImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "StoreFacadeImpl",
+                "to_name": "MerchantConfigurationType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "getMerchantConfigEntities(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.shop.model.store.MerchantConfigEntity\u003e",
+                "to_name": "SOCIAL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "createBrand(java.lang.String,com.salesmanager.shop.model.store.PersistableBrand) return void",
+                "to_name": "SOCIAL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Enum Item",
+                "from_name": "createBrand$lambda$0(com.salesmanager.shop.model.store.MerchantConfigEntity) return R",
+                "to_name": "SOCIAL",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/store/facade/StoreFacadeImpl.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "calling_types": [
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/MerchantConfiguration.java",
+            "calls_between_elements": [
               {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Field",
+                "to_type": "Java Enum Item",
+                "from_name": "merchantConfigurationType",
+                "to_name": "INTEGRATION",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/MerchantConfiguration.java",
             "comment": "",
             "nb_calls_between_elements": 1
           }

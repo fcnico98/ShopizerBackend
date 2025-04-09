@@ -4,35 +4,72 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getDescriptions() return java.util.Set.Set\u003ccom.salesmanager.core.model.reference.country.CountryDescription\u003e",
+                "to_name": "CountryDescription",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setDescriptions(java.util.Set.Set\u003ccom.salesmanager.core.model.reference.country.CountryDescription\u003e) return void",
+                "to_name": "CountryDescription",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "Country",
+                "to_name": "CountryDescription",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addCountryDescription(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.country.CountryDescription) return void",
+                "to_name": "setCountry(com.salesmanager.core.model.reference.country.Country) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryServiceImpl",
+                "to_name": "CountryDescription",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/init/InitializationDatabaseImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "createCountries() return void",
+                "to_name": "CountryDescription(com.salesmanager.core.model.reference.language.Language,java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InitializationDatabaseImpl",
+                "to_name": "CountryDescription",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/init/InitializationDatabaseImpl.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

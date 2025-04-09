@@ -4,35 +4,65 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/order/OrderRepositoryImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "listOrders(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
+                "to_name": "CriteriaOrderBy",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
+                "to_name": "CriteriaOrderBy",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "OrderRepositoryImpl",
+                "to_name": "CriteriaOrderBy",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/order/OrderRepositoryImpl.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ServiceRequestCriteriaBuilderUtils.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "ServiceRequestCriteriaBuilderUtils",
+                "to_name": "CriteriaOrderBy",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildRequest(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e,javax.servlet.http.HttpServletRequest) return com.salesmanager.core.model.common.Criteria",
+                "to_name": "valueOf(java.lang.String) return com.salesmanager.core.model.common.CriteriaOrderBy",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ServiceRequestCriteriaBuilderUtils.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/Criteria.java",
+            "calls_between_elements": [
               {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Field",
+                "to_type": "Java Enum Item",
+                "from_name": "orderBy",
+                "to_name": "DESC",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/Criteria.java",
             "comment": "",
             "nb_calls_between_elements": 1
           }

@@ -4,39 +4,79 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ServiceRequestCriteriaBuilderUtils.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 3
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildRequest(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e,javax.servlet.http.HttpServletRequest) return com.salesmanager.core.model.common.Criteria",
+                "to_name": "setStores(boolean) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildRequest(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e,javax.servlet.http.HttpServletRequest) return com.salesmanager.core.model.common.Criteria",
+                "to_name": "setRetailers(boolean) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "buildRequest(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e,javax.servlet.http.HttpServletRequest) return com.salesmanager.core.model.common.Criteria",
+                "to_name": "MerchantStoreCriteria()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ServiceRequestCriteriaBuilderUtils",
+                "to_name": "MerchantStoreCriteria",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ServiceRequestCriteriaBuilderUtils.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/store/facade/StoreFacadeImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findAll(com.salesmanager.core.model.merchant.MerchantStoreCriteria,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.store.ReadableMerchantStoreList",
+                "to_name": "isRetailers() return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "StoreFacadeImpl",
+                "to_name": "MerchantStoreCriteria",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/store/facade/StoreFacadeImpl.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/store/MerchantStoreApi.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "createMerchantStoreCriteria(javax.servlet.http.HttpServletRequest) return com.salesmanager.core.model.merchant.MerchantStoreCriteria",
+                "to_name": "MerchantStoreCriteria()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantStoreApi",
+                "to_name": "MerchantStoreCriteria",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/store/MerchantStoreApi.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

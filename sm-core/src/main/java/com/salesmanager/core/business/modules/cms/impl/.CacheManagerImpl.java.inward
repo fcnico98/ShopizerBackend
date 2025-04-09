@@ -4,65 +4,163 @@
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "stopFileManager() return void",
+                "to_name": "getManager() return org.infinispan.manager.EmbeddedCacheManager",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addFolder(java.lang.String,java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "to_name": "getTreeCache() return org.infinispan.tree.TreeCache\u003cK,V\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFileNames(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003cjava.lang.String\u003e",
+                "to_name": "getTreeCache() return org.infinispan.tree.TreeCache\u003cK,V\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getNode(java.lang.String) return org.infinispan.tree.Node.Node\u003cjava.lang.String,java.lang.Object\u003e",
+                "to_name": "getTreeCache() return org.infinispan.tree.TreeCache\u003cK,V\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeFiles(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "to_name": "getTreeCache() return org.infinispan.tree.TreeCache\u003cK,V\u003e",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.java",
-            "comment": "calling_types list is truncated to first 5 items",
+            "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 11
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/infinispan/CmsImageFileManagerImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "stopFileManager() return void",
+                "to_name": "getManager() return org.infinispan.manager.EmbeddedCacheManager",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getNode(java.lang.String) return org.infinispan.tree.Node.Node\u003cjava.lang.String,java.lang.Object\u003e",
+                "to_name": "getTreeCache() return org.infinispan.tree.TreeCache\u003cK,V\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductImage(java.lang.String,java.lang.String,java.lang.String,java.lang.String) return com.salesmanager.core.model.content.OutputContentFile",
+                "to_name": "getTreeCache() return org.infinispan.tree.TreeCache\u003cK,V\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getImages(java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
+                "to_name": "getTreeCache() return org.infinispan.tree.TreeCache\u003cK,V\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProductImages(com.salesmanager.core.model.catalog.product.Product) return void",
+                "to_name": "getTreeCache() return org.infinispan.tree.TreeCache\u003cK,V\u003e",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/infinispan/CmsImageFileManagerImpl.java",
-            "comment": "calling_types list is truncated to first 5 items",
+            "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 10
           },
           {
-            "calling_types": [
-              {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
-              },
-              {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
-              }
-            ],
             "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/StoreCacheManagerImpl.java",
-            "comment": "",
-            "nb_calls_between_elements": 3
-          },
-          {
-            "calling_types": [
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Constructor",
+                "to_type": "Java Method",
+                "from_name": "StoreCacheManagerImpl(java.lang.String,java.lang.String)",
+                "to_name": "init(java.lang.String,java.lang.String) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "READ",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getLocation() return java.lang.String",
+                "to_name": "location",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "StoreCacheManagerImpl",
+                "to_name": "CacheManagerImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/DownloadCacheManagerImpl.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/DownloadCacheManagerImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Constructor",
+                "to_type": "Java Method",
+                "from_name": "DownloadCacheManagerImpl(java.lang.String,java.lang.String)",
+                "to_name": "init(java.lang.String,java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getLocation() return java.lang.String",
+                "to_name": "location",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DownloadCacheManagerImpl",
+                "to_name": "CacheManagerImpl",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/StaticContentCacheManagerImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Method",
+                "from_name": "StaticContentCacheManagerImpl(java.lang.String,java.lang.String)",
+                "to_name": "init(java.lang.String,java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "StaticContentCacheManagerImpl",
+                "to_name": "CacheManagerImpl",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 2
           }

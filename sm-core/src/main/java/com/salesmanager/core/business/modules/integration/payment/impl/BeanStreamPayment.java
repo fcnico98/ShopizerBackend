@@ -90,8 +90,9 @@ public class BeanStreamPayment implements PaymentModule {
 
 		
 				String trnID = capturableTransaction.getTransactionDetails().get("TRANSACTIONID");
-				
-				String amnt = productPriceUtils.getAdminFormatedAmount(store, order.getTotal());
+
+				BigDecimal amount = order.getTotal();
+				String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
 				
 				/**
 				merchant_id=123456789&requestType=BACKEND

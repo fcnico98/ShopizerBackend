@@ -7,353 +7,273 @@
         "entities_to_test": [
           {
             "name": "manufacturer",
+            "full_name": "salesmanager.manufacturer",
+            "type": "PostgreSQL Table",
             "used_elements": [
-              "select category from Product"
-            ],
-            "full_name": "salesmanager.manufacturer"
-          },
-          {
-            "name": "manufacturer",
-            "used_elements": [
-              "select category.id, count(product.id) from"
-            ],
-            "full_name": "salesmanager.manufacturer"
-          },
-          {
-            "name": "manufacturer",
-            "used_elements": [
-              "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.manufacturer"
-          },
-          {
-            "name": "manufacturer",
-            "used_elements": [
-              "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e"
-            ],
-            "full_name": "salesmanager.manufacturer"
+              {
+                "name": "select category from Product",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select category.id, count(product.id) from",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e",
+                "type": "Java Method"
+              }
+            ]
           },
           {
             "name": "merchant_store",
+            "full_name": "salesmanager.merchant_store",
+            "type": "PostgreSQL Table",
             "used_elements": [
-              "select category from Product"
-            ],
-            "full_name": "salesmanager.merchant_store"
-          },
-          {
-            "name": "merchant_store",
-            "used_elements": [
-              "select c from Category"
-            ],
-            "full_name": "salesmanager.merchant_store"
-          },
-          {
-            "name": "merchant_store",
-            "used_elements": [
-              "select category.id, count(product.id) from"
-            ],
-            "full_name": "salesmanager.merchant_store"
-          },
-          {
-            "name": "merchant_store",
-            "used_elements": [
-              "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.merchant_store"
-          },
-          {
-            "name": "merchant_store",
-            "used_elements": [
-              "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.merchant_store"
-          },
-          {
-            "name": "merchant_store",
-            "used_elements": [
-              "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e"
-            ],
-            "full_name": "salesmanager.merchant_store"
+              {
+                "name": "select category from Product",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select c from Category",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select category.id, count(product.id) from",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e",
+                "type": "Java Method"
+              }
+            ]
           },
           {
             "name": "product",
+            "full_name": "salesmanager.product",
+            "type": "PostgreSQL Table",
             "used_elements": [
-              "select category from Product"
-            ],
-            "full_name": "salesmanager.product"
-          },
-          {
-            "name": "product",
-            "used_elements": [
-              "select category.id, count(product.id) from"
-            ],
-            "full_name": "salesmanager.product"
-          },
-          {
-            "name": "product",
-            "used_elements": [
-              "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.product"
-          },
-          {
-            "name": "product",
-            "used_elements": [
-              "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e"
-            ],
-            "full_name": "salesmanager.product"
+              {
+                "name": "select category from Product",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select category.id, count(product.id) from",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e",
+                "type": "Java Method"
+              }
+            ]
           },
           {
             "name": "tax_class",
+            "full_name": "salesmanager.tax_class",
+            "type": "PostgreSQL Table",
             "used_elements": [
-              "select category from Product"
-            ],
-            "full_name": "salesmanager.tax_class"
-          },
-          {
-            "name": "tax_class",
-            "used_elements": [
-              "select category.id, count(product.id) from"
-            ],
-            "full_name": "salesmanager.tax_class"
-          },
-          {
-            "name": "tax_class",
-            "used_elements": [
-              "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.tax_class"
-          },
-          {
-            "name": "tax_class",
-            "used_elements": [
-              "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e"
-            ],
-            "full_name": "salesmanager.tax_class"
+              {
+                "name": "select category from Product",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select category.id, count(product.id) from",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e",
+                "type": "Java Method"
+              }
+            ]
           },
           {
             "name": "category",
+            "full_name": "salesmanager.category",
+            "type": "PostgreSQL Table",
             "used_elements": [
-              "select c from Category"
-            ],
-            "full_name": "salesmanager.category"
-          },
-          {
-            "name": "category",
-            "used_elements": [
-              "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.category"
-          },
-          {
-            "name": "category",
-            "used_elements": [
-              "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.category"
-          },
-          {
-            "name": "category",
-            "used_elements": [
-              "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e"
-            ],
-            "full_name": "salesmanager.category"
+              {
+                "name": "select c from Category",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e",
+                "type": "Java Method"
+              }
+            ]
           },
           {
             "name": "country",
+            "full_name": "salesmanager.country",
+            "type": "PostgreSQL Table",
             "used_elements": [
-              "select category from Product"
-            ],
-            "full_name": "salesmanager.country"
-          },
-          {
-            "name": "country",
-            "used_elements": [
-              "select c from Category"
-            ],
-            "full_name": "salesmanager.country"
-          },
-          {
-            "name": "country",
-            "used_elements": [
-              "select category.id, count(product.id) from"
-            ],
-            "full_name": "salesmanager.country"
-          },
-          {
-            "name": "country",
-            "used_elements": [
-              "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.country"
-          },
-          {
-            "name": "country",
-            "used_elements": [
-              "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.country"
-          },
-          {
-            "name": "country",
-            "used_elements": [
-              "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e"
-            ],
-            "full_name": "salesmanager.country"
+              {
+                "name": "select category from Product",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select c from Category",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select category.id, count(product.id) from",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e",
+                "type": "Java Method"
+              }
+            ]
           },
           {
             "name": "customer",
+            "full_name": "salesmanager.customer",
+            "type": "PostgreSQL Table",
             "used_elements": [
-              "select category from Product"
-            ],
-            "full_name": "salesmanager.customer"
-          },
-          {
-            "name": "customer",
-            "used_elements": [
-              "select category.id, count(product.id) from"
-            ],
-            "full_name": "salesmanager.customer"
-          },
-          {
-            "name": "customer",
-            "used_elements": [
-              "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.customer"
-          },
-          {
-            "name": "customer",
-            "used_elements": [
-              "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e"
-            ],
-            "full_name": "salesmanager.customer"
+              {
+                "name": "select category from Product",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select category.id, count(product.id) from",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e",
+                "type": "Java Method"
+              }
+            ]
           },
           {
             "name": "currency",
+            "full_name": "salesmanager.currency",
+            "type": "PostgreSQL Table",
             "used_elements": [
-              "select category from Product"
-            ],
-            "full_name": "salesmanager.currency"
-          },
-          {
-            "name": "currency",
-            "used_elements": [
-              "select c from Category"
-            ],
-            "full_name": "salesmanager.currency"
-          },
-          {
-            "name": "currency",
-            "used_elements": [
-              "select category.id, count(product.id) from"
-            ],
-            "full_name": "salesmanager.currency"
-          },
-          {
-            "name": "currency",
-            "used_elements": [
-              "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.currency"
-          },
-          {
-            "name": "currency",
-            "used_elements": [
-              "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.currency"
-          },
-          {
-            "name": "currency",
-            "used_elements": [
-              "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e"
-            ],
-            "full_name": "salesmanager.currency"
+              {
+                "name": "select category from Product",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select c from Category",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select category.id, count(product.id) from",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e",
+                "type": "Java Method"
+              }
+            ]
           },
           {
             "name": "geozone",
+            "full_name": "salesmanager.geozone",
+            "type": "PostgreSQL Table",
             "used_elements": [
-              "select category from Product"
-            ],
-            "full_name": "salesmanager.geozone"
-          },
-          {
-            "name": "geozone",
-            "used_elements": [
-              "select c from Category"
-            ],
-            "full_name": "salesmanager.geozone"
-          },
-          {
-            "name": "geozone",
-            "used_elements": [
-              "select category.id, count(product.id) from"
-            ],
-            "full_name": "salesmanager.geozone"
-          },
-          {
-            "name": "geozone",
-            "used_elements": [
-              "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.geozone"
-          },
-          {
-            "name": "geozone",
-            "used_elements": [
-              "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.geozone"
-          },
-          {
-            "name": "geozone",
-            "used_elements": [
-              "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e"
-            ],
-            "full_name": "salesmanager.geozone"
+              {
+                "name": "select category from Product",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select c from Category",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select category.id, count(product.id) from",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e",
+                "type": "Java Method"
+              }
+            ]
           },
           {
             "name": "language",
+            "full_name": "salesmanager.language",
+            "type": "PostgreSQL Table",
             "used_elements": [
-              "select category from Product"
-            ],
-            "full_name": "salesmanager.language"
-          },
-          {
-            "name": "language",
-            "used_elements": [
-              "select c from Category"
-            ],
-            "full_name": "salesmanager.language"
-          },
-          {
-            "name": "language",
-            "used_elements": [
-              "select category.id, count(product.id) from"
-            ],
-            "full_name": "salesmanager.language"
-          },
-          {
-            "name": "language",
-            "used_elements": [
-              "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.language"
-          },
-          {
-            "name": "language",
-            "used_elements": [
-              "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
-            ],
-            "full_name": "salesmanager.language"
-          },
-          {
-            "name": "language",
-            "used_elements": [
-              "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e"
-            ],
-            "full_name": "salesmanager.language"
+              {
+                "name": "select category from Product",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select c from Category",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select category.id, count(product.id) from",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+                "type": "Java Method"
+              },
+              {
+                "name": "countProductsByCategories(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003cjava.lang.Object[]\u003e",
+                "type": "Java Method"
+              }
+            ]
           }
         ],
         "type_of_entity_to_test": "data entity"

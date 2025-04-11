@@ -7,24 +7,22 @@
         "entities_to_test": [
           {
             "name": "permission",
+            "full_name": "salesmanager.permission",
+            "type": "PostgreSQL Table",
             "used_elements": [
-              "select p from Permission"
-            ],
-            "full_name": "salesmanager.permission"
-          },
-          {
-            "name": "permission",
-            "used_elements": [
-              "select count(p) from Permission"
-            ],
-            "full_name": "salesmanager.permission"
-          },
-          {
-            "name": "permission",
-            "used_elements": [
-              "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList"
-            ],
-            "full_name": "salesmanager.permission"
+              {
+                "name": "select p from Permission",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "select count(p) from Permission",
+                "type": "JPQL Query"
+              },
+              {
+                "name": "listByCriteria(com.salesmanager.core.model.user.PermissionCriteria) return com.salesmanager.core.model.user.PermissionList",
+                "type": "Java Method"
+              }
+            ]
           }
         ],
         "type_of_entity_to_test": "data entity"

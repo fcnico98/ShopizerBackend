@@ -233,8 +233,9 @@ public class Stripe3Payment implements PaymentModule {
 				te.setErrorCode(IntegrationException.TRANSACTION_EXCEPTION);
 				throw te;
 			}
-
-			String amnt = productPriceUtils.getAdminFormatedAmount(store, order.getTotal());
+			
+			BigDecimal amount = order.getTotal();
+			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
 			String strAmount = String.valueOf(amnt);
 			strAmount = strAmount.replace(".","");
 

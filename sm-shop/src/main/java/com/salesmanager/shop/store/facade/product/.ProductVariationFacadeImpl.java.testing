@@ -1,353 +1,445 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariationFacadeImpl.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariationFacadeImpl.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariationFacadeImpl.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 8,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 10,
+        "impacting_elements": [
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
+                "name": "api/v2/private/product/variation/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/PUT/api/v2/private/product/variation/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "create(com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.product.variation.",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.ReadableProductVariation",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "list$lambda$0(com.salesmanager.core.model.catalog.product.variation.ProductVariation) return R",
-                "type": "Java Lambda Expression"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "product_option",
-            "full_name": "salesmanager.product_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
               {
-                "name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
+                "name": "api/v2/private/product/variation/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/POST/api/v2/private/product/variation/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "api/v2/private/product/variation/unique/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variation/unique/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "create(com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.product.variation.",
-                "type": "Java Method"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.ReadableProductVariation",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "list$lambda$0(com.salesmanager.core.model.catalog.product.variation.ProductVariation) return R",
-                "type": "Java Lambda Expression"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "create(com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
+                "name": "api/v2/private/product/variation/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/POST/api/v2/private/product/variation/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "create(com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.product.variation.",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.ReadableProductVariation",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "list$lambda$0(com.salesmanager.core.model.catalog.product.variation.ProductVariation) return R",
-                "type": "Java Lambda Expression"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "convert(com.salesmanager.core.model.catalog.product.variation.ProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.Readabl",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.product.variation.",
-                "type": "Java Method"
-              },
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.ReadableProductVariation",
-                "type": "Java Method"
-              },
-              {
-                "name": "list$lambda$0(com.salesmanager.core.model.catalog.product.variation.ProductVariation) return R",
-                "type": "Java Lambda Expression"
+                "name": "api/v2/private/product/variations/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variations/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.product.variation.",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
+                "name": "api/v2/private/product/variations/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variations/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "create(com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.product.variation.",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.ReadableProductVariation",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "list$lambda$0(com.salesmanager.core.model.catalog.product.variation.ProductVariation) return R",
-                "type": "Java Lambda Expression"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "ReadableEntityList\u003cReadableProductVariation\u003e",
+            "comment": "",
+            "type": "Java Instantiated Constructor",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.product.variation.",
-                "type": "Java Method"
-              },
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.ReadableProductVariation",
-                "type": "Java Method"
-              },
-              {
-                "name": "list$lambda$0(com.salesmanager.core.model.catalog.product.variation.ProductVariation) return R",
-                "type": "Java Lambda Expression"
+                "name": "api/v2/private/product/variations/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variations/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "product_option_value",
-            "full_name": "salesmanager.product_option_value",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "List\u003cReadableProductVariation\u003e",
+            "comment": "",
+            "type": "Java Instantiated Interface",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.product.variation.",
-                "type": "Java Method"
-              },
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.ReadableProductVariation",
-                "type": "Java Method"
-              },
-              {
-                "name": "list$lambda$0(com.salesmanager.core.model.catalog.product.variation.ProductVariation) return R",
-                "type": "Java Lambda Expression"
+                "name": "api/v2/private/product/variations/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variations/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "product_variation",
-            "full_name": "salesmanager.product_variation",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "list$lambda$0(com.salesmanager.core.model.catalog.product.variation.ProductVariation) return R",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
+                "name": "api/v2/private/product/variations/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variations/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "create(com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.product.variation.",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.ReadableProductVariation",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "list$lambda$0(com.salesmanager.core.model.catalog.product.variation.ProductVariation) return R",
-                "type": "Java Lambda Expression"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.ReadableProductVariation",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v2/private/product/variation/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variation/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v2/private/product/variation/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/DELETE/api/v2/private/product/variation/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 6,
-        "entities_to_test": [
-          {
-            "name": "api/v2/private/product/variation/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/PUT/api/v2/private/product/variation/{}/",
-            "type": "Spring MVC Put Operation",
-            "used_elements": [
-              {
-                "name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "api/v2/private/product/variation/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/POST/api/v2/private/product/variation/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.shop.model.catalog.product.variation.PersistableProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "api/v2/private/product/variations/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variations/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "convert(com.salesmanager.core.model.catalog.product.variation.ProductVariation,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.product.variation.",
-                "type": "Java Method"
-              },
-              {
-                "name": "ReadableEntityList\u003cReadableProductVariation\u003e",
-                "type": "Java Instantiated Constructor"
-              },
-              {
-                "name": "List\u003cReadableProductVariation\u003e",
-                "type": "Java Instantiated Interface"
-              },
-              {
-                "name": "list$lambda$0(com.salesmanager.core.model.catalog.product.variation.ProductVariation) return R",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "api/v2/private/product/variation/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variation/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.variation.ReadableProductVariation",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "api/v2/private/product/variation/unique/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variation/unique/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "api/v2/private/product/variation/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/DELETE/api/v2/private/product/variation/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

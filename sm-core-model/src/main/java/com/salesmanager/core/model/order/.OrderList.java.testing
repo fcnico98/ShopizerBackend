@@ -1,57 +1,63 @@
 {
   "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderList.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderList.java]": [
+    "00. elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderList.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 3,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 2,
+        "impacting_elements": [
           {
-            "name": "api/v1/private/orders/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "getOrders() return java.util.List.List\u003ccom.salesmanager.core.model.order.Order\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "getOrders() return java.util.List.List\u003ccom.salesmanager.core.model.order.Order\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/orders/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "OrderList",
-                "type": "Java Class"
+                "name": "api/v1/auth/orders/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/customers/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/customers/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/auth/orders/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "OrderList",
+            "comment": "",
+            "type": "Java Class",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "getOrders() return java.util.List.List\u003ccom.salesmanager.core.model.order.Order\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/orders/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "OrderList",
-                "type": "Java Class"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/orders/customers/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/customers/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "getOrders() return java.util.List.List\u003ccom.salesmanager.core.model.order.Order\u003e",
-                "type": "Java Method"
+                "name": "api/v1/auth/orders/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "OrderList",
-                "type": "Java Class"
+                "name": "api/v1/private/orders/customers/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/customers/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

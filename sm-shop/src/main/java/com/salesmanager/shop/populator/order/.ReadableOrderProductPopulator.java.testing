@@ -1,340 +1,357 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/ReadableOrderProductPopulator.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/ReadableOrderProductPopulator.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/ReadableOrderProductPopulator.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 13,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 8,
+        "impacting_elements": [
           {
-            "name": "manufacturer",
-            "full_name": "salesmanager.manufacturer",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "ArrayList\u003cReadableOrderProductAttribute\u003e",
+            "comment": "",
+            "type": "Java Instantiated Constructor",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
               {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/orders/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/customers/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/customers/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "setPricingService(com.salesmanager.core.business.services.catalog.pricing.PricingService) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
               {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
+                "name": "api/v1/auth/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/orders/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/customers/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/customers/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "product",
-            "full_name": "salesmanager.product",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "setProductService(com.salesmanager.core.business.services.catalog.product.ProductService) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
               {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
+                "name": "api/v1/auth/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/orders/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/customers/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/customers/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "product_option",
-            "full_name": "salesmanager.product_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "setimageUtils(com.salesmanager.shop.utils.ImageFilePath) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
               {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
+                "name": "api/v1/auth/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/orders/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/customers/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/customers/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "product_variant_group",
-            "full_name": "salesmanager.product_variant_group",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 17,
+            "impacted_elements_to_test": [
               {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
+                "name": "api/v1/auth/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/orders/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/customers/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/customers/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "tax_class",
-            "full_name": "salesmanager.tax_class",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "ReadableOrderProductPopulator()",
+            "comment": "",
+            "type": "Java Constructor",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
               {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
+                "name": "api/v1/auth/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/orders/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/customers/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/customers/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "ReadableOrderProductPopulator",
+            "comment": "",
+            "type": "Java Class",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
               {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
+                "name": "api/v1/auth/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/orders/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/customers/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/customers/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "customer",
-            "full_name": "salesmanager.customer",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "AbstractDataPopulator\u003cOrderProduct,ReadableOrderProduct\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
               {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "api/v1/auth/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "api/v1/private/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "api/v1/auth/orders/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "product_option_value",
-            "full_name": "salesmanager.product_option_value",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "product_variation",
-            "full_name": "salesmanager.product_variation",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
+                "name": "api/v1/private/orders/customers/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/customers/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 6,
-        "entities_to_test": [
-          {
-            "name": "api/v1/cart/{}/checkout/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "ArrayList\u003cReadableOrderProductAttribute\u003e",
-                "type": "Java Instantiated Constructor"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/auth/cart/{}/checkout/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "ArrayList\u003cReadableOrderProductAttribute\u003e",
-                "type": "Java Instantiated Constructor"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/auth/orders/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "ArrayList\u003cReadableOrderProductAttribute\u003e",
-                "type": "Java Instantiated Constructor"
-              },
-              {
-                "name": "setPricingService(com.salesmanager.core.business.services.catalog.pricing.PricingService) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "setProductService(com.salesmanager.core.business.services.catalog.product.ProductService) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "setimageUtils(com.salesmanager.shop.utils.ImageFilePath) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
-              },
-              {
-                "name": "ReadableOrderProductPopulator()",
-                "type": "Java Constructor"
-              },
-              {
-                "name": "ReadableOrderProductPopulator",
-                "type": "Java Class"
-              },
-              {
-                "name": "AbstractDataPopulator\u003cOrderProduct,ReadableOrderProduct\u003e",
-                "type": "Java Instantiated Class"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/orders/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "ArrayList\u003cReadableOrderProductAttribute\u003e",
-                "type": "Java Instantiated Constructor"
-              },
-              {
-                "name": "setPricingService(com.salesmanager.core.business.services.catalog.pricing.PricingService) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "setProductService(com.salesmanager.core.business.services.catalog.product.ProductService) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "setimageUtils(com.salesmanager.shop.utils.ImageFilePath) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
-              },
-              {
-                "name": "ReadableOrderProductPopulator()",
-                "type": "Java Constructor"
-              },
-              {
-                "name": "ReadableOrderProductPopulator",
-                "type": "Java Class"
-              },
-              {
-                "name": "AbstractDataPopulator\u003cOrderProduct,ReadableOrderProduct\u003e",
-                "type": "Java Instantiated Class"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/auth/orders/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "ArrayList\u003cReadableOrderProductAttribute\u003e",
-                "type": "Java Instantiated Constructor"
-              },
-              {
-                "name": "setPricingService(com.salesmanager.core.business.services.catalog.pricing.PricingService) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "setProductService(com.salesmanager.core.business.services.catalog.product.ProductService) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "setimageUtils(com.salesmanager.shop.utils.ImageFilePath) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
-              },
-              {
-                "name": "ReadableOrderProductPopulator()",
-                "type": "Java Constructor"
-              },
-              {
-                "name": "ReadableOrderProductPopulator",
-                "type": "Java Class"
-              },
-              {
-                "name": "AbstractDataPopulator\u003cOrderProduct,ReadableOrderProduct\u003e",
-                "type": "Java Instantiated Class"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/orders/customers/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/customers/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "ArrayList\u003cReadableOrderProductAttribute\u003e",
-                "type": "Java Instantiated Constructor"
-              },
-              {
-                "name": "setPricingService(com.salesmanager.core.business.services.catalog.pricing.PricingService) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "setProductService(com.salesmanager.core.business.services.catalog.product.ProductService) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "setimageUtils(com.salesmanager.shop.utils.ImageFilePath) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "type": "Java Method"
-              },
-              {
-                "name": "ReadableOrderProductPopulator()",
-                "type": "Java Constructor"
-              },
-              {
-                "name": "ReadableOrderProductPopulator",
-                "type": "Java Class"
-              },
-              {
-                "name": "AbstractDataPopulator\u003cOrderProduct,ReadableOrderProduct\u003e",
-                "type": "Java Instantiated Class"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

@@ -1,436 +1,619 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacade.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacade.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacade.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 24,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 28,
+        "impacting_elements": [
           {
-            "name": "api/v1/private/customer/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/PUT/api/v1/private/customer/{}/",
-            "type": "Spring MVC Put Operation",
-            "used_elements": [
+            "name": "update(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.customer.PersistableCustomer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "update(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/private/customer/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/PUT/api/v1/private/customer/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/customers/{}/reviews/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/PUT/api/v1/private/customers/{}/reviews/{}/",
-            "type": "Spring MVC Put Operation",
-            "used_elements": [
+            "name": "CustomerFacade",
+            "comment": "",
+            "type": "Java Interface",
+            "nb_impacted_elements": 24,
+            "impacted_elements_to_test": [
               {
-                "name": "updateCustomerReview(java.lang.Long,java.lang.Long,com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.mode",
-                "type": "Java Method"
+                "name": "api/v1/private/customer/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/PUT/api/v1/private/customer/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/private/customers/{}/reviews/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/PUT/api/v1/private/customers/{}/reviews/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/customers/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/POST/api/v1/private/customers/{}/reviews/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/newsletter/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerNewsletterApi.java/api/v1/PORT/POST/api/v1/newsletter/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/POST/api/v1/private/customer/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/password/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/auth/customer/password/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/address/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/address/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/customer/{}/address/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/private/customer/{}/address/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/cart/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/cart/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/{}/cart/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/{}/cart/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customers/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/GET/api/v1/customers/{}/reviews/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/profile/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/profile/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/customer/profile/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customer/profile/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/customer/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customer/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/customers/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customers/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/customers/{}/reviews/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/DELETE/api/v1/private/customers/{}/reviews/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/auth/customer/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/customer/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/private/customer/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/cart/{}/checkout/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "updateCustomerReview(java.lang.Long,java.lang.Long,com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.mode",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "populateCustomerModel(com.salesmanager.core.model.customer.Customer,com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanage",
-                "type": "Java Method"
-              },
-              {
-                "name": "checkIfUserExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/private/customers/{}/reviews/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/PUT/api/v1/private/customers/{}/reviews/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/auth/cart/{}/checkout/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "populateCustomerModel(com.salesmanager.core.model.customer.Customer,com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanage",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "checkIfUserExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/customers/{}/reviews/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/POST/api/v1/private/customers/{}/reviews/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "checkIfUserExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "createCustomerReview(java.lang.Long,com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.Pers",
-                "type": "Java Method"
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "saveOrUpdateCustomerReview(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.PersistableCu",
-                "type": "Java Method"
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/newsletter/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerNewsletterApi.java/api/v1/PORT/POST/api/v1/newsletter/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "createCustomerReview(java.lang.Long,com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.Pers",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "optinCustomer(com.salesmanager.shop.model.customer.optin.PersistableCustomerOptin,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/private/customers/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/POST/api/v1/private/customers/{}/reviews/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/customer/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/POST/api/v1/private/customer/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "saveOrUpdateCustomerReview(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.PersistableCu",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "create(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "setCustomerModelDefaultProperties(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/private/customers/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/POST/api/v1/private/customers/{}/reviews/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/auth/customer/password/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/auth/customer/password/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "optinCustomer(com.salesmanager.shop.model.customer.optin.PersistableCustomerOptin,com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "changePassword(com.salesmanager.core.model.customer.Customer,java.lang.String) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "passwordMatch(java.lang.String,com.salesmanager.core.model.customer.Customer) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCustomerByUserName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.customer.Customer",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/newsletter/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerNewsletterApi.java/api/v1/PORT/POST/api/v1/newsletter/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/customer/register/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "create(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "getCustomerModel(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.customer.Customer",
-                "type": "Java Method"
-              },
-              {
-                "name": "setCustomerModelDefaultProperties(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "registerCustomer(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "checkIfUserExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/private/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/POST/api/v1/private/customer/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/auth/customer/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/",
-            "type": "Spring MVC Any Operation",
-            "used_elements": [
+            "name": "setCustomerModelDefaultProperties(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "update(java.lang.String,com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
+                "name": "api/v1/private/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/POST/api/v1/private/customer/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "getByUserName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/auth/customer/address/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/address/",
-            "type": "Spring MVC Any Operation",
-            "used_elements": [
+            "name": "changePassword(com.salesmanager.core.model.customer.Customer,java.lang.String) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "updateAddress(java.lang.String,com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAddress(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.address.Address,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByUserName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/auth/customer/password/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/auth/customer/password/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/customer/{}/address/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/private/customer/{}/address/",
-            "type": "Spring MVC Any Operation",
-            "used_elements": [
+            "name": "passwordMatch(java.lang.String,com.salesmanager.core.model.customer.Customer) return boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "updateAddress(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.address.Address,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/auth/customer/password/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/auth/customer/password/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/auth/customer/cart/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/cart/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "getCustomerByUserName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.customer.Customer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "getCustomerByUserName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.customer.Customer",
-                "type": "Java Method"
+                "name": "api/v1/auth/customer/password/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/auth/customer/password/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "mergeCart(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
-                "type": "Java Method"
+                "name": "api/v1/auth/customer/cart/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/cart/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/auth/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/auth/customer/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/auth/customer/{}/cart/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/{}/cart/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "getCustomerModel(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.customer.Customer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "mergeCart(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/auth/orders/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "registerCustomer(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.PersistableCustomer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "getCustomerById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/orders/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "update(java.lang.String,com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.customer.PersistableCustomer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "getCustomerById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/auth/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/customers/{}/reviews/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/GET/api/v1/customers/{}/reviews/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "getByUserName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getAllCustomerReviewsByReviewed(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.customer.ReadableCustomerReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/auth/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/auth/customer/address/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/address/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/auth/customer/profile/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/profile/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "updateAddress(java.lang.String,com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "getCustomerByNick(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/auth/customer/address/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/address/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/customer/profile/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customer/profile/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "updateAddress(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getCustomerByNick(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
+                "name": "api/v1/auth/customer/address/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/address/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/private/customer/{}/address/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/private/customer/{}/address/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/customer/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customer/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.address.Address,com.salesmanager.core.model.reference.language.Language) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getCustomerById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
+                "name": "api/v1/auth/customer/address/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/address/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/private/customer/{}/address/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/private/customer/{}/address/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/customers/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customers/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "mergeCart(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getListByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.CustomerCriteria,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.populator.customer.ReadableCustomerList",
-                "type": "Java Method"
+                "name": "api/v1/auth/customer/cart/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/cart/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/auth/customer/{}/cart/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/{}/cart/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/customers/{}/reviews/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/DELETE/api/v1/private/customers/{}/reviews/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
+            "name": "getCustomerById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "deleteCustomerReview(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "api/v1/auth/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/auth/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/private/orders/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/customer/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customer/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/auth/customer/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/auth/customer/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
+            "name": "getAllCustomerReviewsByReviewed(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.customer.ReadableCustomerReview\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "delete(com.salesmanager.core.model.customer.Customer) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCustomerByUserName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.customer.Customer",
-                "type": "Java Method"
-              },
-              {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/customers/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/GET/api/v1/customers/{}/reviews/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/customer/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/private/customer/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
+            "name": "getCustomerByNick(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "delete(com.salesmanager.core.model.customer.Customer) return void",
-                "type": "Java Method"
+                "name": "api/v1/auth/customer/profile/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/profile/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "deleteById(java.lang.Long) return void",
-                "type": "Java Method"
+                "name": "api/v1/private/customer/profile/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customer/profile/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getListByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.CustomerCriteria,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.populator.customer.ReadableCustomerList",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/customers/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customers/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "deleteCustomerReview(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/customers/{}/reviews/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/DELETE/api/v1/private/customers/{}/reviews/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "delete(com.salesmanager.core.model.customer.Customer) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/auth/customer/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "CustomerFacade",
-                "type": "Java Interface"
+                "name": "api/v1/private/customer/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/private/customer/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "deleteById(java.lang.Long) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/customer/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/private/customer/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

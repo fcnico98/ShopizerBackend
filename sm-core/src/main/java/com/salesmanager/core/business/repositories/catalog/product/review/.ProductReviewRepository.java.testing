@@ -1,586 +1,1001 @@
 {
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/review/ProductReviewRepository.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/review/ProductReviewRepository.java]": [
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/review/ProductReviewRepository.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 12,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 13,
+        "impacting_elements": [
           {
-            "name": "manufacturer",
-            "full_name": "salesmanager.manufacturer",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 16,
+            "impacted_elements_to_test": [
               {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "api/v1/auth/products/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/auth/products/{}/reviews/_2",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/auth/products/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/auth/products/{}/reviews/_1",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/auth/products/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/auth/products/{}/reviews/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/products/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/private/products/{}/reviews/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByCustomer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_review",
+                "full_name": "salesmanager.product_review",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "ProductReviewRepository",
+            "comment": "",
+            "type": "Java Interface",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "api/v1/auth/products/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/auth/products/{}/reviews/_2",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/auth/products/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/auth/products/{}/reviews/_1",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/auth/products/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/auth/products/{}/reviews/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/products/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/private/products/{}/reviews/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByCustomer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/product/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/GET/api/v1/product/{}/reviews/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "api/v2/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/DELETE/api/v2/private/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
+                "name": "api/v1/auth/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductApi.java/api/v1/PORT/DELETE/api/v1/auth/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductApi.java/api/v1/PORT/DELETE/api/v1/private/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/category/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\category\\CategoryApi.java/api/v1/PORT/DELETE/api/v1/private/category/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "product",
-            "full_name": "salesmanager.product",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "select p from ProductReview",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 16,
+            "impacted_elements_to_test": [
               {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "api/v1/auth/products/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/auth/products/{}/reviews/_2",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/auth/products/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/auth/products/{}/reviews/_1",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/auth/products/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/auth/products/{}/reviews/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/products/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/private/products/{}/reviews/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByCustomer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_review",
+                "full_name": "salesmanager.product_review",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "tax_class",
-            "full_name": "salesmanager.tax_class",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 13,
+            "impacted_elements_to_test": [
               {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "api/v1/product/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/GET/api/v1/product/{}/reviews/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByCustomer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_review",
+                "full_name": "salesmanager.product_review",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "select p from ProductReview",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 13,
+            "impacted_elements_to_test": [
               {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "api/v1/product/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/GET/api/v1/product/{}/reviews/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByCustomer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_review",
+                "full_name": "salesmanager.product_review",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "customer",
-            "full_name": "salesmanager.customer",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 14,
+            "impacted_elements_to_test": [
               {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "api/v2/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/DELETE/api/v2/private/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/auth/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductApi.java/api/v1/PORT/DELETE/api/v1/auth/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductApi.java/api/v1/PORT/DELETE/api/v1/private/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/category/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\category\\CategoryApi.java/api/v1/PORT/DELETE/api/v1/private/category/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByCustomer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_review",
+                "full_name": "salesmanager.product_review",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "customer_option",
-            "full_name": "salesmanager.customer_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "select p from ProductReview",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 14,
+            "impacted_elements_to_test": [
               {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "api/v2/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/DELETE/api/v2/private/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/auth/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductApi.java/api/v1/PORT/DELETE/api/v1/auth/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductApi.java/api/v1/PORT/DELETE/api/v1/private/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
+                "name": "api/v1/private/category/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\category\\CategoryApi.java/api/v1/PORT/DELETE/api/v1/private/category/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_review",
+                "full_name": "salesmanager.product_review",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 12,
+            "impacted_elements_to_test": [
               {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByCustomer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_review",
+                "full_name": "salesmanager.product_review",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "customer_option_value",
-            "full_name": "salesmanager.customer_option_value",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "findByCustomer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
               {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_review",
+                "full_name": "salesmanager.product_review",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
               {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByCustomer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_review",
+                "full_name": "salesmanager.product_review",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "select p from ProductReview",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 12,
+            "impacted_elements_to_test": [
               {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByCustomer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_review",
+                "full_name": "salesmanager.product_review",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "product_review",
-            "full_name": "salesmanager.product_review",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "select p from ProductReview",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
               {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProduct(java.lang.Long,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByCustomer(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_review",
+                "full_name": "salesmanager.product_review",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 9,
-        "entities_to_test": [
-          {
-            "name": "api/v1/auth/products/{}/reviews/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/auth/products/{}/reviews/_2",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductReviewRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/auth/products/{}/reviews/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/auth/products/{}/reviews/_1",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductReviewRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/auth/products/{}/reviews/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/auth/products/{}/reviews/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductReviewRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/products/{}/reviews/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/POST/api/v1/private/products/{}/reviews/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "findByProductAndCustomer(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.catalog.product.review.ProductReview",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductReviewRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/product/{}/reviews/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductReviewApi.java/api/v1/PORT/GET/api/v1/product/{}/reviews/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "findByProduct(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductReviewRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v2/private/product/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/DELETE/api/v2/private/product/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
-              {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductReviewRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/auth/product/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductApi.java/api/v1/PORT/DELETE/api/v1/auth/product/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
-              {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductReviewRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/product/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductApi.java/api/v1/PORT/DELETE/api/v1/private/product/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
-              {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductReviewRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/category/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\category\\CategoryApi.java/api/v1/PORT/DELETE/api/v1/private/category/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
-              {
-                "name": "findByProductNoCustomers(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.review.ProductReview\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductReviewRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select p from ProductReview",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

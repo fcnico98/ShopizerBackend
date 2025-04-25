@@ -1,238 +1,293 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductOptionSetMapper.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductOptionSetMapper.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductOptionSetMapper.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 7,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 6,
+        "impacting_elements": [
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "HashSet\u003cProductType\u003e",
+            "comment": "",
+            "type": "Java Instantiated Constructor",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "convert(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.prod",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.referen",
-                "type": "Java Method"
-              },
-              {
-                "name": "value(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
-                "type": "Java Method"
-              },
-              {
-                "name": "merge$lambda$0(java.lang.Long) return R",
-                "type": "Java Lambda Expression"
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "product_option",
-            "full_name": "salesmanager.product_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "convert(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.prod",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "convert(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.prod",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.referen",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merge$lambda$0(java.lang.Long) return R",
-                "type": "Java Lambda Expression"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "merge(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.referen",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "convert(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.prod",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.referen",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "value(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "merge$lambda$0(java.lang.Long) return R",
-                "type": "Java Lambda Expression"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "value(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "convert(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.prod",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.referen",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "value(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "merge$lambda$0(java.lang.Long) return R",
-                "type": "Java Lambda Expression"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "PersistableProductOptionSetMapper",
+            "comment": "",
+            "type": "Java Class",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "convert(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.prod",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.referen",
-                "type": "Java Method"
-              },
-              {
-                "name": "value(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
-                "type": "Java Method"
-              },
-              {
-                "name": "merge$lambda$0(java.lang.Long) return R",
-                "type": "Java Lambda Expression"
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "merge$lambda$0(java.lang.Long) return R",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "convert(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.prod",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.referen",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "value(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "merge$lambda$0(java.lang.Long) return R",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "product_option_value",
-            "full_name": "salesmanager.product_option_value",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "convert(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.prod",
-                "type": "Java Method"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.referen",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "value(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "merge$lambda$0(java.lang.Long) return R",
-                "type": "Java Lambda Expression"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 2,
-        "entities_to_test": [
-          {
-            "name": "api/v1/private/product/property/set/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
-            "type": "Spring MVC Put Operation",
-            "used_elements": [
-              {
-                "name": "HashSet\u003cProductType\u003e",
-                "type": "Java Instantiated Constructor"
-              },
-              {
-                "name": "convert(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.prod",
-                "type": "Java Method"
-              },
-              {
-                "name": "merge(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.referen",
-                "type": "Java Method"
-              },
-              {
-                "name": "value(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
-                "type": "Java Method"
-              },
-              {
-                "name": "PersistableProductOptionSetMapper",
-                "type": "Java Class"
-              },
-              {
-                "name": "merge$lambda$0(java.lang.Long) return R",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/product/property/set/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "HashSet\u003cProductType\u003e",
-                "type": "Java Instantiated Constructor"
-              },
-              {
-                "name": "convert(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.prod",
-                "type": "Java Method"
-              },
-              {
-                "name": "merge(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.referen",
-                "type": "Java Method"
-              },
-              {
-                "name": "value(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
-                "type": "Java Method"
-              },
-              {
-                "name": "PersistableProductOptionSetMapper",
-                "type": "Java Class"
-              },
-              {
-                "name": "merge$lambda$0(java.lang.Long) return R",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

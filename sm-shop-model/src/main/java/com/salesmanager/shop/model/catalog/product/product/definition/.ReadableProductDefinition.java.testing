@@ -1,73 +1,143 @@
 {
   "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/definition/ReadableProductDefinition.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/definition/ReadableProductDefinition.java]": [
+    "00. elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/definition/ReadableProductDefinition.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 3,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 9,
+        "impacting_elements": [
           {
-            "name": "api/v2/private/product/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/PUT/api/v2/private/product/{}/",
-            "type": "Spring MVC Put Operation",
-            "used_elements": [
+            "name": "ArrayList\u003cPersistableProductAttribute\u003e",
+            "comment": "",
+            "type": "Java Instantiated Constructor",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "ArrayList\u003cPersistableProductAttribute\u003e",
-                "type": "Java Instantiated Constructor"
+                "name": "api/v2/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/PUT/api/v2/private/product/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v2/private/product/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/POST/api/v2/private/product/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v2/private/product/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/POST/api/v2/private/product/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "setInventory(com.salesmanager.shop.model.catalog.product.inventory.ReadableInventory) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "ArrayList\u003cPersistableProductAttribute\u003e",
-                "type": "Java Instantiated Constructor"
+                "name": "api/v2/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/GET/api/v2/private/product/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v2/private/product/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/GET/api/v2/private/product/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "setImages(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "setInventory(com.salesmanager.shop.model.catalog.product.inventory.ReadableInventory) return void",
-                "type": "Java Method"
-              },
+                "name": "api/v2/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/GET/api/v2/private/product/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setDescription(com.salesmanager.shop.model.catalog.product.ProductDescription) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "setImages(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e) return void",
-                "type": "Java Method"
-              },
+                "name": "api/v2/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/GET/api/v2/private/product/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setManufacturer(com.salesmanager.shop.model.catalog.manufacturer.ReadableManufacturer) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "setDescription(com.salesmanager.shop.model.catalog.product.ProductDescription) return void",
-                "type": "Java Method"
-              },
+                "name": "api/v2/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/GET/api/v2/private/product/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setCategories(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.category.ReadableCategory\u003e) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "setManufacturer(com.salesmanager.shop.model.catalog.manufacturer.ReadableManufacturer) return void",
-                "type": "Java Method"
-              },
+                "name": "api/v2/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/GET/api/v2/private/product/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setType(com.salesmanager.shop.model.catalog.product.type.ReadableProductType) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "setCategories(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.category.ReadableCategory\u003e) return void",
-                "type": "Java Method"
-              },
+                "name": "api/v2/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/GET/api/v2/private/product/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "ReadableProductDefinition()",
+            "comment": "",
+            "type": "Java Constructor",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "setType(com.salesmanager.shop.model.catalog.product.type.ReadableProductType) return void",
-                "type": "Java Method"
-              },
+                "name": "api/v2/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/GET/api/v2/private/product/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "ReadableProductDefinition",
+            "comment": "",
+            "type": "Java Class",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "ReadableProductDefinition()",
-                "type": "Java Constructor"
-              },
-              {
-                "name": "ReadableProductDefinition",
-                "type": "Java Class"
+                "name": "api/v2/private/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/GET/api/v2/private/product/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

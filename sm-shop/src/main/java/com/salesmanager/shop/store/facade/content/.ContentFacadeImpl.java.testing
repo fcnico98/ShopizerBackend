@@ -1,1418 +1,1665 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/content/ContentFacadeImpl.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/content/ContentFacadeImpl.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/content/ContentFacadeImpl.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 28,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "impacting_elements list is truncated to first 50 items",
+        "nb_impacting_elements": 63,
+        "impacting_elements": [
           {
-            "name": "api/v1/private/content/box/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/PUT/api/v1/private/content/box/{}/",
-            "type": "Spring MVC Put Operation",
-            "used_elements": [
+            "name": "convertContentBoxToContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.box.PersistableContentBox) return com.salesmanager.core.model.content.Content",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "convertContentBoxToContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.box.PersistableContentBox) return com.salesmanager.core.model.content.Content",
-                "type": "Java Method"
+                "name": "api/v1/private/content/box/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/PUT/api/v1/private/content/box/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "updateContentBox(java.lang.Long,com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "api/v1/private/content/box/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/content/box/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "buildDescriptions(com.salesmanager.core.model.content.Content,java.util.List.List\u003ccom.salesmanager.shop.model.content.common.ContentDescription\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "List\u003cContentDescription\u003e",
-                "type": "Java Instantiated Interface"
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/page/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/PUT/api/v1/private/content/page/{}/",
-            "type": "Spring MVC Put Operation",
-            "used_elements": [
+            "name": "updateContentBox(java.lang.Long,com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
               {
-                "name": "convertContentPageToContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.page.PersistableContentPage) return com.salesmanager.core.model.content.Content",
-                "type": "Java Method"
+                "name": "api/v1/private/content/box/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/PUT/api/v1/private/content/box/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "updateContentPage(java.lang.Long,com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "buildDescriptions(com.salesmanager.core.model.content.Content,java.util.List.List\u003ccom.salesmanager.shop.model.content.common.ContentDescription\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e",
-                "type": "Java Method"
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "List\u003cContentDescription\u003e",
-                "type": "Java Instantiated Interface"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/files/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/files/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "buildDescriptions(com.salesmanager.core.model.content.Content,java.util.List.List\u003ccom.salesmanager.shop.model.content.common.ContentDescription\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 5,
+            "impacted_elements_to_test": [
               {
-                "name": "getFileContentType(java.lang.String) return com.salesmanager.core.model.content.FileContentType",
-                "type": "Java Method"
+                "name": "api/v1/private/content/box/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/PUT/api/v1/private/content/box/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "addContentFile(com.salesmanager.shop.model.content.ContentFile,java.lang.String) return void",
-                "type": "Java Method"
+                "name": "api/v1/private/content/page/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/PUT/api/v1/private/content/page/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/page/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/content/page/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/box/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/content/box/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/file/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/file/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "List\u003cContentDescription\u003e",
+            "comment": "",
+            "type": "Java Instantiated Interface",
+            "nb_impacted_elements": 11,
+            "impacted_elements_to_test": [
               {
-                "name": "getFileContentType(java.lang.String) return com.salesmanager.core.model.content.FileContentType",
-                "type": "Java Method"
+                "name": "api/v1/private/content/box/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/PUT/api/v1/private/content/box/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "addContentFile(com.salesmanager.shop.model.content.ContentFile,java.lang.String) return void",
-                "type": "Java Method"
+                "name": "api/v1/private/content/page/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/PUT/api/v1/private/content/page/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/page/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/content/page/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/box/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/content/box/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/content/pages/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/boxes/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/content/boxes/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/content/pages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/pages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/pages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/page/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/content/page/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "convertContentPageToContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.page.PersistableContentPage) return com.salesmanager.core.model.content.Content",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "convertContentPageToContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.page.PersistableContentPage) return com.salesmanager.core.model.content.Content",
-                "type": "Java Method"
+                "name": "api/v1/private/content/page/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/PUT/api/v1/private/content/page/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "saveContentPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
+                "name": "api/v1/private/content/page/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/content/page/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "buildDescriptions(com.salesmanager.core.model.content.Content,java.util.List.List\u003ccom.salesmanager.shop.model.content.common.ContentDescription\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "List\u003cContentDescription\u003e",
-                "type": "Java Instantiated Interface"
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/box/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/content/box/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "updateContentPage(java.lang.Long,com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
               {
-                "name": "convertContentBoxToContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.box.PersistableContentBox) return com.salesmanager.core.model.content.Content",
-                "type": "Java Method"
+                "name": "api/v1/private/content/page/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/PUT/api/v1/private/content/page/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "saveContentBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "buildDescriptions(com.salesmanager.core.model.content.Content,java.util.List.List\u003ccom.salesmanager.shop.model.content.common.ContentDescription\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e",
-                "type": "Java Method"
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "List\u003cContentDescription\u003e",
-                "type": "Java Instantiated Interface"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/images/rename/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/POST/api/v1/private/content/images/rename/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "getFileContentType(java.lang.String) return com.salesmanager.core.model.content.FileContentType",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "renameFile(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.lang.String) return void",
-                "type": "Java Method"
+                "name": "api/v1/private/files/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/files/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "ofNullable\u003cnull\u003e",
-                "type": "Java Instantiated Method"
+                "name": "api/v1/private/file/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/file/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/images/add/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/POST/api/v1/private/content/images/add/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/images/add/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/POST/api/v1/private/content/images/add/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "addContentFile(com.salesmanager.shop.model.content.ContentFile,java.lang.String) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
               {
-                "name": "getFileContentType(java.lang.String) return com.salesmanager.core.model.content.FileContentType",
-                "type": "Java Method"
+                "name": "api/v1/private/files/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/files/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "addContentFile(com.salesmanager.shop.model.content.ContentFile,java.lang.String) return void",
-                "type": "Java Method"
+                "name": "api/v1/private/file/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/file/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/images/add/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/POST/api/v1/private/content/images/add/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "shopizer",
+                "full_name": "_sm-core_3350454590_.shopizer",
+                "type": "Java AWS S3 Bucket",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopizer",
+                "full_name": "_sm-core_3350454590_.shopizer",
+                "type": "Java GCP Cloud Storage Bucket",
+                "nature": "data entity"
+              },
+              {
+                "name": "Unknown",
+                "full_name": "_sm-core_3350454590_.Unknown",
+                "type": "Java AWS Unknown S3 Bucket",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/content/images/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/images/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "saveContentPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
               {
-                "name": "convertToContentImage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentImage",
-                "type": "Java Method"
+                "name": "api/v1/private/content/page/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/content/page/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "absolutePath(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return java.lang.String",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "getContentFolder(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentFolder",
-                "type": "Java Method"
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "List\u003cContentImage\u003e",
-                "type": "Java Instantiated Interface"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "ofNullable\u003cList\u003cString\u003e\u003e",
-                "type": "Java Instantiated Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "getContentFolder$lambda$1(java.lang.String) return R",
-                "type": "Java Lambda Expression"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "getContentFolder$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/content/boxes/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "saveContentBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
               {
-                "name": "fixContentDescription(java.lang.String) return java.lang.String",
-                "type": "Java Method"
+                "name": "api/v1/private/content/box/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/POST/api/v1/private/content/box/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findAppropriateContentDescription(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.content.ContentDescriptio",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "contentDescription(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.common.ContentDescription",
-                "type": "Java Method"
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "List\u003cContentDescription\u003e",
-                "type": "Java Instantiated Interface"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "ofNullable\u003cContent\u003e",
-                "type": "Java Instantiated Method"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "Optional\u003cContentDescription\u003e",
-                "type": "Java Instantiated Class"
-              },
-              {
-                "name": "getContentBox$lambda$2(com.salesmanager.core.model.content.ContentDescription) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "findAppropriateContentDescription$lambda$0(com.salesmanager.core.model.content.ContentDescription) return boolean",
-                "type": "Java Lambda Expression"
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/boxes/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "renameFile(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.lang.String) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
               {
-                "name": "fixContentDescription(java.lang.String) return java.lang.String",
-                "type": "Java Method"
+                "name": "api/v1/private/content/images/rename/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/POST/api/v1/private/content/images/rename/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findAppropriateContentDescription(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.content.ContentDescriptio",
-                "type": "Java Method"
+                "name": "shopizer",
+                "full_name": "_sm-core_3350454590_.shopizer",
+                "type": "Java AWS S3 Bucket",
+                "nature": "data entity"
               },
               {
-                "name": "contentDescription(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.common.ContentDescription",
-                "type": "Java Method"
+                "name": "shopizer",
+                "full_name": "_sm-core_3350454590_.shopizer",
+                "type": "Java GCP Cloud Storage Bucket",
+                "nature": "data entity"
               },
               {
-                "name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
-                "type": "Java Method"
-              },
-              {
-                "name": "List\u003cContentDescription\u003e",
-                "type": "Java Instantiated Interface"
-              },
-              {
-                "name": "ofNullable\u003cContent\u003e",
-                "type": "Java Instantiated Method"
-              },
-              {
-                "name": "Optional\u003cContentDescription\u003e",
-                "type": "Java Instantiated Class"
-              },
-              {
-                "name": "getContentBox$lambda$2(com.salesmanager.core.model.content.ContentDescription) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "findAppropriateContentDescription$lambda$0(com.salesmanager.core.model.content.ContentDescription) return boolean",
-                "type": "Java Lambda Expression"
+                "name": "Unknown",
+                "full_name": "_sm-core_3350454590_.Unknown",
+                "type": "Java AWS Unknown S3 Bucket",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/contents/any/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "ofNullable\u003cnull\u003e",
+            "comment": "",
+            "type": "Java Instantiated Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "ArrayList\u003cContentType\u003e",
-                "type": "Java Instantiated Constructor"
-              },
-              {
-                "name": "create(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.ContentDescriptionEntity",
-                "type": "Java Method"
-              },
-              {
-                "name": "convertContentToReadableContentEntity(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.ReadableContentEntity",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "ArrayList\u003cContentType\u003e",
-                "type": "Java Instantiated Class"
-              },
-              {
-                "name": "getContents$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
+                "name": "api/v1/private/content/images/rename/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/POST/api/v1/private/content/images/rename/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/any/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/any/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "convertToContentImage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentImage",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "ArrayList\u003cContentDescriptionEntity\u003e",
-                "type": "Java Instantiated Constructor"
+                "name": "api/v1/content/images/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/images/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "create(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.ContentDescriptionEntity",
-                "type": "Java Method"
+                "name": "api/v1/private/content/folder/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/folder/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "createContentDescriptionEntitys(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentD",
-                "type": "Java Method"
-              },
-              {
-                "name": "convertContentToReadableContentFull(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.ReadableContentFull",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContent(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull",
-                "type": "Java Method"
-              },
-              {
-                "name": "List\u003cContentDescriptionEntity\u003e",
-                "type": "Java Instantiated Interface"
-              },
-              {
-                "name": "ArrayList\u003cContentDescriptionEntity\u003e",
-                "type": "Java Instantiated Class"
+                "name": "api/v1/private/content/list/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/list/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/page/{}/exists/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/page/{}/exists/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "absolutePath(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return java.lang.String",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
+                "name": "api/v1/content/images/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/images/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/folder/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/folder/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/list/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/list/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/box/{}/exists/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/box/{}/exists/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "getContentFolder(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentFolder",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 5,
+            "impacted_elements_to_test": [
               {
-                "name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
+                "name": "api/v1/content/images/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/images/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/folder/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/folder/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/list/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/list/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "shopizer",
+                "full_name": "_sm-core_3350454590_.shopizer",
+                "type": "Java AWS S3 Bucket",
+                "nature": "data entity"
+              },
+              {
+                "name": "Unknown",
+                "full_name": "_sm-core_3350454590_.Unknown",
+                "type": "Java AWS Unknown S3 Bucket",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/content/pages/name/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/name/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "List\u003cContentImage\u003e",
+            "comment": "",
+            "type": "Java Instantiated Interface",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "contentDescriptionToReadableContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.page.ReadableContentPage",
-                "type": "Java Method"
+                "name": "api/v1/content/images/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/images/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "getContentPageByName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
-                "type": "Java Method"
+                "name": "api/v1/private/content/folder/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/folder/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "ofNullable\u003cContentDescription\u003e",
-                "type": "Java Instantiated Method"
-              },
-              {
-                "name": "getContentPageByName$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
+                "name": "api/v1/private/content/list/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/list/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/content/pages/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "ofNullable\u003cList\u003cString\u003e\u003e",
+            "comment": "",
+            "type": "Java Instantiated Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "findAppropriateContentDescription(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.content.ContentDescriptio",
-                "type": "Java Method"
+                "name": "api/v1/content/images/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/images/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "contentDescription(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.common.ContentDescription",
-                "type": "Java Method"
+                "name": "api/v1/private/content/folder/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/folder/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "convertContentToReadableContentPage(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.page.ReadableContentPage",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
-                "type": "Java Method"
-              },
-              {
-                "name": "List\u003cContentDescription\u003e",
-                "type": "Java Instantiated Interface"
-              },
-              {
-                "name": "ofNullable\u003cContent\u003e",
-                "type": "Java Instantiated Method"
-              },
-              {
-                "name": "Optional\u003cContentDescription\u003e",
-                "type": "Java Instantiated Class"
-              },
-              {
-                "name": "findAppropriateContentDescription$lambda$0(com.salesmanager.core.model.content.ContentDescription) return boolean",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "convertContentToReadableContentPage$lambda$0(com.salesmanager.core.model.content.ContentDescription) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
+                "name": "api/v1/private/content/list/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/list/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/boxes/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "getContentFolder$lambda$1(java.lang.String) return R",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 5,
+            "impacted_elements_to_test": [
               {
-                "name": "findAppropriateContentDescription(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.content.ContentDescriptio",
-                "type": "Java Method"
+                "name": "api/v1/content/images/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/images/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "contentDescription(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.common.ContentDescription",
-                "type": "Java Method"
+                "name": "api/v1/private/content/folder/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/folder/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "setDescription(com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.box.ReadableContentBox,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "api/v1/private/content/list/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/list/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "convertContentToReadableContentBox(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.box.ReadableContentBox",
-                "type": "Java Method"
+                "name": "shopizer",
+                "full_name": "_sm-core_3350454590_.shopizer",
+                "type": "Java AWS S3 Bucket",
+                "nature": "data entity"
               },
               {
-                "name": "getContentBoxes(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntity",
-                "type": "Java Method"
-              },
-              {
-                "name": "List\u003cContentDescription\u003e",
-                "type": "Java Instantiated Interface"
-              },
-              {
-                "name": "Optional\u003cContentDescription\u003e",
-                "type": "Java Instantiated Class"
-              },
-              {
-                "name": "findAppropriateContentDescription$lambda$0(com.salesmanager.core.model.content.ContentDescription) return boolean",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "convertContentToReadableContentBox$lambda$0(com.salesmanager.core.model.content.ContentDescription) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBoxes$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
+                "name": "Unknown",
+                "full_name": "_sm-core_3350454590_.Unknown",
+                "type": "Java AWS Unknown S3 Bucket",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/content/boxes/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "getContentFolder$lambda$0() return java.lang.Object",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 5,
+            "impacted_elements_to_test": [
               {
-                "name": "findAppropriateContentDescription(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.content.ContentDescriptio",
-                "type": "Java Method"
+                "name": "api/v1/content/images/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/images/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "contentDescription(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.common.ContentDescription",
-                "type": "Java Method"
+                "name": "api/v1/private/content/folder/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/folder/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "setDescription(com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.box.ReadableContentBox,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "api/v1/private/content/list/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/list/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "convertContentToReadableContentBox(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.box.ReadableContentBox",
-                "type": "Java Method"
+                "name": "shopizer",
+                "full_name": "_sm-core_3350454590_.shopizer",
+                "type": "Java AWS S3 Bucket",
+                "nature": "data entity"
               },
               {
-                "name": "getContentBoxes(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntity",
-                "type": "Java Method"
-              },
-              {
-                "name": "List\u003cContentDescription\u003e",
-                "type": "Java Instantiated Interface"
-              },
-              {
-                "name": "Optional\u003cContentDescription\u003e",
-                "type": "Java Instantiated Class"
-              },
-              {
-                "name": "findAppropriateContentDescription$lambda$0(com.salesmanager.core.model.content.ContentDescription) return boolean",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "convertContentToReadableContentBox$lambda$0(com.salesmanager.core.model.content.ContentDescription) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBoxes$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
+                "name": "Unknown",
+                "full_name": "_sm-core_3350454590_.Unknown",
+                "type": "Java AWS Unknown S3 Bucket",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/content/pages/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "fixContentDescription(java.lang.String) return java.lang.String",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "findAppropriateContentDescription(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.content.ContentDescriptio",
-                "type": "Java Method"
+                "name": "api/v1/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "contentDescription(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.common.ContentDescription",
-                "type": "Java Method"
-              },
-              {
-                "name": "setDescription(com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.box.ReadableContentBox,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "convertContentToReadableContentBox(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.box.ReadableContentBox",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.Re",
-                "type": "Java Method"
-              },
-              {
-                "name": "List\u003cContentDescription\u003e",
-                "type": "Java Instantiated Interface"
-              },
-              {
-                "name": "Optional\u003cContentDescription\u003e",
-                "type": "Java Instantiated Class"
-              },
-              {
-                "name": "findAppropriateContentDescription$lambda$0(com.salesmanager.core.model.content.ContentDescription) return boolean",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "convertContentToReadableContentBox$lambda$0(com.salesmanager.core.model.content.ContentDescription) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPages$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
+                "name": "api/v1/private/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/pages/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/pages/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "findAppropriateContentDescription(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.content.ContentDescriptio",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
               {
-                "name": "findAppropriateContentDescription(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.content.ContentDescriptio",
-                "type": "Java Method"
+                "name": "api/v1/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "contentDescription(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.common.ContentDescription",
-                "type": "Java Method"
+                "name": "api/v1/private/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "setDescription(com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.box.ReadableContentBox,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "api/v1/content/pages/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "convertContentToReadableContentBox(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.box.ReadableContentBox",
-                "type": "Java Method"
+                "name": "api/v1/private/content/boxes/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "getContentPages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.Re",
-                "type": "Java Method"
+                "name": "api/v1/content/boxes/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "List\u003cContentDescription\u003e",
-                "type": "Java Instantiated Interface"
+                "name": "api/v1/content/pages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "Optional\u003cContentDescription\u003e",
-                "type": "Java Instantiated Class"
-              },
-              {
-                "name": "findAppropriateContentDescription$lambda$0(com.salesmanager.core.model.content.ContentDescription) return boolean",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "convertContentToReadableContentBox$lambda$0(com.salesmanager.core.model.content.ContentDescription) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPages$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
+                "name": "api/v1/private/content/pages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/pages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/folder/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/folder/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "contentDescription(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.common.ContentDescription",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
               {
-                "name": "convertToContentImage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentImage",
-                "type": "Java Method"
+                "name": "api/v1/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "absolutePath(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return java.lang.String",
-                "type": "Java Method"
+                "name": "api/v1/private/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "getContentFolder(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentFolder",
-                "type": "Java Method"
+                "name": "api/v1/content/pages/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "List\u003cContentImage\u003e",
-                "type": "Java Instantiated Interface"
+                "name": "api/v1/private/content/boxes/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "ofNullable\u003cList\u003cString\u003e\u003e",
-                "type": "Java Instantiated Method"
+                "name": "api/v1/content/boxes/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "getContentFolder$lambda$1(java.lang.String) return R",
-                "type": "Java Lambda Expression"
+                "name": "api/v1/content/pages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "getContentFolder$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
+                "name": "api/v1/private/content/pages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/pages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/list/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/GET/api/v1/private/content/list/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "convertToContentImage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentImage",
-                "type": "Java Method"
+                "name": "api/v1/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "absolutePath(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return java.lang.String",
-                "type": "Java Method"
+                "name": "api/v1/private/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "getContentFolder(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentFolder",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "List\u003cContentImage\u003e",
-                "type": "Java Instantiated Interface"
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "ofNullable\u003cList\u003cString\u003e\u003e",
-                "type": "Java Instantiated Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "getContentFolder$lambda$1(java.lang.String) return R",
-                "type": "Java Lambda Expression"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "getContentFolder$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/DELETE/api/v1/private/content/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
+            "name": "ofNullable\u003cContent\u003e",
+            "comment": "",
+            "type": "Java Instantiated Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return void",
-                "type": "Java Method"
+                "name": "api/v1/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/content/pages/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/DELETE/api/v1/private/content/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
+            "name": "Optional\u003cContentDescription\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
               {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
-                "type": "Java Method"
+                "name": "api/v1/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/content/pages/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/boxes/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/content/boxes/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/content/pages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/pages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/pages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/box/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/DELETE/api/v1/private/content/box/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
+            "name": "getContentBox$lambda$2(com.salesmanager.core.model.content.ContentDescription) return R",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
-                "type": "Java Method"
+                "name": "api/v1/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/page/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/DELETE/api/v1/private/content/page/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
+            "name": "getContentBox$lambda$1() return java.lang.Object",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
-                "type": "Java Method"
+                "name": "api/v1/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/content/images/remove/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentAdministrationApi.java/api/v1/PORT/DELETE/api/v1/private/content/images/remove/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
+            "name": "getContentBox$lambda$0() return java.lang.Object",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return void",
-                "type": "Java Method"
+                "name": "api/v1/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "findAppropriateContentDescription$lambda$0(com.salesmanager.core.model.content.ContentDescription) return boolean",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/boxes/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/content/pages/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/boxes/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/content/boxes/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/content/pages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/pages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/pages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "ArrayList\u003cContentType\u003e",
+            "comment": "",
+            "type": "Java Instantiated Constructor",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/contents/any/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "create(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.ContentDescriptionEntity",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/contents/any/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/any/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/any/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "convertContentToReadableContentEntity(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.ReadableContentEntity",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/contents/any/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getContents(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/contents/any/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "ArrayList\u003cContentType\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/contents/any/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getContents$lambda$0(com.salesmanager.core.model.content.Content) return R",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/contents/any/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "ArrayList\u003cContentDescriptionEntity\u003e",
+            "comment": "",
+            "type": "Java Instantiated Constructor",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/content/any/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/any/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "createContentDescriptionEntitys(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentD",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/content/any/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/any/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "convertContentToReadableContentFull(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.ReadableContentFull",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/content/any/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/any/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getContent(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/content/any/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/any/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "List\u003cContentDescriptionEntity\u003e",
+            "comment": "",
+            "type": "Java Instantiated Interface",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/content/any/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/any/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "ArrayList\u003cContentDescriptionEntity\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/content/any/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/any/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/content/page/{}/exists/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/page/{}/exists/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/content/box/{}/exists/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/box/{}/exists/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "contentDescriptionToReadableContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.page.ReadableContentPage",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/content/pages/name/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/name/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getContentPageByName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/content/pages/name/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/name/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "ofNullable\u003cContentDescription\u003e",
+            "comment": "",
+            "type": "Java Instantiated Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/content/pages/name/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/name/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getContentPageByName$lambda$0() return java.lang.Object",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/content/pages/name/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/name/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "convertContentToReadableContentPage(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.page.ReadableContentPage",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/content/pages/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getContentPage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/content/pages/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "convertContentToReadableContentPage$lambda$0(com.salesmanager.core.model.content.ContentDescription) return R",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/content/pages/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getContentPage$lambda$1() return java.lang.Object",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/content/pages/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 9,
-        "entities_to_test": [
-          {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateContentBox(java.lang.Long,com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "deleteContent(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateContentPage(java.lang.Long,com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContent(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveContentBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveContentPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentBoxes(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntity",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.Re",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBoxes$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPages$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "content",
-            "full_name": "salesmanager.content",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateContentBox(java.lang.Long,com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "deleteContent(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateContentPage(java.lang.Long,com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContent(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveContentBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveContentPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentBoxes(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntity",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.Re",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBoxes$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPages$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateContentBox(java.lang.Long,com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "deleteContent(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateContentPage(java.lang.Long,com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContent(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveContentBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveContentPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentBoxes(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntity",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.Re",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBoxes$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPages$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateContentBox(java.lang.Long,com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "deleteContent(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateContentPage(java.lang.Long,com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContent(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveContentBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveContentPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentBoxes(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntity",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.Re",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBoxes$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPages$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateContentBox(java.lang.Long,com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "deleteContent(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateContentPage(java.lang.Long,com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContent(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveContentBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveContentPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentBoxes(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntity",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.Re",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBoxes$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPages$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "convertContentBoxToContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.box.PersistableContentBox) return com.salesmanager.core.model.content.Content",
-                "type": "Java Method"
-              },
-              {
-                "name": "convertContentPageToContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.page.PersistableContentPage) return com.salesmanager.core.model.content.Content",
-                "type": "Java Method"
-              },
-              {
-                "name": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateContentBox(java.lang.Long,com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "deleteContent(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateContentPage(java.lang.Long,com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContent(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.ReadableContentFull",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveContentBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveContentPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentBoxes(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntity",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
-                "type": "Java Method"
-              },
-              {
-                "name": "buildDescriptions(com.salesmanager.core.model.content.Content,java.util.List.List\u003ccom.salesmanager.shop.model.content.common.ContentDescription\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentPages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.Re",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContents$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBox$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentBoxes$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$1() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPage$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentPages$lambda$0(com.salesmanager.core.model.content.Content) return R",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "shopizer",
-            "full_name": "_sm-core_3350454590_.shopizer",
-            "type": "Java AWS S3 Bucket",
-            "used_elements": [
-              {
-                "name": "addContentFiles(java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentFile\u003e,java.lang.String) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "download(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.FileContentType,java.lang.String) return com.salesmanager.core.model.content.OutputContentFile",
-                "type": "Java Method"
-              },
-              {
-                "name": "renameFile(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.lang.String) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "addContentFile(com.salesmanager.shop.model.content.ContentFile,java.lang.String) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentFolder(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentFolder",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentFolder$lambda$1(java.lang.String) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentFolder$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "shopizer",
-            "full_name": "_sm-core_3350454590_.shopizer",
-            "type": "Java GCP Cloud Storage Bucket",
-            "used_elements": [
-              {
-                "name": "addContentFiles(java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentFile\u003e,java.lang.String) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "renameFile(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.lang.String) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "addContentFile(com.salesmanager.shop.model.content.ContentFile,java.lang.String) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return void",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "Unknown",
-            "full_name": "_sm-core_3350454590_.Unknown",
-            "type": "Java AWS Unknown S3 Bucket",
-            "used_elements": [
-              {
-                "name": "addContentFiles(java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentFile\u003e,java.lang.String) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "download(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.FileContentType,java.lang.String) return com.salesmanager.core.model.content.OutputContentFile",
-                "type": "Java Method"
-              },
-              {
-                "name": "renameFile(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.lang.String) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "addContentFile(com.salesmanager.shop.model.content.ContentFile,java.lang.String) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentFolder(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentFolder",
-                "type": "Java Method"
-              },
-              {
-                "name": "getContentFolder$lambda$1(java.lang.String) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getContentFolder$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "data entity"
+        ]
       }
     ]
   }

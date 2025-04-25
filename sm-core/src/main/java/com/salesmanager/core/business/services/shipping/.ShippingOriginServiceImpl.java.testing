@@ -1,129 +1,79 @@
 {
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingOriginServiceImpl.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingOriginServiceImpl.java]": [
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingOriginServiceImpl.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 6,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 1,
+        "impacting_elements": [
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "getByStore(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingOrigin",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
               {
-                "name": "getByStore(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingOrigin",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "api/v1/private/shipping/origin/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/POST/api/v1/private/shipping/origin/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
-                "name": "getByStore(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingOrigin",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "api/v1/cart/{}/shipping/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderShippingApi.java/api/v1/PORT/POST/api/v1/cart/{}/shipping/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
-                "name": "getByStore(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingOrigin",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "api/v1/private/shipping/origin/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/origin/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
-                "name": "getByStore(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingOrigin",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "api/v1/auth/cart/{}/shipping/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderShippingApi.java/api/v1/PORT/GET/api/v1/auth/cart/{}/shipping/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
-                "name": "getByStore(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingOrigin",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "shiping_origin",
-            "full_name": "salesmanager.shiping_origin",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
               {
-                "name": "getByStore(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingOrigin",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shiping_origin",
+                "full_name": "salesmanager.shiping_origin",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 4,
-        "entities_to_test": [
-          {
-            "name": "api/v1/private/shipping/origin/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/POST/api/v1/private/shipping/origin/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "getByStore(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingOrigin",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/cart/{}/shipping/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderShippingApi.java/api/v1/PORT/POST/api/v1/cart/{}/shipping/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "getByStore(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingOrigin",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/shipping/origin/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/origin/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "getByStore(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingOrigin",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/auth/cart/{}/shipping/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderShippingApi.java/api/v1/PORT/GET/api/v1/auth/cart/{}/shipping/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "getByStore(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingOrigin",
-                "type": "Java Method"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

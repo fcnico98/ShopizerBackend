@@ -1,196 +1,235 @@
 {
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/customer/attribute/CustomerOptionSetServiceImpl.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/customer/attribute/CustomerOptionSetServiceImpl.java]": [
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/customer/attribute/CustomerOptionSetServiceImpl.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 8,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 4,
+        "impacting_elements": [
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "listByOptionValue(com.salesmanager.core.model.customer.attribute.CustomerOptionValue,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "listByOptionValue(com.salesmanager.core.model.customer.attribute.CustomerOptionValue,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "delete(com.salesmanager.core.model.customer.attribute.CustomerOptionSet) return void",
-                "type": "Java Method"
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByOption(com.salesmanager.core.model.customer.attribute.CustomerOption,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_set",
+                "full_name": "salesmanager.customer_option_set",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "listByOptionValue(com.salesmanager.core.model.customer.attribute.CustomerOptionValue,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "delete(com.salesmanager.core.model.customer.attribute.CustomerOptionSet) return void",
-                "type": "Java Method"
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByOption(com.salesmanager.core.model.customer.attribute.CustomerOption,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_set",
+                "full_name": "salesmanager.customer_option_set",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "customer_option",
-            "full_name": "salesmanager.customer_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "delete(com.salesmanager.core.model.customer.attribute.CustomerOptionSet) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "listByOptionValue(com.salesmanager.core.model.customer.attribute.CustomerOptionValue,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "delete(com.salesmanager.core.model.customer.attribute.CustomerOptionSet) return void",
-                "type": "Java Method"
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByOption(com.salesmanager.core.model.customer.attribute.CustomerOption,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_set",
+                "full_name": "salesmanager.customer_option_set",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "listByOption(com.salesmanager.core.model.customer.attribute.CustomerOption,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "listByOptionValue(com.salesmanager.core.model.customer.attribute.CustomerOptionValue,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "delete(com.salesmanager.core.model.customer.attribute.CustomerOptionSet) return void",
-                "type": "Java Method"
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByOption(com.salesmanager.core.model.customer.attribute.CustomerOption,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "customer_option_set",
-            "full_name": "salesmanager.customer_option_set",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listByOptionValue(com.salesmanager.core.model.customer.attribute.CustomerOptionValue,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "customer_option_set",
+                "full_name": "salesmanager.customer_option_set",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "delete(com.salesmanager.core.model.customer.attribute.CustomerOptionSet) return void",
-                "type": "Java Method"
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByOption(com.salesmanager.core.model.customer.attribute.CustomerOption,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "customer_option_value",
-            "full_name": "salesmanager.customer_option_value",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listByOptionValue(com.salesmanager.core.model.customer.attribute.CustomerOptionValue,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(com.salesmanager.core.model.customer.attribute.CustomerOptionSet) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "listByOption(com.salesmanager.core.model.customer.attribute.CustomerOption,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listByOptionValue(com.salesmanager.core.model.customer.attribute.CustomerOptionValue,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(com.salesmanager.core.model.customer.attribute.CustomerOptionSet) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "listByOption(com.salesmanager.core.model.customer.attribute.CustomerOption,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listByOptionValue(com.salesmanager.core.model.customer.attribute.CustomerOptionValue,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(com.salesmanager.core.model.customer.attribute.CustomerOptionSet) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "listByOption(com.salesmanager.core.model.customer.attribute.CustomerOption,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.customer.attribute.CustomerOptionSet\u003e",
-                "type": "Java Method"
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
+        ]
       }
     ]
   }

@@ -1,990 +1,1381 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/CustomerApi.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/CustomerApi.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/CustomerApi.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 14,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 22,
+        "impacting_elements": [
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAuthUserAddress(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getAuthUser(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
+            "name": "update(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.PersistableCustomer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Put Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/PUT/api/v1/private/customer/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "api/v1/private/customer/",
-                "type": "Spring MVC Post Operation"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Any Operation"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/auth/customer/address/",
-                "type": "Spring MVC Any Operation"
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/private/customer/{}/address/",
-                "type": "Spring MVC Any Operation"
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/auth/customer/profile/",
-                "type": "Spring MVC Get Operation"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/private/customer/profile/",
-                "type": "Spring MVC Get Operation"
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Get Operation"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Delete Operation"
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Delete Operation"
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
-          {
-            "name": "permission",
-            "full_name": "salesmanager.permission",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "users",
-            "full_name": "salesmanager.users",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAuthUserAddress(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getAuthUser(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/private/customer/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Delete Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "customer",
-            "full_name": "salesmanager.customer",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAuthUserAddress(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getAuthUser(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/private/customer/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Delete Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "customer_option",
-            "full_name": "salesmanager.customer_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAuthUserAddress(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getAuthUser(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/private/customer/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Delete Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAuthUserAddress(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getAuthUser(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/private/customer/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Delete Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "customer_attribute",
-            "full_name": "salesmanager.customer_attribute",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Delete Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "customer_option_value",
-            "full_name": "salesmanager.customer_option_value",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAuthUserAddress(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getAuthUser(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/private/customer/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Delete Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAuthUserAddress(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getAuthUser(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/private/customer/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Delete Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAuthUserAddress(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getAuthUser(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/private/customer/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/profile/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Delete Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "merchant_configuration",
-            "full_name": "salesmanager.merchant_configuration",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/customer/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "sm_group",
-            "full_name": "salesmanager.sm_group",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/customer/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "zone",
-            "full_name": "salesmanager.zone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAuthUserAddress(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "update(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/private/customer/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/private/customer/{}/address/",
-                "type": "Spring MVC Any Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 11,
-        "entities_to_test": [
           {
             "name": "api/v1/private/customer/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/PUT/api/v1/private/customer/{}/",
+            "comment": "",
             "type": "Spring MVC Put Operation",
-            "used_elements": [
-              {
-                "name": "update(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Put Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/PUT/api/v1/private/customer/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 12,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/POST/api/v1/private/customer/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_group",
+                "full_name": "salesmanager.sm_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/private/customer/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/POST/api/v1/private/customer/",
+            "comment": "",
             "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.customer.PersistableCustomer) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 12,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/customer/",
-                "type": "Spring MVC Post Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/POST/api/v1/private/customer/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_group",
+                "full_name": "salesmanager.sm_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "update(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.PersistableCustomer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/auth/customer/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/",
+            "comment": "",
             "type": "Spring MVC Any Operation",
-            "used_elements": [
-              {
-                "name": "update(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.PersistableCustomer",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Any Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "updateAuthUserAddress(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/customer/address/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/address/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/auth/customer/address/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/address/",
+            "comment": "",
             "type": "Spring MVC Any Operation",
-            "used_elements": [
-              {
-                "name": "updateAuthUserAddress(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/customer/address/",
-                "type": "Spring MVC Any Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/auth/customer/address/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/customer/{}/address/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/private/customer/{}/address/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/private/customer/{}/address/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/private/customer/{}/address/",
+            "comment": "",
             "type": "Spring MVC Any Operation",
-            "used_elements": [
-              {
-                "name": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/customer/{}/address/",
-                "type": "Spring MVC Any Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/ANY/api/v1/private/customer/{}/address/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getAuthUser(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.ReadableCustomer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/customer/profile/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/profile/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/customer/profile/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customer/profile/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/auth/customer/profile/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/profile/",
+            "comment": "",
             "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "getAuthUser(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/customer/profile/",
-                "type": "Spring MVC Get Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/profile/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/private/customer/profile/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customer/profile/",
+            "comment": "",
             "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "getAuthUser(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/customer/profile/",
-                "type": "Spring MVC Get Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customer/profile/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/customer/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customer/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/private/customer/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customer/{}/",
+            "comment": "",
             "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.customer.ReadableCustomer",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Get Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customer/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "createCustomerCriteria(java.lang.Integer,java.lang.Integer) return com.salesmanager.core.model.customer.CustomerCriteria",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/customers/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customers/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "list(java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.populator.customer.ReadableCustomerList",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/customers/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customers/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
             "name": "api/v1/private/customers/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customers/",
+            "comment": "",
             "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "createCustomerCriteria(java.lang.Integer,java.lang.Integer) return com.salesmanager.core.model.customer.CustomerCriteria",
-                "type": "Java Method"
-              },
-              {
-                "name": "list(java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.populator.customer.ReadableCustomerList",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/customers/",
-                "type": "Spring MVC Get Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/GET/api/v1/private/customers/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 11,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/auth/customer/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_attribute",
+                "full_name": "salesmanager.customer_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/auth/customer/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/auth/customer/",
+            "comment": "",
             "type": "Spring MVC Delete Operation",
-            "used_elements": [
-              {
-                "name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return void",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 11,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/customer/",
-                "type": "Spring MVC Delete Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/auth/customer/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_attribute",
+                "full_name": "salesmanager.customer_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 12,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/customer/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/private/customer/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "permission",
+                "full_name": "salesmanager.permission",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "users",
+                "full_name": "salesmanager.users",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_attribute",
+                "full_name": "salesmanager.customer_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/private/customer/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/private/customer/{}/",
+            "comment": "",
             "type": "Spring MVC Delete Operation",
-            "used_elements": [
-              {
-                "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 12,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/customer/{}/",
-                "type": "Spring MVC Delete Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/DELETE/api/v1/private/customer/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "permission",
+                "full_name": "salesmanager.permission",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "users",
+                "full_name": "salesmanager.users",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_attribute",
+                "full_name": "salesmanager.customer_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

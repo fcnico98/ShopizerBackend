@@ -1,52 +1,45 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/AbstractController.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/AbstractController.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/AbstractController.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 2,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 2,
+        "impacting_elements": [
           {
-            "name": "admin/files/downloads/{}/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\controller\\FilesController.java//PORT/ANY/admin/files/downloads/{}/{}/",
-            "type": "Spring MVC Any Operation",
-            "used_elements": [
+            "name": "AbstractController",
+            "comment": "",
+            "type": "Java Class",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "AbstractController",
-                "type": "Java Class"
+                "name": "admin/files/downloads/{}/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\controller\\FilesController.java//PORT/ANY/admin/files/downloads/{}/{}/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "static/files/{}/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\controller\\FilesController.java//PORT/ANY/static/files/{}/{}/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "static/files/{}/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\controller\\FilesController.java//PORT/ANY/static/files/{}/{}/",
-            "type": "Spring MVC Any Operation",
-            "used_elements": [
+            "name": "getLanguage(javax.servlet.http.HttpServletRequest) return com.salesmanager.core.model.reference.language.Language",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "AbstractController",
-                "type": "Java Class"
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 1,
-        "entities_to_test": [
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "getLanguage(javax.servlet.http.HttpServletRequest) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "data entity"
+        ]
       }
     ]
   }

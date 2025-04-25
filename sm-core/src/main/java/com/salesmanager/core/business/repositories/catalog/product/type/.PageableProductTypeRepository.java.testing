@@ -1,113 +1,113 @@
 {
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/type/PageableProductTypeRepository.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/type/PageableProductTypeRepository.java]": [
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/type/PageableProductTypeRepository.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 5,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 3,
+        "impacting_elements": [
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "listByStore(java.lang.Integer,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.type.ProductType\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
               {
-                "name": "listByStore(java.lang.Integer,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.type.ProductType\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/product/types/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductTypeApi.java/api/v1/PORT/GET/api/v1/private/product/types/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "PageableProductTypeRepository",
+            "comment": "",
+            "type": "Java Interface",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "listByStore(java.lang.Integer,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.type.ProductType\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
+                "name": "api/v1/private/product/types/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductTypeApi.java/api/v1/PORT/GET/api/v1/private/product/types/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "select distinct p from",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
               {
-                "name": "listByStore(java.lang.Integer,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.type.ProductType\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/product/types/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductTypeApi.java/api/v1/PORT/GET/api/v1/private/product/types/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listByStore(java.lang.Integer,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.type.ProductType\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listByStore(java.lang.Integer,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.type.ProductType\u003e",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 1,
-        "entities_to_test": [
-          {
-            "name": "api/v1/private/product/types/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductTypeApi.java/api/v1/PORT/GET/api/v1/private/product/types/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "listByStore(java.lang.Integer,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.type.ProductType\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "PageableProductTypeRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

@@ -1,304 +1,423 @@
 {
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/ProductOptionSetRepository.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/ProductOptionSetRepository.java]": [
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/ProductOptionSetRepository.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 6,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 9,
+        "impacting_elements": [
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "findOne(java.lang.Integer,java.lang.Long,java.lang.Integer) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "findByCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProductType(java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByStore(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Integer,java.lang.Long,java.lang.Integer) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductOptionSet",
-                "type": "Spring Data JPQL Query"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "product_option",
-            "full_name": "salesmanager.product_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "ProductOptionSetRepository",
+            "comment": "",
+            "type": "Java Interface",
+            "nb_impacted_elements": 5,
+            "impacted_elements_to_test": [
               {
-                "name": "findByCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProductType(java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByStore(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findOne(java.lang.Integer,java.lang.Long,java.lang.Integer) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "select p from ProductOptionSet",
-                "type": "Spring Data JPQL Query"
-              },
-              {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
+                "name": "api/v1/private/product/property/set/unique/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/unique/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "select distinct p from",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "findByCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProductType(java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByStore(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Integer,java.lang.Long,java.lang.Integer) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductOptionSet",
-                "type": "Spring Data JPQL Query"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "findByCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "findByCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProductType(java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/unique/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/unique/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByStore(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Integer,java.lang.Long,java.lang.Integer) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductOptionSet",
-                "type": "Spring Data JPQL Query"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "select p from ProductOptionSet",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "findByCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProductType(java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/unique/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/unique/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByStore(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Integer,java.lang.Long,java.lang.Integer) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductOptionSet",
-                "type": "Spring Data JPQL Query"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "findByProductType(java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
               {
-                "name": "findByCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByProductType(java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByStore(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findOne(java.lang.Integer,java.lang.Long,java.lang.Integer) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select p from ProductOptionSet",
-                "type": "Spring Data JPQL Query"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "findByStore(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "select distinct p from",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 5,
-        "entities_to_test": [
-          {
-            "name": "api/v1/private/product/property/set/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
-            "type": "Spring MVC Put Operation",
-            "used_elements": [
-              {
-                "name": "findOne(java.lang.Integer,java.lang.Long,java.lang.Integer) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductOptionSetRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/product/property/set/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "findByCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductOptionSetRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select p from ProductOptionSet",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/product/property/set/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "findByProductType(java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "findByStore(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionSet\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductOptionSetRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/product/property/set/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "findOne(java.lang.Integer,java.lang.Long,java.lang.Integer) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductOptionSetRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select distinct p from",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/product/property/set/unique/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/unique/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "findByCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionSet",
-                "type": "Java Method"
-              },
-              {
-                "name": "ProductOptionSetRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select p from ProductOptionSet",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

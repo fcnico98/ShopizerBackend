@@ -1,150 +1,187 @@
 {
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/order/OrderRepositoryImpl.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/order/OrderRepositoryImpl.java]": [
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/order/OrderRepositoryImpl.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 6,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "impacting_elements list is truncated to first 50 items",
+        "nb_impacting_elements": 122,
+        "impacting_elements": [
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "select count(o) from Order",
+            "comment": "",
+            "type": "JPQL Query",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
               {
-                "name": "select count(o) from Order",
-                "type": "JPQL Query"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select o from Order",
-                "type": "JPQL Query"
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listOrders(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "orders",
-            "full_name": "salesmanager.orders",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "select o from Order",
+            "comment": "",
+            "type": "JPQL Query",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
               {
-                "name": "select count(o) from Order",
-                "type": "JPQL Query"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select o from Order",
-                "type": "JPQL Query"
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listOrders(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "listOrders(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
               {
-                "name": "select count(o) from Order",
-                "type": "JPQL Query"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select o from Order",
-                "type": "JPQL Query"
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listOrders(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
               {
-                "name": "select count(o) from Order",
-                "type": "JPQL Query"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select o from Order",
-                "type": "JPQL Query"
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listOrders(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "select count(o) from Order",
-                "type": "JPQL Query"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select o from Order",
-                "type": "JPQL Query"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listOrders(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
-                "type": "Java Method"
-              },
-              {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "select count(o) from Order",
-                "type": "JPQL Query"
-              },
-              {
-                "name": "select o from Order",
-                "type": "JPQL Query"
-              },
-              {
-                "name": "listOrders(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
-                "type": "Java Method"
-              },
-              {
-                "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.order.OrderCriteria) return com.salesmanager.core.model.order.OrderList",
-                "type": "Java Method"
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
+        ]
       }
     ]
   }

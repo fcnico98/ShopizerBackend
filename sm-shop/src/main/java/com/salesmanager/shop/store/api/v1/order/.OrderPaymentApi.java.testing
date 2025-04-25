@@ -1,831 +1,1037 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 24,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 18,
+        "impacting_elements": [
           {
-            "name": "manufacturer",
-            "full_name": "salesmanager.manufacturer",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listCapturableOrders(java.time.LocalDate,java.time.LocalDate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return co",
-                "type": "Java Method"
-              },
-              {
-                "name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/private/orders/payment/capturable/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/transactions/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "type": "Spring MVC Get Operation"
-              }
-            ]
-          },
-          {
-            "name": "orders",
-            "full_name": "salesmanager.orders",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listCapturableOrders(java.time.LocalDate,java.time.LocalDate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return co",
-                "type": "Java Method"
-              },
-              {
-                "name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/orders/payment/capturable/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/transactions/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "type": "Spring MVC Get Operation"
-              }
-            ]
-          },
-          {
-            "name": "permission",
-            "full_name": "salesmanager.permission",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/transactions/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "type": "Spring MVC Get Operation"
-              }
-            ]
-          },
-          {
-            "name": "product",
-            "full_name": "salesmanager.product",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "product_option",
-            "full_name": "salesmanager.product_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "product_variant_group",
-            "full_name": "salesmanager.product_variant_group",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "shopping_cart_item",
-            "full_name": "salesmanager.shopping_cart_item",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "tax_class",
-            "full_name": "salesmanager.tax_class",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "users",
-            "full_name": "salesmanager.users",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/transactions/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "type": "Spring MVC Get Operation"
-              }
-            ]
-          },
-          {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listCapturableOrders(java.time.LocalDate,java.time.LocalDate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return co",
-                "type": "Java Method"
-              },
-              {
-                "name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/private/orders/payment/capturable/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/transactions/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "type": "Spring MVC Get Operation"
-              }
-            ]
-          },
-          {
-            "name": "customer",
-            "full_name": "salesmanager.customer",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "customer_option",
-            "full_name": "salesmanager.customer_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listCapturableOrders(java.time.LocalDate,java.time.LocalDate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return co",
-                "type": "Java Method"
-              },
-              {
-                "name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/private/orders/payment/capturable/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/transactions/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "type": "Spring MVC Get Operation"
-              }
-            ]
-          },
-          {
-            "name": "customer_option_value",
-            "full_name": "salesmanager.customer_option_value",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listCapturableOrders(java.time.LocalDate,java.time.LocalDate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return co",
-                "type": "Java Method"
-              },
-              {
-                "name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/private/orders/payment/capturable/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/transactions/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "type": "Spring MVC Get Operation"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listCapturableOrders(java.time.LocalDate,java.time.LocalDate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return co",
-                "type": "Java Method"
-              },
-              {
-                "name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/private/orders/payment/capturable/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/transactions/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "type": "Spring MVC Get Operation"
-              }
-            ]
-          },
-          {
-            "name": "merchant_configuration",
-            "full_name": "salesmanager.merchant_configuration",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "module_configuration",
-            "full_name": "salesmanager.module_configuration",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "product_option_value",
-            "full_name": "salesmanager.product_option_value",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "product_variation",
-            "full_name": "salesmanager.product_variation",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "shopping_cart",
-            "full_name": "salesmanager.shopping_cart",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
-              }
-            ]
-          },
-          {
-            "name": "sm_transaction",
-            "full_name": "salesmanager.sm_transaction",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listCapturableOrders(java.time.LocalDate,java.time.LocalDate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return co",
-                "type": "Java Method"
-              },
-              {
-                "name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/orders/payment/capturable/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/transactions/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "type": "Spring MVC Get Operation"
-              }
-            ]
-          },
-          {
-            "name": "zone",
-            "full_name": "salesmanager.zone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "listCapturableOrders(java.time.LocalDate,java.time.LocalDate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return co",
-                "type": "Java Method"
-              },
-              {
-                "name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/private/orders/payment/capturable/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/transactions/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "type": "Spring MVC Get Operation"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 8,
-        "entities_to_test": [
-          {
-            "name": "api/v1/private/orders/{}/authorize/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/private/orders/{}/authorize/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "authorizePayment(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.ReadableTransaction",
-                "type": "Java Method"
-              },
+            "name": "authorizePayment(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.ReadableTransaction",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/orders/{}/authorize/",
-                "type": "Spring MVC Post Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/private/orders/{}/authorize/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "api/v1/private/orders/{}/authorize/",
+            "comment": "",
+            "type": "Spring MVC Post Operation",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/orders/{}/authorize/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/private/orders/{}/authorize/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "refundPayment(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.ReadableTransaction",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/orders/{}/refund/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/private/orders/{}/refund/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
             "name": "api/v1/private/orders/{}/refund/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/private/orders/{}/refund/",
+            "comment": "",
             "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "refundPayment(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.ReadableTransaction",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/orders/{}/refund/",
-                "type": "Spring MVC Post Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/private/orders/{}/refund/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "capturePayment(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.ReadableTransaction",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/orders/{}/capture/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/private/orders/{}/capture/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
             "name": "api/v1/private/orders/{}/capture/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/private/orders/{}/capture/",
+            "comment": "",
             "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "capturePayment(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.ReadableTransaction",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/orders/{}/capture/",
-                "type": "Spring MVC Post Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/private/orders/{}/capture/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 20,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "module_configuration",
+                "full_name": "salesmanager.module_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "OrderPaymentApi",
+            "comment": "",
+            "type": "Java Class",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/payment/capturable/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
             "name": "api/v1/auth/cart/{}/payment/init/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+            "comment": "",
             "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-                "type": "Java Method"
-              },
-              {
-                "name": "OrderPaymentApi",
-                "type": "Java Class"
-              },
+            "nb_impacted_elements": 20,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "module_configuration",
+                "full_name": "salesmanager.module_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 18,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "module_configuration",
+                "full_name": "salesmanager.module_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/cart/{}/payment/init/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+            "comment": "",
             "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 18,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/payment/init/",
-                "type": "Spring MVC Post Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "module_configuration",
+                "full_name": "salesmanager.module_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "listCapturableOrders(java.time.LocalDate,java.time.LocalDate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return co",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/orders/payment/capturable/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_transaction",
+                "full_name": "salesmanager.sm_transaction",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/private/orders/payment/capturable/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
+            "comment": "",
             "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "listCapturableOrders(java.time.LocalDate,java.time.LocalDate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return co",
-                "type": "Java Method"
-              },
-              {
-                "name": "OrderPaymentApi",
-                "type": "Java Class"
-              },
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/orders/payment/capturable/",
-                "type": "Spring MVC Get Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_transaction",
+                "full_name": "salesmanager.sm_transaction",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 11,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "permission",
+                "full_name": "salesmanager.permission",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "users",
+                "full_name": "salesmanager.users",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_transaction",
+                "full_name": "salesmanager.sm_transaction",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/private/orders/{}/payment/transactions/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+            "comment": "",
             "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "listTransactions(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.order.transaction.ReadableTransaction\u003e",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 11,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/orders/{}/payment/transactions/",
-                "type": "Spring MVC Get Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "List\u003cReadableTransaction\u003e",
-                "type": "Java Instantiated Interface"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "permission",
+                "full_name": "salesmanager.permission",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "users",
+                "full_name": "salesmanager.users",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_transaction",
+                "full_name": "salesmanager.sm_transaction",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "List\u003cReadableTransaction\u003e",
+            "comment": "",
+            "type": "Java Instantiated Interface",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 11,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "permission",
+                "full_name": "salesmanager.permission",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "users",
+                "full_name": "salesmanager.users",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_transaction",
+                "full_name": "salesmanager.sm_transaction",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
+            "comment": "",
             "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 11,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "type": "Spring MVC Get Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "permission",
+                "full_name": "salesmanager.permission",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "users",
+                "full_name": "salesmanager.users",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_transaction",
+                "full_name": "salesmanager.sm_transaction",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

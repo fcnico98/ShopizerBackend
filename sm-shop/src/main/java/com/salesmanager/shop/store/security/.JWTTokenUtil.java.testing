@@ -1,560 +1,631 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 30,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 22,
+        "impacting_elements": [
           {
-            "name": "manufacturer",
-            "full_name": "salesmanager.manufacturer",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "calculateExpirationDate(java.util.Date) return java.util.Date",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 5,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/private/login/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/POST/api/v1/private/login/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customer/login/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/login/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "doGenerateToken(java.util.Map.Map\u003cjava.lang.String,java.lang.Object\u003e,java.lang.String,java.lang.String) return java.lang.String",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/private/login/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/POST/api/v1/private/login/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customer/login/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/login/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "permission",
-            "full_name": "salesmanager.permission",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "generateToken(org.springframework.security.core.userdetails.UserDetails) return java.lang.String",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/private/login/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/POST/api/v1/private/login/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customer/login/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/login/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "product",
-            "full_name": "salesmanager.product",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "generateAudience() return java.lang.String",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/private/login/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/POST/api/v1/private/login/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customer/login/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/login/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "product_option",
-            "full_name": "salesmanager.product_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "JWTTokenUtil",
+            "comment": "",
+            "type": "Java Class",
+            "nb_impacted_elements": 5,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/private/login/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/POST/api/v1/private/login/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customer/login/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/login/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "product_price",
-            "full_name": "salesmanager.product_price",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "refreshToken(java.lang.String) return java.lang.String",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "product_variant_group",
-            "full_name": "salesmanager.product_variant_group",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "canTokenBeRefreshedWithGrace(java.lang.String,java.util.Date) return java.lang.Boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "tax_class",
-            "full_name": "salesmanager.tax_class",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "ignoreTokenExpiration(java.lang.String) return java.lang.Boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "users",
-            "full_name": "salesmanager.users",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "addSeconds(java.util.Date,java.lang.Integer) return java.util.Date",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "category",
-            "full_name": "salesmanager.category",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "isCreatedBeforeLastPasswordResetWithGrace(java.util.Date,java.util.Date) return java.lang.Boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "content",
-            "full_name": "salesmanager.content",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "isTokenExpiredWithGrace(java.lang.String) return java.lang.Boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "getAllClaimsFromToken(java.lang.String) return io.jsonwebtoken.Claims\u003cT\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "customer",
-            "full_name": "salesmanager.customer",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "getAudienceFromToken(java.lang.String) return java.lang.String",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "customer_option",
-            "full_name": "salesmanager.customer_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "getExpirationDateFromToken(java.lang.String) return java.util.Date",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "catalog",
-            "full_name": "salesmanager.catalog",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "getIssuedAtDateFromToken(java.lang.String) return java.util.Date",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "catalog_entry",
-            "full_name": "salesmanager.catalog_entry",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "getUsernameFromToken(java.lang.String) return java.lang.String",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "getClaimFromToken.T",
+            "comment": "",
+            "type": "",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "customer_option_value",
-            "full_name": "salesmanager.customer_option_value",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "getClaimFromToken\u003cT\u003e",
+            "comment": "",
+            "type": "Java Instantiated Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "customer_review",
-            "full_name": "salesmanager.customer_review",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "canTokenBeRefreshed(java.lang.String,java.util.Date) return java.lang.Boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "isCreatedBeforeLastPasswordReset(java.util.Date,java.util.Date) return java.lang.Boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "isTokenExpired(java.lang.String) return java.lang.Boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "merchant_configuration",
-            "full_name": "salesmanager.merchant_configuration",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+            "comment": "",
+            "type": "Generic Java Method",
+            "nb_impacted_elements": 30,
+            "impacted_elements_to_test": [
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
-              }
-            ]
-          },
-          {
-            "name": "module_configuration",
-            "full_name": "salesmanager.module_configuration",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
-              }
-            ]
-          },
-          {
-            "name": "product_attribute",
-            "full_name": "salesmanager.product_attribute",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
-              }
-            ]
-          },
-          {
-            "name": "product_availability",
-            "full_name": "salesmanager.product_availability",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "permission",
+                "full_name": "salesmanager.permission",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
-              }
-            ]
-          },
-          {
-            "name": "product_option_value",
-            "full_name": "salesmanager.product_option_value",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
-              }
-            ]
-          },
-          {
-            "name": "product_variation",
-            "full_name": "salesmanager.product_variation",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
-              }
-            ]
-          },
-          {
-            "name": "zone",
-            "full_name": "salesmanager.zone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "product_price",
+                "full_name": "salesmanager.product_price",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
-              }
-            ]
-          },
-          {
-            "name": "shopizer",
-            "full_name": "_sm-core_3350454590_.shopizer",
-            "type": "Java AWS S3 Bucket",
-            "used_elements": [
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
-              }
-            ]
-          },
-          {
-            "name": "Unknown",
-            "full_name": "_sm-core_3350454590_.Unknown",
-            "type": "Java AWS Unknown S3 Bucket",
-            "used_elements": [
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
               {
-                "name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
-                "type": "Generic Java Method"
+                "name": "users",
+                "full_name": "salesmanager.users",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "category",
+                "full_name": "salesmanager.category",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog_entry",
+                "full_name": "salesmanager.catalog_entry",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_review",
+                "full_name": "salesmanager.customer_review",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "module_configuration",
+                "full_name": "salesmanager.module_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_availability",
+                "full_name": "salesmanager.product_availability",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopizer",
+                "full_name": "_sm-core_3350454590_.shopizer",
+                "type": "Java AWS S3 Bucket",
+                "nature": "data entity"
+              },
+              {
+                "name": "Unknown",
+                "full_name": "_sm-core_3350454590_.Unknown",
+                "type": "Java AWS Unknown S3 Bucket",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 5,
-        "entities_to_test": [
-          {
-            "name": "api/v1/private/login/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/POST/api/v1/private/login/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "calculateExpirationDate(java.util.Date) return java.util.Date",
-                "type": "Java Method"
-              },
-              {
-                "name": "doGenerateToken(java.util.Map.Map\u003cjava.lang.String,java.lang.Object\u003e,java.lang.String,java.lang.String) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "generateToken(org.springframework.security.core.userdetails.UserDetails) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "generateAudience() return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "JWTTokenUtil",
-                "type": "Java Class"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/customer/login/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/login/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "calculateExpirationDate(java.util.Date) return java.util.Date",
-                "type": "Java Method"
-              },
-              {
-                "name": "doGenerateToken(java.util.Map.Map\u003cjava.lang.String,java.lang.Object\u003e,java.lang.String,java.lang.String) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "generateToken(org.springframework.security.core.userdetails.UserDetails) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "generateAudience() return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "JWTTokenUtil",
-                "type": "Java Class"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/customer/register/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "calculateExpirationDate(java.util.Date) return java.util.Date",
-                "type": "Java Method"
-              },
-              {
-                "name": "doGenerateToken(java.util.Map.Map\u003cjava.lang.String,java.lang.Object\u003e,java.lang.String,java.lang.String) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "generateToken(org.springframework.security.core.userdetails.UserDetails) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "generateAudience() return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "JWTTokenUtil",
-                "type": "Java Class"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/auth/refresh/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\AuthenticateUserApi.java/api/v1/PORT/GET/api/v1/auth/refresh/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "calculateExpirationDate(java.util.Date) return java.util.Date",
-                "type": "Java Method"
-              },
-              {
-                "name": "refreshToken(java.lang.String) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "canTokenBeRefreshedWithGrace(java.lang.String,java.util.Date) return java.lang.Boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "ignoreTokenExpiration(java.lang.String) return java.lang.Boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "addSeconds(java.util.Date,java.lang.Integer) return java.util.Date",
-                "type": "Java Method"
-              },
-              {
-                "name": "isCreatedBeforeLastPasswordResetWithGrace(java.util.Date,java.util.Date) return java.lang.Boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "isTokenExpiredWithGrace(java.lang.String) return java.lang.Boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "getAllClaimsFromToken(java.lang.String) return io.jsonwebtoken.Claims\u003cT\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "getAudienceFromToken(java.lang.String) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "getExpirationDateFromToken(java.lang.String) return java.util.Date",
-                "type": "Java Method"
-              },
-              {
-                "name": "getIssuedAtDateFromToken(java.lang.String) return java.util.Date",
-                "type": "Java Method"
-              },
-              {
-                "name": "getUsernameFromToken(java.lang.String) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "JWTTokenUtil",
-                "type": "Java Class"
-              },
-              {
-                "name": "getClaimFromToken.T",
-                "type": ""
-              },
-              {
-                "name": "getClaimFromToken\u003cT\u003e",
-                "type": "Java Instantiated Method"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/auth/customer/refresh/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "calculateExpirationDate(java.util.Date) return java.util.Date",
-                "type": "Java Method"
-              },
-              {
-                "name": "refreshToken(java.lang.String) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "canTokenBeRefreshed(java.lang.String,java.util.Date) return java.lang.Boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "ignoreTokenExpiration(java.lang.String) return java.lang.Boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "isCreatedBeforeLastPasswordReset(java.util.Date,java.util.Date) return java.lang.Boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "isTokenExpired(java.lang.String) return java.lang.Boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "getAllClaimsFromToken(java.lang.String) return io.jsonwebtoken.Claims\u003cT\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "getAudienceFromToken(java.lang.String) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "getExpirationDateFromToken(java.lang.String) return java.util.Date",
-                "type": "Java Method"
-              },
-              {
-                "name": "getIssuedAtDateFromToken(java.lang.String) return java.util.Date",
-                "type": "Java Method"
-              },
-              {
-                "name": "getUsernameFromToken(java.lang.String) return java.lang.String",
-                "type": "Java Method"
-              },
-              {
-                "name": "JWTTokenUtil",
-                "type": "Java Class"
-              },
-              {
-                "name": "getClaimFromToken.T",
-                "type": ""
-              },
-              {
-                "name": "getClaimFromToken\u003cT\u003e",
-                "type": "Java Instantiated Method"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

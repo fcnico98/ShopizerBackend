@@ -1,209 +1,273 @@
 {
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/payments/TransactionRepository.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/payments/TransactionRepository.java]": [
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/payments/TransactionRepository.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 7,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 5,
+        "impacting_elements": [
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "findByDates(java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "findByDates(java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/orders/payment/capturable/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select t from Transaction",
-                "type": "Spring Data JPQL Query"
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_transaction",
+                "full_name": "salesmanager.sm_transaction",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "orders",
-            "full_name": "salesmanager.orders",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "TransactionRepository",
+            "comment": "",
+            "type": "Java Interface",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "findByDates(java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/orders/payment/capturable/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "select t from Transaction",
-                "type": "Spring Data JPQL Query"
+                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "select t from Transaction",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "findByDates(java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/orders/payment/capturable/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select t from Transaction",
-                "type": "Spring Data JPQL Query"
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_transaction",
+                "full_name": "salesmanager.sm_transaction",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "findByDates(java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "select t from Transaction",
-                "type": "Spring Data JPQL Query"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_transaction",
+                "full_name": "salesmanager.sm_transaction",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "select t from Transaction",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "findByDates(java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "select t from Transaction",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "findByDates(java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select t from Transaction",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "sm_transaction",
-            "full_name": "salesmanager.sm_transaction",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "findByDates(java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "select t from Transaction",
-                "type": "Spring Data JPQL Query"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_transaction",
+                "full_name": "salesmanager.sm_transaction",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 3,
-        "entities_to_test": [
-          {
-            "name": "api/v1/private/orders/payment/capturable/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "findByDates(java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "TransactionRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select t from Transaction",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/orders/{}/payment/transactions/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "TransactionRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select t from Transaction",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
-                "type": "Java Method"
-              },
-              {
-                "name": "TransactionRepository",
-                "type": "Java Interface"
-              },
-              {
-                "name": "select t from Transaction",
-                "type": "Spring Data JPQL Query"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

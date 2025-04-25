@@ -1,64 +1,71 @@
 {
   "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/customer/review/CustomerReviewService.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/customer/review/CustomerReviewService.java]": [
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/customer/review/CustomerReviewService.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 4,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 3,
+        "impacting_elements": [
           {
-            "name": "api/v1/private/customers/{}/reviews/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/PUT/api/v1/private/customers/{}/reviews/{}/",
-            "type": "Spring MVC Put Operation",
-            "used_elements": [
+            "name": "CustomerReviewService",
+            "comment": "",
+            "type": "Java Interface",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
               {
-                "name": "CustomerReviewService",
-                "type": "Java Interface"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/customers/{}/reviews/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/POST/api/v1/private/customers/{}/reviews/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "getByReviewerAndReviewed(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.customer.review.CustomerReview",
-                "type": "Java Method"
+                "name": "api/v1/private/customers/{}/reviews/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/PUT/api/v1/private/customers/{}/reviews/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "CustomerReviewService",
-                "type": "Java Interface"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/customers/{}/reviews/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/GET/api/v1/customers/{}/reviews/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "getByReviewedCustomer(com.salesmanager.core.model.customer.Customer) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
-                "type": "Java Method"
+                "name": "api/v1/private/customers/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/POST/api/v1/private/customers/{}/reviews/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "CustomerReviewService",
-                "type": "Java Interface"
+                "name": "api/v1/customers/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/GET/api/v1/customers/{}/reviews/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/customers/{}/reviews/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/DELETE/api/v1/private/customers/{}/reviews/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/customers/{}/reviews/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/DELETE/api/v1/private/customers/{}/reviews/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
+            "name": "getByReviewerAndReviewed(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.customer.review.CustomerReview",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "CustomerReviewService",
-                "type": "Java Interface"
+                "name": "api/v1/private/customers/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/POST/api/v1/private/customers/{}/reviews/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getByReviewedCustomer(com.salesmanager.core.model.customer.Customer) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/customers/{}/reviews/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerReviewApi.java/api/v1/PORT/GET/api/v1/customers/{}/reviews/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

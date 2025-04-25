@@ -1,139 +1,139 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/utils/LanguageUtils.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/utils/LanguageUtils.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/utils/LanguageUtils.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 6,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 4,
+        "impacting_elements": [
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "getServiceLanguage(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "getRequestLanguage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
+                "name": "api/v1/store/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\store\\MerchantStoreApi.java/api/v1/PORT/GET/api/v1/store/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "getRESTLanguage(javax.servlet.http.HttpServletRequest,org.springframework.web.context.request.NativeWebRequest) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
+                "name": "api/v1/private/marketplace/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\marketplace\\MarketPlaceApi.java/api/v1/PORT/GET/api/v1/private/marketplace/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "LanguageUtils",
+            "comment": "",
+            "type": "Java Class MVC",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "getRequestLanguage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
+                "name": "api/v1/store/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\store\\MerchantStoreApi.java/api/v1/PORT/GET/api/v1/store/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "getRESTLanguage(javax.servlet.http.HttpServletRequest,org.springframework.web.context.request.NativeWebRequest) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
+                "name": "api/v1/private/marketplace/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\marketplace\\MarketPlaceApi.java/api/v1/PORT/GET/api/v1/private/marketplace/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "getRequestLanguage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.core.model.reference.language.Language",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 5,
+            "impacted_elements_to_test": [
               {
-                "name": "getRequestLanguage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "getRESTLanguage(javax.servlet.http.HttpServletRequest,org.springframework.web.context.request.NativeWebRequest) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "getRESTLanguage(javax.servlet.http.HttpServletRequest,org.springframework.web.context.request.NativeWebRequest) return com.salesmanager.core.model.reference.language.Language",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
               {
-                "name": "getRequestLanguage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "getRESTLanguage(javax.servlet.http.HttpServletRequest,org.springframework.web.context.request.NativeWebRequest) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "getRequestLanguage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "getRESTLanguage(javax.servlet.http.HttpServletRequest,org.springframework.web.context.request.NativeWebRequest) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "getServiceLanguage(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "zone",
-            "full_name": "salesmanager.zone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
               {
-                "name": "getRESTLanguage(javax.servlet.http.HttpServletRequest,org.springframework.web.context.request.NativeWebRequest) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 2,
-        "entities_to_test": [
-          {
-            "name": "api/v1/store/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\store\\MerchantStoreApi.java/api/v1/PORT/GET/api/v1/store/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "getServiceLanguage(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
-              },
-              {
-                "name": "LanguageUtils",
-                "type": "Java Class MVC"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/marketplace/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\marketplace\\MarketPlaceApi.java/api/v1/PORT/GET/api/v1/private/marketplace/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "getServiceLanguage(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
-                "type": "Java Method"
-              },
-              {
-                "name": "LanguageUtils",
-                "type": "Java Class MVC"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

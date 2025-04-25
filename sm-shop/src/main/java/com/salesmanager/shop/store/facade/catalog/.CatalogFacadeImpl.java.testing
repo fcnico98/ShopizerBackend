@@ -1,709 +1,1097 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/catalog/CatalogFacadeImpl.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/catalog/CatalogFacadeImpl.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/catalog/CatalogFacadeImpl.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 9,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 24,
+        "impacting_elements": [
           {
-            "name": "api/v1/private/catalog/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/{}/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "addCatalogEntry(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.Read",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "addCatalogEntry(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.Read",
-                "type": "Java Method"
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "addCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
+                "name": "category",
+                "full_name": "salesmanager.category",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "getCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog_entry",
+                "full_name": "salesmanager.catalog_entry",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/catalog/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
               {
-                "name": "uniqueCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "saveCatalog(com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "category",
+                "full_name": "salesmanager.category",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/catalog/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/ANY/api/v1/private/catalog/{}/",
-            "type": "Spring MVC Any Operation",
-            "used_elements": [
+            "name": "addCatalogEntry$lambda$0() return java.lang.Object",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "updateCatalog(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "ofNullable\u003cCatalog\u003e",
-                "type": "Java Instantiated Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "updateCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
+                "name": "category",
+                "full_name": "salesmanager.category",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog_entry",
+                "full_name": "salesmanager.catalog_entry",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/catalog/{}/entry/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/entry/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "getCatalog$lambda$0() return java.lang.Object",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
               {
-                "name": "listCatalogEntry(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.",
-                "type": "Java Method"
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "List\u003cReadableCatalogCategoryEntry\u003e",
-                "type": "Java Instantiated Interface"
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "listCatalogEntry$lambda$1(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return R",
-                "type": "Java Lambda Expression"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "listCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
+                "name": "category",
+                "full_name": "salesmanager.category",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "createReadableList\u003cCatalogCategoryEntry,ReadableCatalogCategoryEntry\u003e",
-                "type": "Java Instantiated Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/catalog/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "uniqueCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
+                "name": "api/v1/private/catalog/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "getCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
+                "name": "api/v1/private/catalog/unique/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/unique/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/catalog/unique/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/unique/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "saveCatalog(com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "uniqueCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
+                "name": "api/v1/private/catalog/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "category",
+                "full_name": "salesmanager.category",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/catalogs/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalogs/",
-            "type": "Spring MVC Get Operation",
-            "used_elements": [
+            "name": "updateCatalog(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
               {
-                "name": "getListCatalogs(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityLi",
-                "type": "Java Method"
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/ANY/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "ReadableEntityList\u003cReadableCatalog\u003e",
-                "type": "Java Instantiated Constructor"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "List\u003cReadableCatalog\u003e",
-                "type": "Java Instantiated Interface"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "getListCatalogs$lambda$0(com.salesmanager.core.model.catalog.catalog.Catalog) return R",
-                "type": "Java Lambda Expression"
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "createReadableList\u003cCatalog,ReadableCatalog\u003e",
-                "type": "Java Instantiated Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "api/v1/private/catalog/{}/entry/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/DELETE/api/v1/private/catalog/{}/entry/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
+            "name": "ofNullable\u003cCatalog\u003e",
+            "comment": "",
+            "type": "Java Instantiated Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "removeCatalogEntry(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/ANY/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/private/catalog/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/DELETE/api/v1/private/catalog/{}/",
-            "type": "Spring MVC Delete Operation",
-            "used_elements": [
+            "name": "updateCatalog$lambda$0() return java.lang.Object",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
               {
-                "name": "deleteCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/ANY/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "listCatalogEntry(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalog/{}/entry/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/entry/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "category",
+                "full_name": "salesmanager.category",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog_entry",
+                "full_name": "salesmanager.catalog_entry",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "List\u003cReadableCatalogCategoryEntry\u003e",
+            "comment": "",
+            "type": "Java Instantiated Interface",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalog/{}/entry/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/entry/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "listCatalogEntry$lambda$1(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return R",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalog/{}/entry/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/entry/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "category",
+                "full_name": "salesmanager.category",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog_entry",
+                "full_name": "salesmanager.catalog_entry",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "listCatalogEntry$lambda$0() return java.lang.Object",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalog/{}/entry/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/entry/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "category",
+                "full_name": "salesmanager.category",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog_entry",
+                "full_name": "salesmanager.catalog_entry",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "createReadableList\u003cCatalogCategoryEntry,ReadableCatalogCategoryEntry\u003e",
+            "comment": "",
+            "type": "Java Instantiated Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalog/{}/entry/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/entry/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getListCatalogs(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityLi",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalogs/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalogs/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "ReadableEntityList\u003cReadableCatalog\u003e",
+            "comment": "",
+            "type": "Java Instantiated Constructor",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalogs/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalogs/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "List\u003cReadableCatalog\u003e",
+            "comment": "",
+            "type": "Java Instantiated Interface",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalogs/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalogs/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getListCatalogs$lambda$0(com.salesmanager.core.model.catalog.catalog.Catalog) return R",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalogs/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalogs/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "createReadableList\u003cCatalog,ReadableCatalog\u003e",
+            "comment": "",
+            "type": "Java Instantiated Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalogs/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalogs/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "removeCatalogEntry(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalog/{}/entry/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/DELETE/api/v1/private/catalog/{}/entry/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "deleteCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/DELETE/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.catalog.Catalog",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "category",
+                "full_name": "salesmanager.category",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "category",
+                "full_name": "salesmanager.category",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getCatalog$lambda$0() return java.lang.Object",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "category",
+                "full_name": "salesmanager.category",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "catalog",
+                "full_name": "salesmanager.catalog",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 9,
-        "entities_to_test": [
-          {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "uniqueCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.Read",
-                "type": "Java Method"
-              },
-              {
-                "name": "listCatalogEntry(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getListCatalogs(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityLi",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.catalog.Catalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateCatalog(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "deleteCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveCatalog(com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$1(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getListCatalogs$lambda$0(com.salesmanager.core.model.catalog.catalog.Catalog) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "updateCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "category",
-            "full_name": "salesmanager.category",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "addCatalogEntry(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.Read",
-                "type": "Java Method"
-              },
-              {
-                "name": "listCatalogEntry(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.catalog.Catalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveCatalog(com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$1(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "uniqueCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.Read",
-                "type": "Java Method"
-              },
-              {
-                "name": "listCatalogEntry(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getListCatalogs(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityLi",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.catalog.Catalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateCatalog(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "deleteCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveCatalog(com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$1(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getListCatalogs$lambda$0(com.salesmanager.core.model.catalog.catalog.Catalog) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "updateCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "catalog",
-            "full_name": "salesmanager.catalog",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "uniqueCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.Read",
-                "type": "Java Method"
-              },
-              {
-                "name": "listCatalogEntry(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getListCatalogs(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityLi",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.catalog.Catalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateCatalog(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "deleteCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveCatalog(com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$1(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getListCatalogs$lambda$0(com.salesmanager.core.model.catalog.catalog.Catalog) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "updateCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "catalog_entry",
-            "full_name": "salesmanager.catalog_entry",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "addCatalogEntry(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.Read",
-                "type": "Java Method"
-              },
-              {
-                "name": "listCatalogEntry(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$1(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "uniqueCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.Read",
-                "type": "Java Method"
-              },
-              {
-                "name": "listCatalogEntry(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getListCatalogs(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityLi",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.catalog.Catalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateCatalog(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "deleteCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveCatalog(com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$1(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getListCatalogs$lambda$0(com.salesmanager.core.model.catalog.catalog.Catalog) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "updateCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "uniqueCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.Read",
-                "type": "Java Method"
-              },
-              {
-                "name": "listCatalogEntry(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getListCatalogs(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityLi",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.catalog.Catalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateCatalog(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "deleteCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveCatalog(com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$1(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getListCatalogs$lambda$0(com.salesmanager.core.model.catalog.catalog.Catalog) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "updateCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "uniqueCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.Read",
-                "type": "Java Method"
-              },
-              {
-                "name": "listCatalogEntry(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getListCatalogs(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityLi",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.catalog.Catalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "updateCatalog(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "deleteCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveCatalog(com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "addCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$1(com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "listCatalogEntry$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getListCatalogs$lambda$0(com.salesmanager.core.model.catalog.catalog.Catalog) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "updateCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          },
-          {
-            "name": "zone",
-            "full_name": "salesmanager.zone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "getListCatalogs(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityLi",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "getCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "saveCatalog(com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
-                "type": "Java Method"
-              },
-              {
-                "name": "getListCatalogs$lambda$0(com.salesmanager.core.model.catalog.catalog.Catalog) return R",
-                "type": "Java Lambda Expression"
-              },
-              {
-                "name": "getCatalog$lambda$0() return java.lang.Object",
-                "type": "Java Lambda Expression"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "data entity"
+        ]
       }
     ]
   }

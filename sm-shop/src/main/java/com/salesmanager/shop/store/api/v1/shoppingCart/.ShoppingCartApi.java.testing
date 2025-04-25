@@ -1,1482 +1,2053 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 20,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 19,
+        "impacting_elements": [
           {
-            "name": "manufacturer",
-            "full_name": "salesmanager.manufacturer",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
+            "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 19,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
-          {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "product",
-            "full_name": "salesmanager.product",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "product_option",
-            "full_name": "salesmanager.product_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "product_variant_group",
-            "full_name": "salesmanager.product_variant_group",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "shopping_cart_item",
-            "full_name": "salesmanager.shopping_cart_item",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "tax_class",
-            "full_name": "salesmanager.tax_class",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "customer",
-            "full_name": "salesmanager.customer",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "customer_option",
-            "full_name": "salesmanager.customer_option",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              }
-            ]
-          },
-          {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "customer_option_value",
-            "full_name": "salesmanager.customer_option_value",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              }
-            ]
-          },
-          {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "merchant_configuration",
-            "full_name": "salesmanager.merchant_configuration",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "product_attribute",
-            "full_name": "salesmanager.product_attribute",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "product_option_value",
-            "full_name": "salesmanager.product_option_value",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "product_variation",
-            "full_name": "salesmanager.product_variation",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "shopping_cart",
-            "full_name": "salesmanager.shopping_cart",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          },
-          {
-            "name": "zone",
-            "full_name": "salesmanager.zone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 9,
-        "entities_to_test": [
           {
             "name": "api/v1/cart/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+            "comment": "",
             "type": "Spring MVC Put Operation",
-            "used_elements": [
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 19,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "addToCart(java.lang.Long,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.sal",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/customers/{}/cart/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/customers/{}/cart/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
             "name": "api/v1/customers/{}/cart/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/customers/{}/cart/",
+            "comment": "",
             "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "addToCart(java.lang.Long,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.sal",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/customers/{}/cart/",
-                "type": "Spring MVC Post Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/customers/{}/cart/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 19,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/cart/{}/multi/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+            "comment": "",
             "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 19,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "asList\u003cPersistableShoppingCartItem[]\u003e",
-                "type": "Java Instantiated Method"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "asList\u003cPersistableShoppingCartItem[]\u003e",
+            "comment": "",
+            "type": "Java Instantiated Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 19,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/promo/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/promo/{}/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/cart/{}/promo/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/promo/{}/",
+            "comment": "",
             "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return org.springframework.http.ResponseEntity.ResponseEntity\u003cc",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 19,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/promo/{}/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 19,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/cart/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
+            "comment": "",
             "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 19,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/",
-                "type": "Spring MVC Post Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 21,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/customer/cart/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/cart/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/auth/customer/cart/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/cart/",
+            "comment": "",
             "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "getByCustomer(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 21,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/cart/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 21,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/customer/{}/cart/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/{}/cart/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/auth/customer/{}/cart/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/{}/cart/",
+            "comment": "",
             "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "getByCustomer(java.lang.Long,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletRespo",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 21,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/{}/cart/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 19,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/cart/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/cart/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/cart/{}/",
+            "comment": "",
             "type": "Spring MVC Get Operation",
-            "used_elements": [
-              {
-                "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 19,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/cart/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 19,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
             "name": "api/v1/cart/{}/product/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+            "comment": "",
             "type": "Spring MVC Delete Operation",
-            "used_elements": [
-              {
-                "name": "deleteCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.",
-                "type": "Java Method"
-              },
+            "nb_impacted_elements": 19,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation"
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_attribute",
+                "full_name": "salesmanager.product_attribute",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

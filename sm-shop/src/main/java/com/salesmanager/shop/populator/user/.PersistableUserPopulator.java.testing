@@ -1,134 +1,113 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/user/PersistableUserPopulator.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/user/PersistableUserPopulator.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/user/PersistableUserPopulator.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 7,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 3,
+        "impacting_elements": [
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "type": "Java Method"
+                "name": "api/v1/private/user/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/PUT/api/v1/private/user/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/user/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/POST/api/v1/private/user/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_group",
+                "full_name": "salesmanager.sm_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "PersistableUserPopulator",
+            "comment": "",
+            "type": "Java Class",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "type": "Java Method"
+                "name": "api/v1/private/user/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/PUT/api/v1/private/user/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/user/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/POST/api/v1/private/user/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "AbstractDataPopulator\u003cPersistableUser,User\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+                "name": "api/v1/private/user/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/PUT/api/v1/private/user/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
-                "name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "sm_group",
-            "full_name": "salesmanager.sm_group",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "zone",
-            "full_name": "salesmanager.zone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "type": "Java Method"
+                "name": "api/v1/private/user/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/POST/api/v1/private/user/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 2,
-        "entities_to_test": [
-          {
-            "name": "api/v1/private/user/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/PUT/api/v1/private/user/{}/",
-            "type": "Spring MVC Put Operation",
-            "used_elements": [
-              {
-                "name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "type": "Java Method"
-              },
-              {
-                "name": "PersistableUserPopulator",
-                "type": "Java Class"
-              },
-              {
-                "name": "AbstractDataPopulator\u003cPersistableUser,User\u003e",
-                "type": "Java Instantiated Class"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/user/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/POST/api/v1/private/user/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "type": "Java Method"
-              },
-              {
-                "name": "PersistableUserPopulator",
-                "type": "Java Class"
-              },
-              {
-                "name": "AbstractDataPopulator\u003cPersistableUser,User\u003e",
-                "type": "Java Instantiated Class"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

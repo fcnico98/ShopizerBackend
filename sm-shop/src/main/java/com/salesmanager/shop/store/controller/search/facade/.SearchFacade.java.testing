@@ -1,57 +1,79 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacade.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacade.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacade.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 3,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 4,
+        "impacting_elements": [
           {
-            "name": "api/v1/private/system/search/index/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\system\\SearchToolsApi.java/api/v1/PORT/POST/api/v1/private/system/search/index/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "indexAllData(com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "indexAllData(com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "type": "Java Method"
-              },
-              {
-                "name": "SearchFacade",
-                "type": "Java Interface"
+                "name": "api/v1/private/system/search/index/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\system\\SearchToolsApi.java/api/v1/PORT/POST/api/v1/private/system/search/index/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/search/autocomplete/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\search\\SearchApi.java/api/v1/PORT/POST/api/v1/search/autocomplete/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "SearchFacade",
+            "comment": "",
+            "type": "Java Interface",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "autocompleteRequest(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ValueList",
-                "type": "Java Method"
+                "name": "api/v1/private/system/search/index/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\system\\SearchToolsApi.java/api/v1/PORT/POST/api/v1/private/system/search/index/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "SearchFacade",
-                "type": "Java Interface"
+                "name": "api/v1/search/autocomplete/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\search\\SearchApi.java/api/v1/PORT/POST/api/v1/search/autocomplete/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/search/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\search\\SearchApi.java/api/v1/PORT/POST/api/v1/search/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "api/v1/search/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\search\\SearchApi.java/api/v1/PORT/POST/api/v1/search/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
+            "name": "autocompleteRequest(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ValueList",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "search(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.catalog.SearchProductRequest) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
-                "type": "Java Method"
-              },
+                "name": "api/v1/search/autocomplete/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\search\\SearchApi.java/api/v1/PORT/POST/api/v1/search/autocomplete/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "search(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.catalog.SearchProductRequest) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "SearchFacade",
-                "type": "Java Interface"
+                "name": "api/v1/search/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\search\\SearchApi.java/api/v1/PORT/POST/api/v1/search/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

@@ -1,182 +1,201 @@
 {
   "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/PersistableTaxRateMapper.java]": {
-    "00. data elements and user transaction / API endpoint built on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/PersistableTaxRateMapper.java]": [
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/PersistableTaxRateMapper.java] impacting data elements and user transactions / API endpoints": [
       {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 7,
-        "entities_to_test": [
+        "impacting_elements_list_comment": "",
+        "nb_impacting_elements": 5,
+        "impacting_elements": [
           {
-            "name": "merchant_store",
-            "full_name": "salesmanager.merchant_store",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "taxRate(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.PersistableTaxRate) return com.salesmanager.core.model.tax.taxrate.TaxRate",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "convert(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "type": "Java Method"
+                "name": "api/v1/private/tax/rate/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "type": "Java Method"
+                "name": "api/v1/private/tax/rate/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "tax_class",
-            "full_name": "salesmanager.tax_class",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "description(com.salesmanager.shop.model.tax.TaxRateDescription) return com.salesmanager.core.model.tax.taxrate.TaxRateDescription",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
               {
-                "name": "convert(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "type": "Java Method"
+                "name": "api/v1/private/tax/rate/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "type": "Java Method"
+                "name": "api/v1/private/tax/rate/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "country",
-            "full_name": "salesmanager.country",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
               {
-                "name": "convert(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "type": "Java Method"
+                "name": "api/v1/private/tax/rate/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "type": "Java Method"
+                "name": "api/v1/private/tax/rate/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "currency",
-            "full_name": "salesmanager.currency",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "PersistableTaxRateMapper",
+            "comment": "",
+            "type": "Java Class",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
               {
-                "name": "convert(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "type": "Java Method"
+                "name": "api/v1/private/tax/rate/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "type": "Java Method"
+                "name": "api/v1/private/tax/rate/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "geozone",
-            "full_name": "salesmanager.geozone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
+            "name": "convert(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
               {
-                "name": "convert(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "type": "Java Method"
+                "name": "api/v1/private/tax/rate/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "language",
-            "full_name": "salesmanager.language",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "taxRate(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.PersistableTaxRate) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "type": "Java Method"
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "convert(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "type": "Java Method"
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "description(com.salesmanager.shop.model.tax.TaxRateDescription) return com.salesmanager.core.model.tax.taxrate.TaxRateDescription",
-                "type": "Java Method"
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "type": "Java Method"
-              }
-            ]
-          },
-          {
-            "name": "zone",
-            "full_name": "salesmanager.zone",
-            "type": "PostgreSQL Table",
-            "used_elements": [
-              {
-                "name": "convert(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "type": "Java Method"
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
-                "name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "type": "Java Method"
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }
-        ],
-        "type_of_entity_to_test": "data entity"
-      },
-      {
-        "entities_to_test_list_comment": "",
-        "nb_entities_to_test": 2,
-        "entities_to_test": [
-          {
-            "name": "api/v1/private/tax/rate/{}/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
-            "type": "Spring MVC Put Operation",
-            "used_elements": [
-              {
-                "name": "taxRate(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.PersistableTaxRate) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "type": "Java Method"
-              },
-              {
-                "name": "description(com.salesmanager.shop.model.tax.TaxRateDescription) return com.salesmanager.core.model.tax.taxrate.TaxRateDescription",
-                "type": "Java Method"
-              },
-              {
-                "name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "type": "Java Method"
-              },
-              {
-                "name": "PersistableTaxRateMapper",
-                "type": "Java Class"
-              }
-            ]
-          },
-          {
-            "name": "api/v1/private/tax/rate/",
-            "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
-            "type": "Spring MVC Post Operation",
-            "used_elements": [
-              {
-                "name": "taxRate(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.PersistableTaxRate) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "type": "Java Method"
-              },
-              {
-                "name": "convert(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "type": "Java Method"
-              },
-              {
-                "name": "description(com.salesmanager.shop.model.tax.TaxRateDescription) return com.salesmanager.core.model.tax.taxrate.TaxRateDescription",
-                "type": "Java Method"
-              },
-              {
-                "name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "type": "Java Method"
-              },
-              {
-                "name": "PersistableTaxRateMapper",
-                "type": "Java Class"
-              }
-            ]
-          }
-        ],
-        "type_of_entity_to_test": "user transaction / API endpoint"
+        ]
       }
     ]
   }

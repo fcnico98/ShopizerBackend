@@ -291,7 +291,7 @@ public class ProductPriceUtils {
 	 * @throws Exception
 	 */
 	// Utility
-	public String getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount) throws Exception {
+	public static String getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount) throws Exception {
 		if (amount == null) {
 			return "";
 		}

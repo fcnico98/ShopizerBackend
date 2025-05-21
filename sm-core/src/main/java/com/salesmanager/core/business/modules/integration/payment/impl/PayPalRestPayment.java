@@ -121,7 +121,7 @@ public class PayPalRestPayment implements PaymentModule {
 			// ###Amount
 			// Let's you specify a payment amount.
 			
-			String sAmount = productPriceUtils.getAdminFormatedAmount(store, amount);
+			String sAmount = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
 			
 			
 			Amount amnt = new Amount();

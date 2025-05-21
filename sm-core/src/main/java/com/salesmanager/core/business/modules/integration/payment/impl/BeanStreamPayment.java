@@ -92,7 +92,7 @@ public class BeanStreamPayment implements PaymentModule {
 				String trnID = capturableTransaction.getTransactionDetails().get("TRANSACTIONID");
 
 				BigDecimal amount = order.getTotal();
-				String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
+				String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
 				
 				/**
 				merchant_id=123456789&requestType=BACKEND
@@ -181,7 +181,7 @@ public class BeanStreamPayment implements PaymentModule {
 
 			String trnID = transaction.getTransactionDetails().get("TRANSACTIONID");
 			
-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
+			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
 			
 			/**
 			merchant_id=123456789&requestType=BACKEND
@@ -498,7 +498,7 @@ public class BeanStreamPayment implements PaymentModule {
 			
 		String orderNumber = uniqueId;
 		
-		String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
+		String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
 		
 		
 		StringBuilder messageString = new StringBuilder();
